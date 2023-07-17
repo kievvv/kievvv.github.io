@@ -6,7 +6,7 @@
   <link href="https://kievvv.github.io/atom.xml" rel="self"/>
   
   <link href="https://kievvv.github.io/"/>
-  <updated>2023-07-17T17:25:12.935Z</updated>
+  <updated>2023-07-17T17:38:15.544Z</updated>
   <id>https://kievvv.github.io/</id>
   
   <author>
@@ -17,18 +17,20 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
+    <title>Hello World：建站日志</title>
     <link href="https://kievvv.github.io/2023/07/06/Hello%20World/"/>
     <id>https://kievvv.github.io/2023/07/06/Hello%20World/</id>
     <published>2023-07-06T13:36:56.025Z</published>
-    <updated>2023-07-17T17:25:12.935Z</updated>
+    <updated>2023-07-17T17:38:15.544Z</updated>
     
-    <content type="html"><![CDATA[<p>2023.7.6  21:38<br>First Blog!</p>]]></content>
+    <content type="html"><![CDATA[<p>2023.7.6  21:38<br>First Blog!</p><p>2023.7.18</p><p>更新主题：<a href="https://github.com/volantis-x/hexo-theme-volantis">volantis</a></p>]]></content>
     
     
       
       
     <summary type="html">&lt;p&gt;2023.7.6  21:38&lt;br&gt;First Blog!&lt;/p&gt;
+&lt;p&gt;2023.7.18&lt;/p&gt;
+&lt;p&gt;更新主题：&lt;a href=&quot;https://github.com/volantis-x/hexo-theme-volantis&quot;&gt;volantis&lt;/a&gt;&lt;/p&gt;
 </summary>
       
     
