@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Hexo</title>
+  
+  
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2023-07-06T13:47:02.270Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>John Doe</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>HalloWorld</title>
+    <link href="http://example.com/2023/07/06/HalloWorld/"/>
+    <id>http://example.com/2023/07/06/HalloWorld/</id>
+    <published>2023-07-06T13:36:56.025Z</published>
+    <updated>2023-07-06T13:47:02.270Z</updated>
+    
+    <content type="html"><![CDATA[<p>2023.7.6  21:38<br>First Blog!</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;2023.7.6  21:38&lt;br&gt;First Blog!&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
