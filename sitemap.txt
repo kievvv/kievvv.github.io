@@ -1,2 +1,2 @@
-http://example.com/2023/07/06/HalloWorld/
+http://example.com/2023/07/06/Hallo%20World/
 http://example.com/
