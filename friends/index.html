@@ -44,8 +44,8 @@
 <meta property="og:site_name" content="iullius’ Blog">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2023-07-17T16:00:18.949Z">
-<meta property="article:modified_time" content="2023-07-17T16:00:18.949Z">
+<meta property="article:published_time" content="2023-07-19T14:14:55.627Z">
+<meta property="article:modified_time" content="2023-07-19T14:14:55.627Z">
 <meta property="article:author" content="iullius">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
@@ -1596,7 +1596,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1689754814112),
+    lastupdate: new Date(1689780179441),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2024,7 +2024,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <!-- Custom Files bodyBegin end-->
     <!-- front-matter body_begin begin -->
     <!-- front-matter body_begin end -->
-    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur show" style='opacity: 0' >
+    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur " style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -2293,7 +2293,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="none" class='cover-wrapper friends search' style="display: none;">
+      <div id="half" class='cover-wrapper friends search' style="display: ;">
         
   <div id="parallax-window"></div>
 
@@ -2411,10 +2411,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-07-18T00:00:18+08:00">
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-07-19T22:14:55+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2023年7月18日</p>
+    <p>发布于：2023年7月19日</p>
   </a>
 </div>
 
@@ -2479,10 +2479,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-07-18T00:00:18+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-07-19T22:14:55+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2023年7月18日</p>
+    <p>更新于：2023年7月19日</p>
   </a>
 </div>
 
@@ -2601,14 +2601,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     // header
     var l_header=document.getElementById("l_header");
     
-    l_header.classList.add("show");
+    l_header.classList.remove("show");
     
     
       // cover
       var cover_wrapper=document.querySelector('#l_cover .cover-wrapper');
       var scroll_down=document.getElementById('scroll-down');
-      cover_wrapper.id="none";
-      cover_wrapper.style.display="none";
+      cover_wrapper.id="half";
+      cover_wrapper.style.display="";
       scroll_down.style.display="none";
     
   
@@ -2890,6 +2890,17 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <script>
 
+  volantis.css("https://unpkg.com/@highlightjs/cdn-assets@11.5.1/styles/night-owl.min.css");
+
+
+  volantis.js("https://unpkg.com/@highlightjs/cdn-assets@11.5.1/highlight.min.js").then(()=>{
+    volantis.requestAnimationFrame(hljs.highlightAll)
+  })
+  volantis.pjax.push(()=>{
+    document.querySelectorAll('pre code').forEach((block) => {
+      hljs.highlightElement(block);
+    });
+  },"highlightjs")
 
 
   function pjax_highlightjs_copyCode(){
@@ -2914,14 +2925,12 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
   <script>
-  let imgs = ["https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA1992.jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2590.jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA4652.jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2827.jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA4206.jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2995.jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA1998.jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2695.jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA1733.jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA3179.jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA4314.jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2706.jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2495.jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2981.jpg"];
+  let imgs = ["https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA1733.jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2590.jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA1992.jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA4652.jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA3179.jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2706.jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2981.jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2495.jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA1998.jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2995.jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2695.jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA4314.jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2827.jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA4206.jpg"];
   let index = 0;
   let IntervalParallax = null;
 
   function parallax(){
     let ParallaxWindow = document.querySelector("#parallax-window");
-    
-      ParallaxWindow = document.querySelector("html");
     
     Parallax.window = ParallaxWindow;
     Parallax.options.fade = 200;
@@ -2931,7 +2940,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     if (imgs.length>1) {
       IntervalParallax = setInterval(function () {
         next_parallax();
-      }, '60000');
+      }, '300000');
     }
   }
 
@@ -2939,6 +2948,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     if (typeof Parallax == "undefined") {
       return
     }
+    
+      if (!document.querySelector("#full")&&!document.querySelector("#half")) {
+        return
+      }
     
     if (imgs.length>=1) {
       Parallax.options.src = imgs[index % imgs.length];
@@ -3141,7 +3154,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"iullius’ Blog","url":"https://kievvv.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"iullius","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://kievvv.github.io/","sameAs":["https://github.com/volantis-x"],"description":"网络安全、音乐、摄影、电影"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://kievvv.github.io/","name":"iullius’ Blog"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"iullius’ Blog","url":"https://kievvv.github.io/","keywords":null,"description":"网络安全、音乐、摄影、电影","author":{"@type":"Person","name":"iullius","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://kievvv.github.io/","description":"网络安全、音乐、摄影、电影"},"publisher":{"@type":"Organization","name":"iullius’ Blog","url":"https://kievvv.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://kievvv.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"我的朋友们","description":"网络安全、音乐、摄影、电影","inLanguage":["zh-CN","en","zh-TW","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://kievvv.github.io/friends/index.html"},"author":{"@type":"Person","name":"iullius","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://kievvv.github.io/"},"publisher":{"@type":"Organization","name":"iullius’ Blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://kievvv.github.io/friends/index.html","wordCount":0,"datePublished":"2023-07-17T16:00:18.949Z","dateModified":"2023-07-17T16:00:18.949Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"iullius’ Blog","url":"https://kievvv.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"iullius","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://kievvv.github.io/","sameAs":["https://github.com/volantis-x"],"description":"网络安全、音乐、摄影、电影"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://kievvv.github.io/","name":"iullius’ Blog"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"iullius’ Blog","url":"https://kievvv.github.io/","keywords":null,"description":"网络安全、音乐、摄影、电影","author":{"@type":"Person","name":"iullius","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://kievvv.github.io/","description":"网络安全、音乐、摄影、电影"},"publisher":{"@type":"Organization","name":"iullius’ Blog","url":"https://kievvv.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://kievvv.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"我的朋友们","description":"网络安全、音乐、摄影、电影","inLanguage":["zh-CN","en","zh-TW","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://kievvv.github.io/friends/index.html"},"author":{"@type":"Person","name":"iullius","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://kievvv.github.io/"},"publisher":{"@type":"Organization","name":"iullius’ Blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://kievvv.github.io/friends/index.html","wordCount":0,"datePublished":"2023-07-19T14:14:55.627Z","dateModified":"2023-07-19T14:14:55.627Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

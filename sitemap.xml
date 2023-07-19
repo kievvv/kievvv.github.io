@@ -2,6 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://kievvv.github.io/friends/index.html</loc>
+    
+    <lastmod>2023-07-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://kievvv.github.io/tags/index.html</loc>
+    
+    <lastmod>2023-07-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://kievvv.github.io/categories/index.html</loc>
+    
+    <lastmod>2023-07-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://kievvv.github.io/2023/07/19/%E5%AF%86%E7%A0%81%E5%AD%A6%E7%AC%94%E8%AE%B0/</loc>
+    
+    <lastmod>2023-07-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://kievvv.github.io/about/index.html</loc>
     
     <lastmod>2023-07-19</lastmod>
@@ -14,33 +50,6 @@
     <loc>https://kievvv.github.io/2023/07/06/Hello%20World/</loc>
     
     <lastmod>2023-07-19</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://kievvv.github.io/tags/index.html</loc>
-    
-    <lastmod>2023-07-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://kievvv.github.io/friends/index.html</loc>
-    
-    <lastmod>2023-07-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://kievvv.github.io/categories/index.html</loc>
-    
-    <lastmod>2023-07-17</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -62,10 +71,24 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://kievvv.github.io/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/</loc>
+    <lastmod>2023-07-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
   <url>
     <loc>https://kievvv.github.io/categories/%E6%9D%82%E8%B0%88/</loc>
+    <lastmod>2023-07-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://kievvv.github.io/categories/%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2023-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

@@ -1599,7 +1599,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1689754814112),
+    lastupdate: new Date(1689780179441),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2520,6 +2520,18 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
 
   
+    <div class="prev-next">
+      
+        <a class='prev' href='/2023/07/19/%E5%AF%86%E7%A0%81%E5%AD%A6%E7%AC%94%E8%AE%B0/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>密码学笔记</p>
+          <p class='content'>第一章 引言信息安全基本属性
+机密性 （Confidentiality）保证信息为授权者使用而不泄漏给未经授权者。别人“看不到”或“看不懂”
+认证（Authentication）消息认证，保证消...</p>
+        </a>
+      
+      
+    </div>
+  
   <!-- Custom Files postEnd begin-->
   
   <!-- Custom Files postEnd end-->
@@ -2917,6 +2929,17 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <script>
 
+  volantis.css("https://unpkg.com/@highlightjs/cdn-assets@11.5.1/styles/night-owl.min.css");
+
+
+  volantis.js("https://unpkg.com/@highlightjs/cdn-assets@11.5.1/highlight.min.js").then(()=>{
+    volantis.requestAnimationFrame(hljs.highlightAll)
+  })
+  volantis.pjax.push(()=>{
+    document.querySelectorAll('pre code').forEach((block) => {
+      hljs.highlightElement(block);
+    });
+  },"highlightjs")
 
 
   function pjax_highlightjs_copyCode(){
@@ -2941,14 +2964,12 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
   <script>
-  let imgs = ["https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA1992.jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2590.jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA4652.jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2827.jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA4206.jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2995.jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA1998.jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2695.jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA1733.jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA3179.jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA4314.jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2706.jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2495.jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2981.jpg"];
+  let imgs = ["https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA1733.jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2590.jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA1992.jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA4652.jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA3179.jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2706.jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2981.jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2495.jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA1998.jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2995.jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2695.jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA4314.jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2827.jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA4206.jpg"];
   let index = 0;
   let IntervalParallax = null;
 
   function parallax(){
     let ParallaxWindow = document.querySelector("#parallax-window");
-    
-      ParallaxWindow = document.querySelector("html");
     
     Parallax.window = ParallaxWindow;
     Parallax.options.fade = 200;
@@ -2958,7 +2979,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     if (imgs.length>1) {
       IntervalParallax = setInterval(function () {
         next_parallax();
-      }, '60000');
+      }, '300000');
     }
   }
 
@@ -2966,6 +2987,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     if (typeof Parallax == "undefined") {
       return
     }
+    
+      if (!document.querySelector("#full")&&!document.querySelector("#half")) {
+        return
+      }
     
     if (imgs.length>=1) {
       Parallax.options.src = imgs[index % imgs.length];
