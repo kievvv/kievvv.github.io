@@ -1,3 +1,4 @@
+https://kievvv.github.io/2023/07/28/SQUIRREL-review/
 https://kievvv.github.io/2023/07/06/Hello%20World%EF%BC%9A%E5%BB%BA%E7%AB%99%E6%97%A5%E5%BF%97/
 https://kievvv.github.io/friends/index.html
 https://kievvv.github.io/tags/index.html
@@ -7,5 +8,8 @@ https://kievvv.github.io/about/index.html
 https://kievvv.github.io/
 https://kievvv.github.io/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/
 https://kievvv.github.io/tags/HelloWorld/
+https://kievvv.github.io/tags/Fuzzing/
+https://kievvv.github.io/tags/Database/
+https://kievvv.github.io/tags/SQL/
 https://kievvv.github.io/categories/%E7%AC%94%E8%AE%B0/
 https://kievvv.github.io/categories/%E6%9D%82%E8%B0%88/
