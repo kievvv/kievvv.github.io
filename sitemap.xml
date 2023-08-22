@@ -99,13 +99,6 @@
   </url>
   
   <url>
-    <loc>https://kievvv.github.io/tags/Netflix/</loc>
-    <lastmod>2023-08-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://kievvv.github.io/tags/Fuzzing/</loc>
     <lastmod>2023-08-22</lastmod>
     <changefreq>weekly</changefreq>
@@ -121,6 +114,13 @@
   
   <url>
     <loc>https://kievvv.github.io/tags/SQL/</loc>
+    <lastmod>2023-08-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://kievvv.github.io/tags/Netflix/</loc>
     <lastmod>2023-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
