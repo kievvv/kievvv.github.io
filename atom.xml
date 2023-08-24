@@ -6,7 +6,7 @@
   <link href="https://kievvv.github.io/atom.xml" rel="self"/>
   
   <link href="https://kievvv.github.io/"/>
-  <updated>2023-08-23T07:34:48.811Z</updated>
+  <updated>2023-08-24T11:58:28.314Z</updated>
   <id>https://kievvv.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Matlab基础语法备忘录</title>
+    <link href="https://kievvv.github.io/2023/08/24/Matlab%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E5%A4%87%E5%BF%98%E5%BD%95/"/>
+    <id>https://kievvv.github.io/2023/08/24/Matlab%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E5%A4%87%E5%BF%98%E5%BD%95/</id>
+    <published>2023-08-24T11:55:29.000Z</published>
+    <updated>2023-08-24T11:58:28.314Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>MatLab的索引是从1开始的</strong></p><ol><li><p>清空<br><code>clc</code> 清空命令行<br><code>clear all</code> 清空工作区所有变量</p></li><li><p>变量命名区分大小写，长度&lt;&#x3D;63</p></li><li><p><code>%</code>单行注释<br><code>%%</code>多行注释</p></li><li><p>变量名字以字母开头，中间可以是字母、数字、下划线</p></li><li><p>数据类型</p></li></ol><ol><li>数字</li><li>字符和字符串<br>字符串用单引号``<br>length(str)<br><strong>3) 矩阵</strong><br><code>A=[1 2 3; 4 5 3; 3 2 7]</code>：<code>;</code>表示换行，行内用空格或<code>,</code><br><code>B=A&#39;</code>：求转置<br><code>C=A(:)</code>：转成一维矩阵<br><code>D=inv(A)</code>：求逆矩阵<br><code>E=zeros(10,5,3)</code>：3维矩阵，每维都是10行5列，元素全是0<br><strong>4) 元胞数组</strong><br><code>A=cell(1,6)</code>：1行6列的元胞数组<br><code>A&#123;2&#125;=eye(3) </code>：把该单位矩阵赋给A中第2个元素<br><code>eye(n)</code>：生成n维单位矩阵<br><code>magic(n)</code>：生成n阶幻方（横竖斜任意方向数字和总相同）</li><li>结构体<br><code>books=struct(&#39;name&#39;,&#123;&#123;'Machine Learning','Data Mining'&#125;&#125;,&#39;price&#39;,[30,40])</code>：相当于键值对、字典<br><code>books.name</code><br><code>books.name(1)</code>：小括号取出的是cell<br><code>books.name&#123;1&#125;</code>：中括号取出的是具体值</li></ol><ol start="6"><li><p>矩阵操作<br><code>A=[1 2 3 4 5 6 7 8]</code>、】<br><code>B=1:2:9</code>：构造矩阵-&gt;<code>起点:步长:终点</code><br><code>B=[1 3 5 7 9]</code><br><code>C=repmat(B,3,2)</code>：重复B，竖着重复3次，横着重复2次<br><code>D=ones(2,4)</code>：2行4列的纯一矩阵</p></li><li><p>矩阵四则运算<br><code>+ - *</code>：字面意思<br><code>A/B</code>：等价于<code>A * inv(B)</code>，和B的逆相乘<br><code>A .* B</code>：两矩阵对应项相乘，有<code>.</code>的都是对对应项操作，<code>./</code>同理</p></li><li><p>下标<br><code>A(2,3)</code><br><code>A(2,:)</code>：<code>:</code>表示取所有<br><code>[m,n]=find(A&gt;20)</code>：找A中大于20的元素，将其横纵坐标分别赋给m数组和n数组</p></li><li><p>逻辑与流程控制</p></li></ol><ol><li>for循环</li></ol><pre><code class="matlab">for 循环变量=初值:步长:终值    ...end</code></pre><p>步长为1的话可以省略<br>即<code>for 循环变量=初值:终值</code></p><ol start="2"><li>while循环</li></ol><pre><code class="matlab">while 布尔表达式    ...end</code></pre><ol start="3"><li>if(else)语句</li></ol><pre><code class="matlab">if 布尔表达式    ...end</code></pre><pre><code class="matlab">if 布尔表达式    ...else    ...end</code></pre><ol start="10"><li>绘图<br>…</li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;strong&gt;MatLab的索引是从1开始的&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;清空&lt;br&gt;&lt;code&gt;clc&lt;/code&gt; 清空命令行&lt;br&gt;&lt;code&gt;clear all&lt;/code&gt; 清空工作区所有变量&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;变量命名区分</summary>
+      
+    
+    
+    
+    <category term="笔记" scheme="https://kievvv.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="Matlab" scheme="https://kievvv.github.io/tags/Matlab/"/>
+    
+  </entry>
   
   <entry>
     <title>Netflix使用及解锁4k折腾记</title>
