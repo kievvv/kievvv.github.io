@@ -47,7 +47,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2023-08-09T18:38:23.000Z">
-<meta property="article:modified_time" content="2023-08-23T07:37:22.998Z">
+<meta property="article:modified_time" content="2023-09-23T16:06:46.239Z">
 <meta property="article:author" content="iullius">
 <meta property="article:tag" content="Art">
 <meta property="article:tag" content="Photos">
@@ -272,6 +272,103 @@ button {
   position: relative;
   overflow: hidden;
   margin-bottom: -100px;
+}
+.cover-wrapper .cover-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+}
+.cover-wrapper .cover-bg.lazyload:not(.loaded) {
+  opacity: 0;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+}
+.cover-wrapper .cover-bg.lazyload.loaded {
+  animation-delay: 0s;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  animation-name: fadeIn;
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    filter: blur(12px);
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -khtml-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    filter: blur(12px);
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -khtml-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    filter: blur(12px);
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -khtml-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    filter: blur(12px);
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -khtml-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
 }
 .cover-wrapper .cover-body {
   z-index: 1;
@@ -1763,7 +1860,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1695263278353),
+    lastupdate: new Date(1695485798595),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2208,7 +2305,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
         <a class="title flat-box" target="_self" href='/'>
           
-            <img no-lazy class='logo' src='https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/mtdog_nobg_small.png'/>
+            <img no-lazy class='logo' src='https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232344208.png'/>
           
           
           
@@ -2578,7 +2675,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class='headimg-div'>
       <a class='headimg-a'>
-        <img itemprop="image" class='headimg' src='https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2554.jpg'/>
+        <img itemprop="image" class='headimg' src='https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232353596.jpg'/>
       </a>
     </div>
   
@@ -2595,7 +2692,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
 <div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
   <a itemprop="url" class='author' href="/" rel="nofollow">
-    <img itemprop="image" src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Maltese1.jpg" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Maltese1.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <img itemprop="image" src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232347378.jpg" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232347378.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
     <p itemprop="name">iullius</p>
   </a>
 </div>
@@ -2650,43 +2747,50 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>草间弥生坚持不懈地追求前卫艺术实践，使她成为二十一世纪的全球文化偶像。她在逾七十年的创作生涯中发展出独树一帜的核心美学和人生哲学。其作品展示浩瀚无垠之境，反思大自然的生命形态与循环，掳获世人的目光。“草间弥生：一九四五年至今”呈现艺术家的创作生涯，强调她对相互连结的追求，以及不断推动其创作的生命哲思。<br>“草间弥生：一九四五年至今”是草间在日本以外的亚洲地区举行的最大回顾展，展出逾200件展品，涵盖绘画、素描、雕塑、装置及档案资料等各种媒材。是次回顾展按时序及主题出发，由第二次世界大战尾声创作的绘画至其最近期的沉浸式作品，围绕“无限”、“积累”、“全面连结”、“生物宇宙”、“死亡”和“生命的力量”六个主题，全面地呈现草间艺术生涯的各个发展阶段。</p>
 </blockquote>
 <p><a target="_blank" rel="noopener" href="https://www.mplus.org.hk/sc/exhibitions/yayoi-kusama-1945-to-now/">Offical Website</a></p>
-<p>M+场馆不算十分好找，地铁九龙站出门后还有十分钟左右路程，稍微有些绕，不过当时在九龙站出站时就已经看到该展览的物料宣传，当然也有包括故宫博物馆等艺术展览的宣传，这个街区是艺术文化活动较集中的地方。<br><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2529.jpg" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2529.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2529"></p>
+<p>M+场馆不算十分好找，地铁九龙站出门后还有十分钟左右路程，稍微有些绕，不过当时在九龙站出站时就已经看到该展览的物料宣传，当然也有包括故宫博物馆等艺术展览的宣传，这个街区是艺术文化活动较集中的地方。<br><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232353733.jpg" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232353733.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2529"></p>
 <p>在M+整体体验非常好，包括场馆的建筑风格、内部装潢、安静程度、服务人员和设施等都很不错。</p>
-<p>几个记忆点：电梯前面有专人替顾客按电梯并礼貌地鞠躬打招呼；服务人员中英粤切换流利；买学生票无需check证件；支持微信支付宝。<br><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2551.jpg" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2551.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2551"></p>
-<p>进入正题。展览标题处这幅自画像包含草间弥生经典的波点样式和黑黄配色，开篇明志，后续会看到更多类似元素。<br><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2554.jpg" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2554.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2554"></p>
-<p><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2639.jpg" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2639.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2639"></p>
-<p>玄关处主要是波点元素为主的人脸像，配色十分鲜艳大胆，下图仍为艺术家自画像，配色很抓眼。<img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2557.jpg" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2557.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2557"></p>
-<p>第一个展厅。该展厅的展品全部是无主体的纹理平面画。<br><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2559.jpg" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2559.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2559"><br>场馆里人其实挺多的，但是很安静，连走路脚步都会不自觉放轻，基本没有小孩子吵闹声。</p>
-<p><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2561.jpg" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2561.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2561"></p>
-<p><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2562.jpg" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2562.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2562"></p>
-<p><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2558.jpg" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2558.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2558"></p>
-<p><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2642.jpg" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2642.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2642"><br>每次看见纯纹理的作品我都会停下来仔细端详一下，在看草间这一系列作品时也不例外。这部分画都是纯视觉向的，比较抽象。有一种说法是这些花纹是作者在自己梦中看到的景象。<br>草间弥生的创作很大一部分与她早期患精神疾病时的灵感相联系。</p>
+<p>几个记忆点：电梯前面有专人替顾客按电梯并礼貌地鞠躬打招呼；服务人员中英粤切换流利；买学生票无需check证件；支持微信支付宝。<br><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232353457.jpg" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232353457.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2551"></p>
+<p>进入正题。展览标题处这幅自画像包含草间弥生经典的波点样式和黑黄配色，开篇明志，后续会看到更多类似元素。<br><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232353596.jpg" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232353596.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2554"></p>
+<p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232353183.jpg" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232353183.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2639"></p>
+<p>玄关处主要是波点元素为主的人脸像，配色十分鲜艳大胆，下图仍为艺术家自画像，配色很抓眼。</p>
+<p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232354982.jpg" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232354982.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2557"></p>
+<p>第一个展厅。该展厅的展品全部是无主体的纹理平面画。<br><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232354224.jpg" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232354224.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2559"><br>场馆里人其实挺多的，但是很安静，连走路脚步都会不自觉放轻，基本没有小孩子吵闹声。</p>
+<p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232354844.jpg" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232354844.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2561"></p>
+<p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232354226.jpg" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232354226.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2562"></p>
+<p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232355039.jpg" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232355039.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2558"></p>
+<p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232355518.jpg" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232355518.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2642"><br>每次看见纯纹理的作品我都会停下来仔细端详一下，在看草间这一系列作品时也不例外。这部分画都是纯视觉向的，比较抽象。有一种说法是这些花纹是作者在自己梦中看到的景象。<br>草间弥生的创作很大一部分与她早期患精神疾病时的灵感相联系。</p>
 <p>然后来到装置艺术区域。</p>
-<p><strong>红黑触手</strong><br>草间弥生的经典设计，视觉冲击力很强，我最爱的展品之一。<br><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2582.jpg" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2582.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2582"></p>
-<p><strong>长满阴茎的女孩和家具</strong><br>主题是针对女性受性侵害的隐喻。<img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2587.jpg" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2587.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2587"></p>
-<p><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2589.jpg" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2589.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2589"></p>
-<p><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA25911.jpg" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA25911.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA25911"></p>
-<p>综合展厅。该展厅装置和画都有，以波点、纹理为主。<br><strong>波点大蘑菇</strong><br><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2603.jpg" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2603.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2603"></p>
-<p><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2604.jpg" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2604.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2604"></p>
-<p>这是毛细血管么？<br><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2608.jpg" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2608.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2608"></p>
-<p>然后就是Highlight之一：<strong>黑黄蛇纹图</strong><br>这幅画的画幅很大，现场效果非常震撼。近看纹理和质感都非常妙，摄人心魄。我凑近看了差不多有五分钟。<br><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2610.jpg" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2610.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2610"></p>
-<p><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2611.jpg" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2611.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2611"></p>
-<p>下一个很出圈的装置艺术是<strong>黑黄南瓜</strong><br>展馆内的瓜，小小的很精致：<br><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2614.jpg" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2614.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2614"></p>
-<p>场馆外的大瓜，应该不是艺术家原作品，属于是宣传周边：<br><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2716.jpg" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2716.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2716"></p>
-<p>下一个展区，主题是<strong>生命的色彩</strong>。整个区域的作品色彩非常明艳，表现的是生命和活力。<img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2635.jpg" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2635.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2635"></p>
-<p><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2630.jpg" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2630.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
-<p><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2631.jpg" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2631.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2631"></p>
-<p>下一个装置艺术区，主要是探讨人体器官本身，以及人和地狱的联系<img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2619.jpg" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2619.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2619"><br><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2623.jpg" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2623.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2623"></p>
-<p><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2625.jpg" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2625.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="img"></p>
-<p><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2620.jpg" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2620.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2620"></p>
-<p><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2621.jpg" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2621.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2621"></p>
-<p>接着是通过装置和影像展示的<strong>行为艺术</strong>相关的作品，也包括草间弥生的个人自白。这部分还是要在现场观看感受，很难描述清楚。<img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2600.jpg" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2600.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2600"></p>
-<p><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2666.jpg" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2666.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2666"></p>
-<p>1967 年，草间弥生纽约公园、克赖斯勒艺术博物馆举办“<strong>人体嘉年华</strong>”活动，邀请了许多模特在墙上以及各自的身体上进行创作。<br><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2672.jpg" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2672.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2672"></p>
-<p><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2673.jpg" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2673.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2673"></p>
-<p><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2674.jpg" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2674.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2674"></p>
-<p>要离开时偶然从一个门缝进入，别有洞天。发现一处现代感很浓的装置艺术，一滩金属材质拟液态物体，就着栅状光线，如果以动态视角观看的话，金属表面有光怪陆离的效果。草间似乎不是善用光影的艺术家，该作品跟她其他作品的形态差别好像也比较大。<br>但就挺好看的。<img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2647.jpg" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2647.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2647"></p>
-<p>展览设计有些复杂，来来回回把二层场馆逛了两三遍，没想到还是有遗漏。出来之后发现地下一层还有大型装置艺术的场馆，有点遗憾地错过了。<img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2715.jpg" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2715.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><strong>红黑触手</strong><br>草间弥生的经典设计，视觉冲击力很强，我最爱的展品之一。<br><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232355524.jpg" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232355524.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2582"></p>
+<p><strong>长满阴茎的女孩和家具</strong><br>主题是针对女性受性侵害的隐喻。</p>
+<p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232355565.jpg" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232355565.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2587"></p>
+<p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232356397.jpg" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232356397.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2589"></p>
+<p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232356950.jpg" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232356950.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2591"></p>
+<p>综合展厅。该展厅装置和画都有，以波点、纹理为主。<br><strong>波点大蘑菇</strong><br><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232356246.jpg" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232356246.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2603"></p>
+<p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232356247.jpg" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232356247.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2604"></p>
+<p>这是毛细血管么？<br><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232356455.jpg" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232356455.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2608"></p>
+<p>然后就是Highlight之一：<strong>黑黄蛇纹图</strong><br>这幅画的画幅很大，现场效果非常震撼。近看纹理和质感都非常妙，摄人心魄。我凑近看了差不多有五分钟。<br><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232357441.jpg" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232357441.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2610"></p>
+<p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232357817.jpg" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232357817.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2611"></p>
+<p>下一个很出圈的装置艺术是<strong>黑黄南瓜</strong><br>展馆内的瓜，小小的很精致：<br><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232357241.jpg" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232357241.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2614"></p>
+<p>场馆外的大瓜，应该不是艺术家原作品，属于是宣传周边：<br><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232358765.jpg" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232358765.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2716"></p>
+<p>下一个展区，主题是<strong>生命的色彩</strong>。整个区域的作品色彩非常明艳，表现的是生命和活力。</p>
+<p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232358241.jpg" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232358241.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2635"></p>
+<p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232358909.jpg" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232358909.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2630"></p>
+<p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232358047.jpg" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232358047.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2631"></p>
+<p>下一个装置艺术区，主要是探讨人体器官本身，以及人和地狱的联系</p>
+<p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232359150.jpg" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232359150.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2619"></p>
+<p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232359037.jpg" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232359037.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2623"></p>
+<p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232359990.jpg" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232359990.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2625"></p>
+<p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232359460.jpg" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232359460.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2620"></p>
+<p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232359471.jpg" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232359471.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2621"></p>
+<p>接着是通过装置和影像展示的<strong>行为艺术</strong>相关的作品，也包括草间弥生的个人自白。这部分还是要在现场观看感受，很难描述清楚。</p>
+<p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309240000941.jpg" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309240000941.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2600"></p>
+<p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309240000565.jpg" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309240000565.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2666"></p>
+<p>1967 年，草间弥生纽约公园、克赖斯勒艺术博物馆举办“<strong>人体嘉年华</strong>”活动，邀请了许多模特在墙上以及各自的身体上进行创作。<br><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309240000770.jpg" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309240000770.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2672"></p>
+<p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309240000624.jpg" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309240000624.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2673"></p>
+<p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309240000283.jpg" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309240000283.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2674"></p>
+<p>要离开时偶然从一个门缝进入，别有洞天。发现一处现代感很浓的装置艺术，一滩金属材质拟液态物体，就着栅状光线，如果以动态视角观看的话，金属表面有光怪陆离的效果。草间似乎不是善用光影的艺术家，该作品跟她其他作品的形态差别好像也比较大。<br>但就挺好看的。</p>
+<p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309240000480.jpg" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309240000480.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2647"></p>
+<p>展览设计有些复杂，来来回回把二层场馆逛了两三遍，没想到还是有遗漏。出来之后发现地下一层还有大型装置艺术的场馆，有点遗憾地错过了。<img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309240001110.jpg" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309240001110.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="PANA2715"></p>
 
   </div>
   
@@ -2711,10 +2815,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-08-23T15:37:22+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-09-24T00:06:46+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2023年8月23日</p>
+    <p>更新于：2023年9月24日</p>
   </a>
 </div>
 
@@ -3315,7 +3419,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
   <script>
-  let imgs = ["https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/cover%20(10).jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/cover%20(5).jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/cover%20(1).jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/cover%20(7).jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/cover%20(8).jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/cover%20(9).jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/cover%20(3).jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/cover%20(11).jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/cover%20(2).jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/cover%20(6).jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/cover%20(12).jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/cover%20(4).jpg"];
+  let imgs = ["https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232304843.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232305972.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232304301.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232304237.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232302541.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232303575.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232254011.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232305394.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232303572.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232304216.jpg"];
   let index = 0;
   let IntervalParallax = null;
 
@@ -3544,7 +3648,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"iullius’ Blog","url":"https://kievvv.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"iullius","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://kievvv.github.io/","sameAs":["https://github.com/volantis-x"],"description":"Personal Blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://kievvv.github.io/","name":"iullius’ Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://kievvv.github.io/categories/游记/","name":"游记"}},{"@type":"ListItem","position":3,"item":{"@id":"https://kievvv.github.io/2023/08/10/草间弥生个展blog/","name":"观展游记之「草间弥生：一九四五年至今」"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"iullius’ Blog","url":"https://kievvv.github.io/","keywords":"iullius","description":"Personal Blog","author":{"@type":"Person","name":"iullius","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://kievvv.github.io/","description":"Personal Blog"},"publisher":{"@type":"Organization","name":"iullius’ Blog","url":"https://kievvv.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://kievvv.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"观展游记之「草间弥生：一九四五年至今」","description":"Personal Blog","inLanguage":["zh-CN","en","zh-HK","zh-TW","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://kievvv.github.io/2023/08/10/%E8%8D%89%E9%97%B4%E5%BC%A5%E7%94%9F%E4%B8%AA%E5%B1%95blog/"},"author":{"@type":"Person","name":"iullius","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://kievvv.github.io/"},"publisher":{"@type":"Organization","name":"iullius’ Blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://kievvv.github.io/2023/08/10/%E8%8D%89%E9%97%B4%E5%BC%A5%E7%94%9F%E4%B8%AA%E5%B1%95blog/","wordCount":0,"datePublished":"2023-08-09T18:38:23.000Z","dateModified":"2023-08-23T07:37:22.998Z","articleSection":"游记","keywords":"Art,Photos","image":{"@type":"ImageObject","url":"https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/PANA2554.jpg","width":1024,"height":768}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"iullius’ Blog","url":"https://kievvv.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"iullius","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://kievvv.github.io/","sameAs":["https://github.com/volantis-x"],"description":"Personal Blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://kievvv.github.io/","name":"iullius’ Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://kievvv.github.io/categories/游记/","name":"游记"}},{"@type":"ListItem","position":3,"item":{"@id":"https://kievvv.github.io/2023/08/10/草间弥生个展blog/","name":"观展游记之「草间弥生：一九四五年至今」"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"iullius’ Blog","url":"https://kievvv.github.io/","keywords":"iullius","description":"Personal Blog","author":{"@type":"Person","name":"iullius","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://kievvv.github.io/","description":"Personal Blog"},"publisher":{"@type":"Organization","name":"iullius’ Blog","url":"https://kievvv.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://kievvv.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"观展游记之「草间弥生：一九四五年至今」","description":"Personal Blog","inLanguage":["zh-CN","en","zh-HK","zh-TW","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://kievvv.github.io/2023/08/10/%E8%8D%89%E9%97%B4%E5%BC%A5%E7%94%9F%E4%B8%AA%E5%B1%95blog/"},"author":{"@type":"Person","name":"iullius","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://kievvv.github.io/"},"publisher":{"@type":"Organization","name":"iullius’ Blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://kievvv.github.io/2023/08/10/%E8%8D%89%E9%97%B4%E5%BC%A5%E7%94%9F%E4%B8%AA%E5%B1%95blog/","wordCount":0,"datePublished":"2023-08-09T18:38:23.000Z","dateModified":"2023-09-23T16:06:46.239Z","articleSection":"游记","keywords":"Art,Photos","image":{"@type":"ImageObject","url":"https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232353596.jpg","width":1024,"height":768}}]</script>
 
 
 

@@ -47,7 +47,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2023-08-22T18:39:31.000Z">
-<meta property="article:modified_time" content="2023-08-24T12:18:30.762Z">
+<meta property="article:modified_time" content="2023-09-23T16:13:47.631Z">
 <meta property="article:author" content="iullius">
 <meta property="article:tag" content="Netflix">
 <meta name="twitter:card" content="summary">
@@ -271,6 +271,103 @@ button {
   position: relative;
   overflow: hidden;
   margin-bottom: -100px;
+}
+.cover-wrapper .cover-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+}
+.cover-wrapper .cover-bg.lazyload:not(.loaded) {
+  opacity: 0;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+}
+.cover-wrapper .cover-bg.lazyload.loaded {
+  animation-delay: 0s;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  animation-name: fadeIn;
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    filter: blur(12px);
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -khtml-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    filter: blur(12px);
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -khtml-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    filter: blur(12px);
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -khtml-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    filter: blur(12px);
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -khtml-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
 }
 .cover-wrapper .cover-body {
   z-index: 1;
@@ -1762,7 +1859,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1695263278353),
+    lastupdate: new Date(1695485798595),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2207,7 +2304,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
         <a class="title flat-box" target="_self" href='/'>
           
-            <img no-lazy class='logo' src='https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/mtdog_nobg_small.png'/>
+            <img no-lazy class='logo' src='https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232344208.png'/>
           
           
           
@@ -2577,7 +2674,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class='headimg-div'>
       <a class='headimg-a'>
-        <img itemprop="image" class='headimg' src='https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230823013053.png'/>
+        <img itemprop="image" class='headimg' src='https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309240008527.png'/>
       </a>
     </div>
   
@@ -2594,7 +2691,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
 <div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
   <a itemprop="url" class='author' href="/" rel="nofollow">
-    <img itemprop="image" src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Maltese1.jpg" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Maltese1.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <img itemprop="image" src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232347378.jpg" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232347378.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
     <p itemprop="name">iullius</p>
   </a>
 </div>
@@ -2651,12 +2748,12 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>Windows浏览器基本就是Microsoft Microsoft Edge和Chrome两个。</p>
 <p>Microsoft Edge进官网登录直接播放就可以达到1080P。</p>
 <blockquote>
-<p>查看分辨率的方法：快捷键<code>Ctrl+Shift+Alt+D</code>，非全屏即可显示。该方法浏览器和客户端都适用。<img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-08-23%20005418.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-08-23%20005418.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="屏幕截图 2023-08-23 005418"></p>
+<p>查看分辨率的方法：快捷键<code>Ctrl+Shift+Alt+D</code>，非全屏即可显示。该方法浏览器和客户端都适用。<img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309240009694.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309240009694.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="屏幕截图 2023-08-23 005418"></p>
 </blockquote>
 <p>Chrome原生会限制分辨率，最高720P。可以通过插件强制改成1080P。插件名字是<code>Netflix 1080p</code>。</p>
 <p>按上面方法如果没达到1080p的话，先等一下缓冲看看，因为Netflix会自动根据网络情况调整画质。如果还是不行就更换节点。<br>浏览器用着挺好的，如果不用4k的话不推荐用Windows客户端。</p>
 <hr>
-<p>接下来是<strong>Netflix解锁4k分辨率</strong>的方法：<br>（如果没有4k显示器的话可以直接跳过了）</p>
+<p>接下来是<strong>Netflix解锁4k分辨率</strong>的方法：</p>
 <p><strong>基本条件：</strong></p>
 <ol>
 <li>支持<strong>4k(3840×2160) 60Hz</strong>的显示器</li>
@@ -2669,7 +2766,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li>网络速度：<strong>25Mbps以上</strong>（<a target="_blank" rel="noopener" href="https://fast.com/">官方测速</a>）</li>
 <li>充足的流量：4k一小时7GB左右</li>
 </ol>
-<p>Microsoft Edge最新版原生最高支持Netflix 4k<br>首先安装tampermonkey拓展，是一个浏览器脚本环境<br>然后打开并安装<a target="_blank" rel="noopener" href="https://greasyfork.org/zh-CN/scripts/444125-netflix-uhd">Netflix UHD</a>脚本<br>在浏览器Netflix播放视频，右键菜单，点<code>PlayReady DRM Info(UHD Ready)</code><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/111.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/111.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><br>如果全部都是勾说明符合4k播放条件，点开剧集详情页，应该会有4k的标识<img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230823013053.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230823013053.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230823013053"><br>否则显示的是“高画质”。如果此时播放没办法达到4k，可能是网络问题。</p>
+<p>Microsoft Edge最新版原生最高支持Netflix 4k<br>首先安装tampermonkey拓展，是一个浏览器脚本环境<br>然后打开并安装<a target="_blank" rel="noopener" href="https://greasyfork.org/zh-CN/scripts/444125-netflix-uhd">Netflix UHD</a>脚本<br>在浏览器Netflix播放视频，右键菜单，点<code>PlayReady DRM Info(UHD Ready)</code><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309240009423.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309240009423.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230823012815"><br>如果全部都是勾说明符合4k播放条件，点开剧集详情页，应该会有4k的标识</p>
+<p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309240008527.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309240008527.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230823013053"></p>
+<p>否则显示的是“高画质”。如果此时播放没办法达到4k，可能是网络问题。</p>
 <blockquote>
 <p>如果Info中最底下两行是叉，那就是没安装<strong>HEVC拓展</strong>。不介意几块钱可以直接在微软商店搜索，付费购买。<br>不付费的方法也有，网上搜到的大部分适用于win10的，win11不适用。<br>我最后摸索出来适用于win11的HEVC拓展免费安装方法：</p>
 <p>进入如下网址：<a target="_blank" rel="noopener" href="https://store.rg-adguard.net/">https://store.rg-adguard.net/</a></p>
@@ -2703,10 +2802,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-08-24T20:18:30+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-09-24T00:13:47+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2023年8月24日</p>
+    <p>更新于：2023年9月24日</p>
   </a>
 </div>
 
@@ -3305,7 +3404,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
   <script>
-  let imgs = ["https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/cover%20(10).jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/cover%20(5).jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/cover%20(1).jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/cover%20(7).jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/cover%20(8).jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/cover%20(9).jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/cover%20(3).jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/cover%20(11).jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/cover%20(2).jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/cover%20(6).jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/cover%20(12).jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/cover%20(4).jpg"];
+  let imgs = ["https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232304843.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232305972.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232304301.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232304237.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232302541.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232303575.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232254011.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232305394.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232303572.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232304216.jpg"];
   let index = 0;
   let IntervalParallax = null;
 
@@ -3534,7 +3633,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"iullius’ Blog","url":"https://kievvv.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"iullius","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://kievvv.github.io/","sameAs":["https://github.com/volantis-x"],"description":"Personal Blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://kievvv.github.io/","name":"iullius’ Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://kievvv.github.io/categories/笔记/","name":"笔记"}},{"@type":"ListItem","position":3,"item":{"@id":"https://kievvv.github.io/2023/08/23/Netflix使用及解锁4k折腾记/","name":"Netflix使用及解锁4k折腾记"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"iullius’ Blog","url":"https://kievvv.github.io/","keywords":"iullius","description":"Personal Blog","author":{"@type":"Person","name":"iullius","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://kievvv.github.io/","description":"Personal Blog"},"publisher":{"@type":"Organization","name":"iullius’ Blog","url":"https://kievvv.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://kievvv.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Netflix使用及解锁4k折腾记","description":"Personal Blog","inLanguage":["zh-CN","en","zh-HK","zh-TW","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://kievvv.github.io/2023/08/23/Netflix%E4%BD%BF%E7%94%A8%E5%8F%8A%E8%A7%A3%E9%94%814k%E6%8A%98%E8%85%BE%E8%AE%B0/"},"author":{"@type":"Person","name":"iullius","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://kievvv.github.io/"},"publisher":{"@type":"Organization","name":"iullius’ Blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://kievvv.github.io/2023/08/23/Netflix%E4%BD%BF%E7%94%A8%E5%8F%8A%E8%A7%A3%E9%94%814k%E6%8A%98%E8%85%BE%E8%AE%B0/","wordCount":0,"datePublished":"2023-08-22T18:39:31.000Z","dateModified":"2023-08-24T12:18:30.762Z","articleSection":"笔记","keywords":"Netflix","image":{"@type":"ImageObject","url":["https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230823013053.png"],"width":1024,"height":768}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"iullius’ Blog","url":"https://kievvv.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"iullius","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://kievvv.github.io/","sameAs":["https://github.com/volantis-x"],"description":"Personal Blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://kievvv.github.io/","name":"iullius’ Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://kievvv.github.io/categories/笔记/","name":"笔记"}},{"@type":"ListItem","position":3,"item":{"@id":"https://kievvv.github.io/2023/08/23/Netflix使用及解锁4k折腾记/","name":"Netflix使用及解锁4k折腾记"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"iullius’ Blog","url":"https://kievvv.github.io/","keywords":"iullius","description":"Personal Blog","author":{"@type":"Person","name":"iullius","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://kievvv.github.io/","description":"Personal Blog"},"publisher":{"@type":"Organization","name":"iullius’ Blog","url":"https://kievvv.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://kievvv.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Netflix使用及解锁4k折腾记","description":"Personal Blog","inLanguage":["zh-CN","en","zh-HK","zh-TW","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://kievvv.github.io/2023/08/23/Netflix%E4%BD%BF%E7%94%A8%E5%8F%8A%E8%A7%A3%E9%94%814k%E6%8A%98%E8%85%BE%E8%AE%B0/"},"author":{"@type":"Person","name":"iullius","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://kievvv.github.io/"},"publisher":{"@type":"Organization","name":"iullius’ Blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://kievvv.github.io/2023/08/23/Netflix%E4%BD%BF%E7%94%A8%E5%8F%8A%E8%A7%A3%E9%94%814k%E6%8A%98%E8%85%BE%E8%AE%B0/","wordCount":0,"datePublished":"2023-08-22T18:39:31.000Z","dateModified":"2023-09-23T16:13:47.631Z","articleSection":"笔记","keywords":"Netflix","image":{"@type":"ImageObject","url":["https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309240008527.png"],"width":1024,"height":768}}]</script>
 
 
 

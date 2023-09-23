@@ -47,7 +47,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2023-07-19T13:36:33.000Z">
-<meta property="article:modified_time" content="2023-08-23T07:39:31.823Z">
+<meta property="article:modified_time" content="2023-09-23T15:40:08.044Z">
 <meta property="article:author" content="iullius">
 <meta property="article:tag" content="Cryptography">
 <meta name="twitter:card" content="summary">
@@ -271,6 +271,103 @@ button {
   position: relative;
   overflow: hidden;
   margin-bottom: -100px;
+}
+.cover-wrapper .cover-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+}
+.cover-wrapper .cover-bg.lazyload:not(.loaded) {
+  opacity: 0;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+}
+.cover-wrapper .cover-bg.lazyload.loaded {
+  animation-delay: 0s;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  animation-name: fadeIn;
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    filter: blur(12px);
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -khtml-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    filter: blur(12px);
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -khtml-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    filter: blur(12px);
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -khtml-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    filter: blur(12px);
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -khtml-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
 }
 .cover-wrapper .cover-body {
   z-index: 1;
@@ -1762,7 +1859,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1695263278353),
+    lastupdate: new Date(1695485798595),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2207,7 +2304,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
         <a class="title flat-box" target="_self" href='/'>
           
-            <img no-lazy class='logo' src='https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/mtdog_nobg_small.png'/>
+            <img no-lazy class='logo' src='https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232344208.png'/>
           
           
           
@@ -2577,7 +2674,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class='headimg-div'>
       <a class='headimg-a'>
-        <img itemprop="image" class='headimg' src='https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230614220030.png'/>
+        <img itemprop="image" class='headimg' src='https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232339872.png'/>
       </a>
     </div>
   
@@ -2594,7 +2691,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
 <div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
   <a itemprop="url" class='author' href="/" rel="nofollow">
-    <img itemprop="image" src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Maltese1.jpg" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Maltese1.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <img itemprop="image" src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232347378.jpg" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232347378.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
     <p itemprop="name">iullius</p>
   </a>
 </div>
@@ -2653,7 +2750,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li><em>可控性（Controllability）</em><br>授权实体可以控制信息系统和信息使用的特性</li>
 <li><em>审计（Accountability）</em><br>确保实体的活动可被跟踪</li>
 </ul>
-<h2 id="密码编码学"><a href="#密码编码学" class="headerlink" title="密码编码学"></a>密码编码学</h2><h3 id="密码算法的分类"><a href="#密码算法的分类" class="headerlink" title="密码算法的分类"></a>密码算法的分类</h3><p><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230629170445.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230629170445.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<h2 id="密码编码学"><a href="#密码编码学" class="headerlink" title="密码编码学"></a>密码编码学</h2><h3 id="密码算法的分类"><a href="#密码算法的分类" class="headerlink" title="密码算法的分类"></a>密码算法的分类</h3><p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232319818.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232319818.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230629170445"></p>
 <h4 id="按功能"><a href="#按功能" class="headerlink" title="按功能"></a>按功能</h4><p>加密算法：用于机密性解决方案<br>杂凑函数：用于完整性解决方案<br>数字签名：用于认证和不可否认性</p>
 <h4 id="按密钥的使用方式"><a href="#按密钥的使用方式" class="headerlink" title="按密钥的使用方式"></a>按密钥的使用方式</h4><p><strong>对称密钥密码</strong> : 加密密钥与解密密钥相同<br><strong>非对称密钥密码（公钥密码）</strong>:加密密钥与解密密钥不同<br>    公钥密码部分解决了对称密钥密码算法中<strong>密钥共享</strong>、<strong>密钥管理</strong>的问题。</p>
 <ul>
@@ -2708,22 +2805,22 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li>密码还是安全的，但是不是可证明安全</li>
 </ol>
 <h3 id="CDH假设"><a href="#CDH假设" class="headerlink" title="CDH假设"></a>CDH假设</h3><p><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230613233558.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230613233558.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
-<h1 id="第二章-流密码"><a href="#第二章-流密码" class="headerlink" title="第二章 流密码"></a>第二章 流密码</h1><h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><h3 id="一次一密"><a href="#一次一密" class="headerlink" title="一次一密"></a>一次一密</h3><p><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230609143652.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230609143652.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="img"><br>• 优点：<br>• 密钥随机产生，仅使用一次<br>• 无条件安全<br>• 加密和解密为加法运算，效率较高<br>• 缺点：<br>• 密钥长度至少与明文长度一样长<br>• 密钥共享困难，不太实用</p>
+<h1 id="第二章-流密码"><a href="#第二章-流密码" class="headerlink" title="第二章 流密码"></a>第二章 流密码</h1><h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><h3 id="一次一密"><a href="#一次一密" class="headerlink" title="一次一密"></a>一次一密</h3><p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232319965.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232319965.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230609143652"><br>• 优点：<br>• 密钥随机产生，仅使用一次<br>• 无条件安全<br>• 加密和解密为加法运算，效率较高<br>• 缺点：<br>• 密钥长度至少与明文长度一样长<br>• 密钥共享困难，不太实用</p>
 <p>• 改进：<br>• 种子密钥生成无限长的密钥（流密码的思想，共享一小段）</p>
 <p>流密码的基本思想<br>• 利用密钥k产生一个密钥流z&#x3D;z0z1z2…，并使用如下规则对明文串<br>x&#x3D;x0x1x2…（加法或者简单处理方法）加密：<br>y&#x3D;y0y1y2…＝Ez0(x0)Ez1(x1) Ez2(x2)…，</p>
 <h3 id="流密码的定义"><a href="#流密码的定义" class="headerlink" title="流密码的定义"></a>流密码的定义</h3><p>内部记忆元件的状态σi独立于明文字符的叫做同步流密码，否则叫<br>做自同步流密码。<br>在同步流密码中，由于zi&#x3D;f(k,σi)与明文字符无关，因而此时密文字符yi&#x3D;Ezi(xi)也不依赖于此前的明文字符。<br>可将同步流密码的加密器分成密钥流产生器和加密变换器两个部分。</p>
 <h3 id="同步流密码"><a href="#同步流密码" class="headerlink" title="同步流密码"></a>同步流密码</h3><p><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230609160714.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230609160714.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="img"></p>
-<p>密码设计者的最大愿望是设计出一个滚动密钥生成器，使得密<br>钥经其扩展成的密钥流序列具有如下性质：<br>极大的周期<br>良好的统计特性<br>抗线性分析</p>
-<h3 id="有限状态自动机模型"><a href="#有限状态自动机模型" class="headerlink" title="有限状态自动机模型"></a>有限状态自动机模型</h3><p>有限状态自动机可用有向图表示，称为转移图<br><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230609161615.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230609161615.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="img"><br>箭头和箭尾代表状态，（)中前者代表引起状态改变的输入，后者代表状态改变后的输出</p>
-<h3 id="密钥流生成器"><a href="#密钥流生成器" class="headerlink" title="密钥流生成器"></a>密钥流生成器</h3><p>密钥流产生器: 参数为k的有限状态自动机，<br>一个输出符号集Z、一个状态集∑、两个函数φ和ψ以及一个初始状态σ0组成。<br>状态转移函数φ:σi→σi+1，将当前状态σi变为一个新状态σi+1，<br>输出函数ψ:σi→zi，当前状态σi变为输出符号集中的一个元素zi。<br><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230609161759.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230609161759.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="img"><br>一般采用线性的φ和非线性的ψ<br>密钥流生成器可分成驱动部分和非线性组合部分<br>驱动部分是一个或多个线性反馈 移位寄存器。（LFSR是流密码构造的关键模块)</p>
+<p>密码设计者的最大愿望是设计出一个滚动密钥生成器，使得密钥经其扩展成的密钥流序列具有如下性质：<br>极大的周期<br>良好的统计特性<br>抗线性分析</p>
+<h3 id="有限状态自动机模型"><a href="#有限状态自动机模型" class="headerlink" title="有限状态自动机模型"></a>有限状态自动机模型</h3><p>有限状态自动机可用有向图表示，称为转移图<br><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232321859.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232321859.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230609161615"><br>箭头和箭尾代表状态，（)中前者代表引起状态改变的输入，后者代表状态改变后的输出</p>
+<h3 id="密钥流生成器"><a href="#密钥流生成器" class="headerlink" title="密钥流生成器"></a>密钥流生成器</h3><p>密钥流产生器: 参数为k的有限状态自动机，<br>一个输出符号集Z、一个状态集∑、两个函数φ和ψ以及一个初始状态σ0组成。<br>状态转移函数φ:σi→σi+1，将当前状态σi变为一个新状态σi+1，<br>输出函数ψ:σi→zi，当前状态σi变为输出符号集中的一个元素zi。<br><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232321101.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232321101.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230609161759"><br>一般采用线性的φ和非线性的ψ<br>密钥流生成器可分成驱动部分和非线性组合部分<br>驱动部分是一个或多个线性反馈 移位寄存器。（LFSR是流密码构造的关键模块)</p>
 <h2 id="二元序列的伪随机性"><a href="#二元序列的伪随机性" class="headerlink" title="二元序列的伪随机性"></a>二元序列的伪随机性</h2><h3 id="二元序列的相关概念"><a href="#二元序列的相关概念" class="headerlink" title="二元序列的相关概念"></a>二元序列的相关概念</h3><p>GF（2）上的一个无限序列-&gt;a&#x3D;(a1,a2,…,an,…)称为二元序列，若 ai属于GF(2)，0或者1。</p>
-<p><strong>游程</strong><br><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230609162824.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230609162824.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="img"></p>
+<p><strong>游程</strong><br><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232322051.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232322051.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230609162824"></p>
 <p><strong>自相关函数</strong></p>
-<h3 id="伪随机序列满足条件"><a href="#伪随机序列满足条件" class="headerlink" title="伪随机序列满足条件"></a>伪随机序列满足条件</h3><p><strong>Golomb伪随机公设</strong><br><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230609162943.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230609162943.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="img"></p>
+<h3 id="伪随机序列满足条件"><a href="#伪随机序列满足条件" class="headerlink" title="伪随机序列满足条件"></a>伪随机序列满足条件</h3><p><strong>Golomb伪随机公设</strong><br><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232322654.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232322654.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230609162943"></p>
 <h2 id="线性反馈移位寄存器"><a href="#线性反馈移位寄存器" class="headerlink" title="线性反馈移位寄存器"></a>线性反馈移位寄存器</h2><h3 id="反馈移位寄存器"><a href="#反馈移位寄存器" class="headerlink" title="反馈移位寄存器"></a>反馈移位寄存器</h3><p>GF(2)上一个n级反馈移位寄存器由n个二元存储器与一个反馈函数f(a1,a2,…,an) 组成</p>
-<p><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230609163935.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230609163935.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="img"></p>
+<p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232322143.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232322143.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230609163935"></p>
 <p>反馈函数f(a1,a2,…,an)是n元布尔函数，即函数的自变量和因变量只取0和1这 两个可能的值。</p>
-<h3 id="线性反馈移位寄存器-1"><a href="#线性反馈移位寄存器-1" class="headerlink" title="线性反馈移位寄存器"></a>线性反馈移位寄存器</h3><p>反馈函数是个线性函数<br><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230609164316.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230609164316.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="img"></p>
+<h3 id="线性反馈移位寄存器-1"><a href="#线性反馈移位寄存器-1" class="headerlink" title="线性反馈移位寄存器"></a>线性反馈移位寄存器</h3><p>反馈函数是个线性函数<br><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232322381.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232322381.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230609164316"></p>
 <p><strong>密钥流的周期</strong><br>给定密钥流 ，如果存在整数r，使得 对于任意 ，都有 ，则称 r为该密钥流的一个周期， 称满足 的最小正整数为该密钥流的最小周期或简称周期。</p>
 <h2 id="m-序列"><a href="#m-序列" class="headerlink" title="m-序列"></a>m-序列</h2><h3 id="线性反馈移位寄存器的多项式表示"><a href="#线性反馈移位寄存器的多项式表示" class="headerlink" title="线性反馈移位寄存器的多项式表示"></a>线性反馈移位寄存器的多项式表示</h3><p>定理2.2 p(x)|q(x)的充要条件是G(p(x)) Í G(q(x))</p>
 <h3 id="m-序列产生的条件"><a href="#m-序列产生的条件" class="headerlink" title="m-序列产生的条件"></a>m-序列产生的条件</h3><h4 id="Golomb伪随机公设"><a href="#Golomb伪随机公设" class="headerlink" title="Golomb伪随机公设"></a>Golomb伪随机公设</h4><p>①在序列的一个周期内，0与1的个数相差至多为1。<br>②在序列的一个周期内，长为i的游程占游程总数的1&#x2F;2i (i&#x3D;1,2,…)，且在等长的游程中0的游程个数和1的游程个数相等。<br>③异相自相关函数是一个常数。</p>
@@ -2740,7 +2837,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li>扩散性</li>
 <li>抗线性分析</li>
 </ol>
-<h3 id="Geffe序列生成器"><a href="#Geffe序列生成器" class="headerlink" title="Geffe序列生成器"></a>Geffe序列生成器</h3><h3 id="J-K触发器"><a href="#J-K触发器" class="headerlink" title="J-K触发器"></a>J-K触发器</h3><h3 id="Pless生成器"><a href="#Pless生成器" class="headerlink" title="Pless生成器"></a>Pless生成器</h3><h1 id="第三章-分组密码"><a href="#第三章-分组密码" class="headerlink" title="第三章 分组密码"></a>第三章 分组密码</h1><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230614213510.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230614213510.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><br>通常取n&#x3D;m<br>若n&lt;m ，则为有数据扩展的分组密码。<br>若n&gt;m ，则为有数据压缩的分组密码。</p>
+<h3 id="Geffe序列生成器"><a href="#Geffe序列生成器" class="headerlink" title="Geffe序列生成器"></a>Geffe序列生成器</h3><h3 id="J-K触发器"><a href="#J-K触发器" class="headerlink" title="J-K触发器"></a>J-K触发器</h3><h3 id="Pless生成器"><a href="#Pless生成器" class="headerlink" title="Pless生成器"></a>Pless生成器</h3><h1 id="第三章-分组密码"><a href="#第三章-分组密码" class="headerlink" title="第三章 分组密码"></a>第三章 分组密码</h1><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232323222.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232323222.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230614213510"><br>通常取n&#x3D;m<br>若n&lt;m ，则为有数据扩展的分组密码。<br>若n&gt;m ，则为有数据压缩的分组密码。</p>
 <h2 id="安全性设计原则"><a href="#安全性设计原则" class="headerlink" title="安全性设计原则"></a>安全性设计原则</h2><h3 id="混淆原则-Confusion"><a href="#混淆原则-Confusion" class="headerlink" title="混淆原则(Confusion)"></a>混淆原则(Confusion)</h3><ul>
 <li>混淆原则就是将密文、明文、密钥三者之间的统计关系和代数关系变 得尽可能复杂，使得敌手即使获得了密文和明文，也无法求出密钥的任何信息</li>
 <li>即使获得了密文和明文的统计规律，也无法求出明文的新的信息</li>
@@ -2768,27 +2865,28 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <h3 id="Feistel密码结构"><a href="#Feistel密码结构" class="headerlink" title="Feistel密码结构"></a>Feistel密码结构</h3><p>乘积密码指顺序地执行两个或多个基本密码系统，使得最后结果的密码强度高于每个基本密码系统产生的结果</p>
 <h4 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h4><p>分组大小<br>密钥大小<br>轮数<br>子密钥产生算法<br>轮函数</p>
 <h4 id="要求"><a href="#要求" class="headerlink" title="要求"></a>要求</h4><p>快速的软件实现<br>算法容易分析</p>
-<h4 id="Feistel加密结构"><a href="#Feistel加密结构" class="headerlink" title="Feistel加密结构"></a>Feistel加密结构</h4><p><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230614214856.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230614214856.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><br>将每组明文分成左右两半L0和R0，在进行完n轮迭代后，左右两半再合并到一起以产生密文分组<br>其中Ki是第i轮用的子密钥，由加密密钥K得到。一般地，各轮子密钥彼此不同而且与K也不同</p>
+<h4 id="Feistel加密结构"><a href="#Feistel加密结构" class="headerlink" title="Feistel加密结构"></a>Feistel加密结构</h4><p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232323745.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232323745.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230614214856"><br>将每组明文分成左右两半L0和R0，在进行完n轮迭代后，左右两半再合并到一起以产生密文分组<br>其中Ki是第i轮用的子密钥，由加密密钥K得到。一般地，各轮子密钥彼此不同而且与K也不同</p>
 <h4 id="Feistel解密结构"><a href="#Feistel解密结构" class="headerlink" title="Feistel解密结构"></a>Feistel解密结构</h4><p>本质上和加密过程是一样的，子密钥Ki的次序与加密过程相反</p>
-<p><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230614215050.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230614215050.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232323205.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232323205.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230614215050"></p>
 <h3 id="DES算法"><a href="#DES算法" class="headerlink" title="DES算法"></a>DES算法</h3><h4 id="基本参数"><a href="#基本参数" class="headerlink" title="基本参数"></a>基本参数</h4><p>分组长度为64 bits (8 bytes)<br>密文分组长度也是64 bits<br>密钥长度为64 bits，有8 bits奇偶校验，有效密钥长度为56 bits</p>
-<h4 id="流程"><a href="#流程" class="headerlink" title="流程"></a>流程</h4><p><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230614220030.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230614220030.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">初值置换IP</p>
-<h5 id="16轮迭代的乘积变换"><a href="#16轮迭代的乘积变换" class="headerlink" title="16轮迭代的乘积变换"></a>16轮迭代的乘积变换</h5><h5 id="逆初值置换IP-1"><a href="#逆初值置换IP-1" class="headerlink" title="逆初值置换IP^-1"></a>逆初值置换IP^-1</h5><h4 id="轮函数"><a href="#轮函数" class="headerlink" title="轮函数"></a>轮函数</h4><p><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230614220043.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230614220043.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><br>即<br><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230614220114.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230614220114.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
-<h4 id="密钥编排"><a href="#密钥编排" class="headerlink" title="密钥编排"></a>密钥编排</h4><p><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230614220247.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230614220247.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><br>即<br><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230614220300.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230614220300.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<h4 id="流程"><a href="#流程" class="headerlink" title="流程"></a>流程</h4><p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232324214.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232324214.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230614220030"></p>
+<p>初值置换IP</p>
+<h5 id="16轮迭代的乘积变换"><a href="#16轮迭代的乘积变换" class="headerlink" title="16轮迭代的乘积变换"></a>16轮迭代的乘积变换</h5><h5 id="逆初值置换IP-1"><a href="#逆初值置换IP-1" class="headerlink" title="逆初值置换IP^-1"></a>逆初值置换IP^-1</h5><h4 id="轮函数"><a href="#轮函数" class="headerlink" title="轮函数"></a>轮函数</h4><p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232325368.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232325368.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230614220043"><br>即<br><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232325894.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232325894.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230614220114"></p>
+<h4 id="密钥编排"><a href="#密钥编排" class="headerlink" title="密钥编排"></a>密钥编排</h4><p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232325760.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232325760.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230614220247"><br>即<br><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232325278.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232325278.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230614220300"></p>
 <h4 id="填充Padding"><a href="#填充Padding" class="headerlink" title="填充Padding"></a>填充Padding</h4><p>给定加密消息的长度是随机的，按64bit分组时，最后一组消息 长度可能不足64 bit。可以填充一些数字，通常用最后1字节作为填 充指示符（PI）</p>
 <h4 id="DES的安全性"><a href="#DES的安全性" class="headerlink" title="DES的安全性"></a>DES的安全性</h4><p>目前攻击DES的主要方法有时间-空间权衡攻击、差分攻击、线性攻击和相关 密钥攻击等方法<br><strong>线性攻击</strong>方法是最有效的一种方法</p>
 <h4 id="多重DES"><a href="#多重DES" class="headerlink" title="多重DES"></a>多重DES</h4><p>多重DES就是使用多个密钥利用DES对明文进行多次加密<br>    可以增加密钥量</p>
-<h5 id="双重DES"><a href="#双重DES" class="headerlink" title="双重DES"></a>双重DES</h5><p><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230614220613.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230614220613.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<h5 id="双重DES"><a href="#双重DES" class="headerlink" title="双重DES"></a>双重DES</h5><p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232325769.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232325769.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230614220613"></p>
 <h6 id="中间相遇攻击"><a href="#中间相遇攻击" class="headerlink" title="中间相遇攻击"></a>中间相遇攻击</h6><h5 id="三重DES"><a href="#三重DES" class="headerlink" title="三重DES"></a>三重DES</h5><p>当k1&#x3D;k3时，则称为双密钥三重DES</p>
 <h3 id="分组密码的工作模式"><a href="#分组密码的工作模式" class="headerlink" title="分组密码的工作模式"></a>分组密码的工作模式</h3><ul>
 <li>工作模式：根据不同的数据格式和安全性要求, 以一个具体的分组密码算法为基础构造一个分组密码系统的方法</li>
 </ul>
 <h4 id="电码本-ECB-模式"><a href="#电码本-ECB-模式" class="headerlink" title="电码本(ECB)模式"></a>电码本(ECB)模式</h4><ul>
-<li>直接利用加密算法分别对分组数据组加密<br><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230614221318.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230614221318.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><br>优点：<br>（1）实现简单;<br>（2)不同明文分组的加密可并行实施，尤其是硬件实现时速度很快</li>
+<li>直接利用加密算法分别对分组数据组加密<br><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232325336.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232325336.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230614221318"><br>优点：<br>（1）实现简单;<br>（2)不同明文分组的加密可并行实施，尤其是硬件实现时速度很快</li>
 </ul>
 <p>缺点：<br>（1）相同明文分组对应相同密文分组<br>（2）不能隐蔽明文分组的统计规律和结构规律,不能抵抗统计分析、重传和代换攻击</p>
 <h4 id="密码分组链接-CBC-模式"><a href="#密码分组链接-CBC-模式" class="headerlink" title="密码分组链接(CBC)模式"></a>密码分组链接(CBC)模式</h4><ul>
-<li>这种模式<strong>先将明文分组与上一次的密文块进行按比特异或</strong>，然后再进行加密处理<br><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230614221546.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230614221546.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><br>特点：</li>
+<li>这种模式<strong>先将明文分组与上一次的密文块进行按比特异或</strong>，然后再进行加密处理<br><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232325933.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232325933.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230614221546"><br>特点：</li>
 </ul>
 <ol>
 <li>明文块的统计特性得到了隐蔽-&gt;各密文块不仅与当前明文块有关，而且还与以前的 明文块及初始化向量有关</li>
@@ -2797,7 +2895,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </ol>
 <h4 id="密码反馈-CFB-模式"><a href="#密码反馈-CFB-模式" class="headerlink" title="密码反馈(CFB)模式"></a>密码反馈(CFB)模式</h4><p>若待加密消息需按字符、字节或比特处理时，可采用CFB模式。 并称待加密消息按 r 比特处理的CFB模式为 r 比特CFB模式</p>
 <ul>
-<li>选取最左边的r比特 作为加密密钥<br><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616101732.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616101732.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></li>
+<li>选取最左边的r比特 作为加密密钥<br><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232326587.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232326587.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230616101732"></li>
 </ul>
 <p>特点</p>
 <ol>
@@ -2806,7 +2904,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li>错误的传播（一个或多个比特错误出现在任一个r比特的密文组中</li>
 <li>错误恢复（自同步</li>
 </ol>
-<h4 id="输出反馈-OFB-模式"><a href="#输出反馈-OFB-模式" class="headerlink" title="输出反馈(OFB)模式"></a>输出反馈(OFB)模式</h4><p>OFB模式在结构上类似于CFB模式，但反馈的内容是DES的输出而不是密文！<br><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616101753.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616101753.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<h4 id="输出反馈-OFB-模式"><a href="#输出反馈-OFB-模式" class="headerlink" title="输出反馈(OFB)模式"></a>输出反馈(OFB)模式</h4><p>OFB模式在结构上类似于CFB模式，但反馈的内容是DES的输出而不是密文！<br><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232326418.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232326418.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230616101753"></p>
 <p>特点：</p>
 <ol>
 <li>相同明文（改变IV同样会导致相同的明文输入得到不同的加密 输出</li>
@@ -2814,7 +2912,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li>没有错误传播（有一个或多个比特错误的任一密文字符仅会影响 该字符的解密</li>
 <li>错误恢复（OFB模式能从密文比特错误中得以恢复，但在丢失密文 比特后就无法实现自同步了，这是因为丢失密文比特会破坏密钥流 的编排</li>
 </ol>
-<h4 id="计数器（CTR）模式"><a href="#计数器（CTR）模式" class="headerlink" title="计数器（CTR）模式"></a>计数器（CTR）模式</h4><p>（OFB模式的简化版本）<br>结构<br><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616103420.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616103420.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<h4 id="计数器（CTR）模式"><a href="#计数器（CTR）模式" class="headerlink" title="计数器（CTR）模式"></a>计数器（CTR）模式</h4><p>（OFB模式的简化版本）<br>结构<br><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232326404.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232326404.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230616103420"></p>
 <p>优点：</p>
 <ol>
 <li>效率（可并行加密、预处理、吞吐量仅受可使用并行数量的限制</li>
@@ -2831,7 +2929,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <h3 id="有限域"><a href="#有限域" class="headerlink" title="有限域"></a>有限域</h3><h3 id="AES算法"><a href="#AES算法" class="headerlink" title="AES算法"></a>AES算法</h3><h4 id="AES提出的背景"><a href="#AES提出的背景" class="headerlink" title="AES提出的背景"></a>AES提出的背景</h4><p>DES算法由于其密钥较短，难以抵抗现有的攻击，因此不再作 为加密标准</p>
 <h4 id="AES算法框架和参数说明"><a href="#AES算法框架和参数说明" class="headerlink" title="AES算法框架和参数说明"></a>AES算法框架和参数说明</h4><h5 id="设计思想"><a href="#设计思想" class="headerlink" title="设计思想"></a>设计思想</h5><p>设计简单<br>速度快，编码紧凑<br>抵抗所有已知的攻击<br>没有采用Feistel结构，轮函数由3个不同的可逆均匀变 换构成的</p>
 <h5 id="轮函数-1"><a href="#轮函数-1" class="headerlink" title="轮函数"></a>轮函数</h5><p>线性混合层-&gt;确保多轮之上的高度扩散<br>非线性层-&gt;将具有最优的“最坏情况非线性特性”的S盒并行使用，确保混淆特性<br>密钥加层-&gt;单轮子密钥简单的异或到中间状态上，实现一次性掩盖</p>
-<h5 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h5><p><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616105100.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616105100.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<h5 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h5><p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232326348.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232326348.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230616105100"></p>
 <h4 id="轮函数-2"><a href="#轮函数-2" class="headerlink" title="轮函数"></a>轮函数</h4><h5 id="字节代换（S盒）"><a href="#字节代换（S盒）" class="headerlink" title="字节代换（S盒）"></a>字节代换（S盒）</h5><p>解密用到逆S盒</p>
 <h5 id="行移位"><a href="#行移位" class="headerlink" title="行移位"></a>行移位</h5><p>状态阵列的各行进行循环移位，不同行的移位量不同<br>0行：不动<br>1行：循环左移C1字节<br>2行：循环左移C2字节<br>3行：循环左移C3字节</p>
 <p>解密则相应逆行移位</p>
@@ -2841,17 +2939,17 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <h3 id="SM4算法"><a href="#SM4算法" class="headerlink" title="SM4算法"></a>SM4算法</h3><ul>
 <li>SM4是一个<strong>分组密码算法</strong>，<strong>分组长度和密钥长度均为128比特</strong>。加密算法与密钥扩展算法都采用<strong>32轮非线性迭代结构</strong></li>
 </ul>
-<h4 id="整体结构"><a href="#整体结构" class="headerlink" title="整体结构"></a>整体结构</h4><p><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616111713.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616111713.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
-<h1 id="第四章-公钥密码"><a href="#第四章-公钥密码" class="headerlink" title="第四章 公钥密码"></a>第四章 公钥密码</h1><h2 id="对称密码的困境"><a href="#对称密码的困境" class="headerlink" title="对称密码的困境"></a>对称密码的困境</h2><p>-&gt;密钥共享和管理<br><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616112025.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616112025.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
-<p>-&gt;不支持“开放系统”<br>两个没有预先建立关系的用户<br><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616112909.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616112909.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<h4 id="整体结构"><a href="#整体结构" class="headerlink" title="整体结构"></a>整体结构</h4><p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232326173.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232326173.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230616111713"></p>
+<h1 id="第四章-公钥密码"><a href="#第四章-公钥密码" class="headerlink" title="第四章 公钥密码"></a>第四章 公钥密码</h1><h2 id="对称密码的困境"><a href="#对称密码的困境" class="headerlink" title="对称密码的困境"></a>对称密码的困境</h2><p>-&gt;密钥共享和管理<br><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232326218.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232326218.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230616112025"></p>
+<p>-&gt;不支持“开放系统”<br>两个没有预先建立关系的用户<br><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232327720.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232327720.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230616112909"></p>
 <h2 id="公钥密码体制"><a href="#公钥密码体制" class="headerlink" title="公钥密码体制"></a>公钥密码体制</h2><ul>
 <li>主要思想：从一个方向计算非常容易，而 从另一个方向计算则很困难</li>
 </ul>
-<h3 id="公钥密码的理论基础-陷门单向函数"><a href="#公钥密码的理论基础-陷门单向函数" class="headerlink" title="公钥密码的理论基础: 陷门单向函数"></a>公钥密码的理论基础: <strong>陷门单向函数</strong></h3><p><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616112443.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616112443.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><br><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616112453.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616112453.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<h3 id="公钥密码的理论基础-陷门单向函数"><a href="#公钥密码的理论基础-陷门单向函数" class="headerlink" title="公钥密码的理论基础: 陷门单向函数"></a>公钥密码的理论基础: <strong>陷门单向函数</strong></h3><p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232327460.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232327460.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230616112443"><br><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232327867.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232327867.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230616112453"></p>
 <ul>
-<li><p>公钥加密结构<br><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616112635.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616112635.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<li><p>公钥加密结构<br><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232327681.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232327681.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230616112635"></p>
 </li>
-<li><p>公钥认证结构<br><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616112721.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616112721.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<li><p>公钥认证结构<br><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232327475.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232327475.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230616112721"></p>
 </li>
 <li><p>公钥密码体制的优势<br>密钥分发：公钥能够采用公开（认证的）信道进行传输；<br>密钥管理：在用户N个用户的系统中，每个用户只需安全保管自己的私钥和N-1个 其他用户的公钥。整个系统仅仅需要维护N个公钥；<br>开放系统：即使是没有预先建立关系的用户也能通过对方的公钥建立安全通信。</p>
 </li>
@@ -2871,10 +2969,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li>计算 m&#x3D;pq, z&#x3D;(p-1)(q-1) 。</li>
 <li>随机选取 e（其中e&lt;n ）， e与z没有公因数。（ e, z“互为质数”）</li>
 <li>选取d使得ed-1能够被z完全整除。 （换言之：ed mod z &#x3D; 1 ）</li>
-<li>公钥是 (n,e)。私钥是(n,d) 。<br><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616114507.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616114507.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></li>
+<li>公钥是 (n,e)。私钥是(n,d) 。<br><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232328786.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232328786.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230616114507"></li>
 </ol>
-<h4 id="加解密过程"><a href="#加解密过程" class="headerlink" title="加解密过程"></a>加解密过程</h4><p><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616114417.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616114417.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
-<p>例题<br><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616150625.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616150625.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<h4 id="加解密过程"><a href="#加解密过程" class="headerlink" title="加解密过程"></a>加解密过程</h4><p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232328405.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232328405.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230616114417"></p>
+<p>例题<br><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232328932.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232328932.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230616150625"></p>
 <p>RSA的加密、解密过程都为求一个整数的整数次幂，再取模。如果按其 含义直接计算，则中间结果非常大，有可能超出计算机所允许的整数取值 范围。<br>而用模运算的性质：(a×b) mod n&#x3D;[(a mod n)×(b mod n)] mod n 就可减小中间结果。</p>
 <h4 id="RSA密钥的产生"><a href="#RSA密钥的产生" class="headerlink" title="RSA密钥的产生"></a>RSA密钥的产生</h4><ol>
 <li>两个大素数p、q的选取。-&gt;Miller-Rabin算法</li>
@@ -2889,7 +2987,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li>背包问题（knapsack problem）</li>
 </ol>
 <h3 id="ElGamal公钥密码体制"><a href="#ElGamal公钥密码体制" class="headerlink" title="ElGamal公钥密码体制"></a>ElGamal公钥密码体制</h3><p>Elgamal加密<strong>基于CDH假设的单向性</strong></p>
-<h4 id="ElGamal公钥密码体制历史"><a href="#ElGamal公钥密码体制历史" class="headerlink" title="ElGamal公钥密码体制历史"></a>ElGamal公钥密码体制历史</h4><h4 id="ElGamal公钥加密体制原理"><a href="#ElGamal公钥加密体制原理" class="headerlink" title="ElGamal公钥加密体制原理"></a>ElGamal公钥加密体制原理</h4><p><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616154338.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616154338.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<h4 id="ElGamal公钥密码体制历史"><a href="#ElGamal公钥密码体制历史" class="headerlink" title="ElGamal公钥密码体制历史"></a>ElGamal公钥密码体制历史</h4><h4 id="ElGamal公钥加密体制原理"><a href="#ElGamal公钥加密体制原理" class="headerlink" title="ElGamal公钥加密体制原理"></a>ElGamal公钥加密体制原理</h4><p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232328661.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232328661.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230616154338"></p>
 <p>特点：</p>
 <ol>
 <li>安全性基于有限域上的离散对数的难解性</li>
@@ -2903,19 +3001,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li>ElGamal：循环群的离散对数问题</li>
 </ul>
 <h3 id="椭圆曲线密码"><a href="#椭圆曲线密码" class="headerlink" title="椭圆曲线密码"></a>椭圆曲线密码</h3><p>椭圆曲线密码体制ECC（elliptic curve cryptography）可用短得多的密钥获得同样的安全性</p>
-<h4 id="原理-1"><a href="#原理-1" class="headerlink" title="原理"></a>原理</h4><p><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616160118.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616160118.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><br><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616160127.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616160127.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
-<h4 id="加密流程"><a href="#加密流程" class="headerlink" title="加密流程"></a>加密流程</h4><p><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616160012.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616160012.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><br><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616160315.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616160315.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<h4 id="原理-1"><a href="#原理-1" class="headerlink" title="原理"></a>原理</h4><p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232329094.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232329094.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230616160118"><br><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232329491.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232329491.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230616160127"></p>
+<h4 id="加密流程"><a href="#加密流程" class="headerlink" title="加密流程"></a>加密流程</h4><p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232330509.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232330509.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230616160012"><br><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232330106.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232330106.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230616160315"></p>
 <h4 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h4><ol>
 <li>安全性高</li>
 <li>密钥量小-&gt;在实现相同的安全性能条件下，椭圆曲线密码 体制所需的密钥量远比基于有限域上的离散对数问题的公钥体制的密钥量小</li>
 <li>灵活性好</li>
 </ol>
 <h3 id="SM2椭圆曲线公钥密码加密算法"><a href="#SM2椭圆曲线公钥密码加密算法" class="headerlink" title="SM2椭圆曲线公钥密码加密算法"></a>SM2椭圆曲线公钥密码加密算法</h3><h4 id="算法简介"><a href="#算法简介" class="headerlink" title="算法简介"></a>算法简介</h4><p>中国商用公钥密码标准算法<br>一组椭 圆曲线密码算法，其中包含加解密算法、数字签名算法<br>安全性都是<strong>基于求解椭圆曲线上的离散对数问题</strong>的困难性</p>
-<h4 id="算法原理"><a href="#算法原理" class="headerlink" title="算法原理"></a>算法原理</h4><h5 id="密钥产生"><a href="#密钥产生" class="headerlink" title="密钥产生"></a>密钥产生</h5><p><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616163259.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616163259.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
-<h5 id="加密算法"><a href="#加密算法" class="headerlink" title="加密算法"></a>加密算法</h5><p><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616163317.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616163317.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
-<h5 id="加密流程图"><a href="#加密流程图" class="headerlink" title="加密流程图"></a>加密流程图</h5><p><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616163338.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616163338.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
-<h5 id="解密算法"><a href="#解密算法" class="headerlink" title="解密算法"></a>解密算法</h5><p><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616163453.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616163453.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
-<h5 id="解密流程图"><a href="#解密流程图" class="headerlink" title="解密流程图"></a>解密流程图</h5><p><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616163628.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616163628.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<h4 id="算法原理"><a href="#算法原理" class="headerlink" title="算法原理"></a>算法原理</h4><h5 id="密钥产生"><a href="#密钥产生" class="headerlink" title="密钥产生"></a>密钥产生</h5><p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232330575.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232330575.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230616163259"></p>
+<h5 id="加密算法"><a href="#加密算法" class="headerlink" title="加密算法"></a>加密算法</h5><p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232330479.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232330479.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230616163317"></p>
+<h5 id="加密流程图"><a href="#加密流程图" class="headerlink" title="加密流程图"></a>加密流程图</h5><p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232330070.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232330070.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230616163338"></p>
+<h5 id="解密算法"><a href="#解密算法" class="headerlink" title="解密算法"></a>解密算法</h5><p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232330172.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232330172.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230616163453"></p>
+<h5 id="解密流程图"><a href="#解密流程图" class="headerlink" title="解密流程图"></a>解密流程图</h5><p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232331360.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232331360.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230616163628"></p>
 <h3 id="SM2与ECC的区别"><a href="#SM2与ECC的区别" class="headerlink" title="SM2与ECC的区别"></a>SM2与ECC的区别</h3><p>ECC算法通常采用NIST等国际机构建议的曲线及参数<br>SM2算法 的参数需要利用一定的算法产生-&gt;更安全</p>
 <p>在ECC算法中，用户可以选择MD5、SHA-1等国际通用的哈希算法<br>SM2算法中则使用SM3哈希算法</p>
 <p>SM的优点：解密算法中的检错</p>
@@ -2932,35 +3030,35 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>H(y)&#x3D;H(x)的概率是1&#x2F;n &lt;&#x3D;&gt; H(y)≠H(x)的概率是1-1&#x2F;n</p>
 <p>y取k个随机值得到函数的k个输出中，至少有一个等于H(x)的概率为1-[1-1&#x2F;n]^k (约等于k&#x2F;n)</p>
 <p>若使上述概率等于0.5，则k&#x3D;n&#x2F;2。如果H的输出为m比特长，即可 能的输出个数n&#x3D;2m，则k&#x3D;2^(m-1)</p>
-<h3 id="生日悖论"><a href="#生日悖论" class="headerlink" title="生日悖论"></a>生日悖论</h3><p>问题描述：“在k个人中<strong>至少有两个人的生日相同的概率大于0.5时，k至少多大？</strong>”<br>设有k个整数项，每一项都在1到n之间等可能地取值。<br>P(n, k)：k个整数项中至少有两个取值相同的概率<br><strong>生日悖论就是求使得P(365,k)≥0.5的最小k</strong><br><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616174203.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616174203.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><br>P(365,23)&#x3D;0.5073，即只需23人</p>
+<h3 id="生日悖论"><a href="#生日悖论" class="headerlink" title="生日悖论"></a>生日悖论</h3><p>问题描述：“在k个人中<strong>至少有两个人的生日相同的概率大于0.5时，k至少多大？</strong>”<br>设有k个整数项，每一项都在1到n之间等可能地取值。<br>P(n, k)：k个整数项中至少有两个取值相同的概率<br><strong>生日悖论就是求使得P(365,k)≥0.5的最小k</strong><br><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232331298.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232331298.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230616174203"><br>P(365,23)&#x3D;0.5073，即只需23人</p>
 <p>之所以称这一问题是悖论是因为： 当人数k给定时，得到的至少有两个人的生日相同的概率比想象的要大得多</p>
-<h4 id="生日悖论推广问题"><a href="#生日悖论推广问题" class="headerlink" title="生日悖论推广问题"></a>生日悖论推广问题</h4><p><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616174451.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616174451.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><br>令P(n, k)&gt;0.5，可得<br><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616174530.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616174530.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<h4 id="生日悖论推广问题"><a href="#生日悖论推广问题" class="headerlink" title="生日悖论推广问题"></a>生日悖论推广问题</h4><p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232331094.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232331094.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230616174451"><br>令P(n, k)&gt;0.5，可得<br><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232331038.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232331038.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230616174530"></p>
 <h3 id="第二类生日攻击"><a href="#第二类生日攻击" class="headerlink" title="第二类生日攻击"></a>第二类生日攻击</h3><p>寻找函数H的具有相同输出的两个任意输入的攻击方式。</p>
 <h3 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h3><p>输出长度与碰撞-&gt;生日攻击给出了消息摘要长度的下界<br>通常建议消息摘要的最小可接受的长度为128比特</p>
 <h2 id="SHA-1密码杂凑函数"><a href="#SHA-1密码杂凑函数" class="headerlink" title="SHA-1密码杂凑函数"></a>SHA-1密码杂凑函数</h2><h3 id="MD5哈希算法"><a href="#MD5哈希算法" class="headerlink" title="MD5哈希算法"></a>MD5哈希算法</h3><p>输入：任意长的消息（图中为K比特）<br>分组：512比特<br>输出：128比特的消息摘要。</p>
-<h3 id="安全杂凑算法SHA-1"><a href="#安全杂凑算法SHA-1" class="headerlink" title="安全杂凑算法SHA-1"></a>安全杂凑算法SHA-1</h3><p>安全哈希算法(Secure Hash Algorithm, SHA)<br>输入：小于264比特长的任意消息，分为512比特长的分组。<br>输出：160比特长的消息摘要<br><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616175152.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616175152.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<h3 id="安全杂凑算法SHA-1"><a href="#安全杂凑算法SHA-1" class="headerlink" title="安全杂凑算法SHA-1"></a>安全杂凑算法SHA-1</h3><p>安全哈希算法(Secure Hash Algorithm, SHA)<br>输入：小于264比特长的任意消息，分为512比特长的分组。<br>输出：160比特长的消息摘要<br><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232331991.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232331991.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230616175152"></p>
 <h4 id="算法处理步骤"><a href="#算法处理步骤" class="headerlink" title="算法处理步骤"></a>算法处理步骤</h4><h5 id="1-消息填充"><a href="#1-消息填充" class="headerlink" title="1)消息填充"></a>1)消息填充</h5><p>对消息填充，使得其比特长在模512下为448，即填充后消息的长度为 512的某一倍数减64，留出的64比特备用（￥）<br>该步骤是必须的<br>填充方式：第1位为1，其后各位皆为0</p>
 <h5 id="2-附加消息的长度"><a href="#2-附加消息的长度" class="headerlink" title="2)附加消息的长度"></a>2)附加消息的长度</h5><p>留出的64比特（￥）来表示消息被填充前的长度</p>
 <h5 id="3-对MD缓冲区初始化"><a href="#3-对MD缓冲区初始化" class="headerlink" title="3)对MD缓冲区初始化"></a>3)对MD缓冲区初始化</h5><p>使用160比特长的缓冲区存储中间结果和最终杂凑值<br>缓冲区为5个32比特以big-endian方式存储数据的寄存器(A, B, C, D, E)<br>分别为A&#x3D;67452301， B&#x3D;EFCDAB89， C&#x3D;98BADCFB， D&#x3D;10325476， E&#x3D;C3D2E1F0。</p>
-<h5 id="4-以分组为单位对消息进行处理（复杂）"><a href="#4-以分组为单位对消息进行处理（复杂）" class="headerlink" title="4)以分组为单位对消息进行处理（复杂）"></a>4)以分组为单位对消息进行处理（复杂）</h5><p>每一分组Yq都经一压缩函数处理，<strong>压缩函数</strong>由4轮处理 过程构成，每一轮又由20步迭代组成。<br>第4轮的输出（即第80步迭代的输出）再与第1轮的输 入CV.q相加，以产生CV.(q+1)，其中加法是缓冲区5个字中的 每一个字与CV.q中相应的字模2^(32)相加。<br><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616235416.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230616235416.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<h5 id="4-以分组为单位对消息进行处理（复杂）"><a href="#4-以分组为单位对消息进行处理（复杂）" class="headerlink" title="4)以分组为单位对消息进行处理（复杂）"></a>4)以分组为单位对消息进行处理（复杂）</h5><p>每一分组Yq都经一压缩函数处理，<strong>压缩函数</strong>由4轮处理 过程构成，每一轮又由20步迭代组成。<br>第4轮的输出（即第80步迭代的输出）再与第1轮的输 入CV.q相加，以产生CV.(q+1)，其中加法是缓冲区5个字中的 每一个字与CV.q中相应的字模2^(32)相加。<br><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232331443.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232331443.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230616235416"></p>
 <h5 id="5-输出消息"><a href="#5-输出消息" class="headerlink" title="5)输出消息"></a>5)输出消息</h5><p>输出消息的L个分组都被处理完后，最后 一个分组的输出即为160比特的消息摘要。</p>
-<h4 id="压缩函数"><a href="#压缩函数" class="headerlink" title="压缩函数"></a>压缩函数</h4><p>SHA的压缩函数由4轮处理过程组成，每轮处理过程20步迭代运算组成<br><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230617001018.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230617001018.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><br>公式解释：<br><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230617001833.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230617001833.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><br><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230617002014.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230617002014.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<h4 id="压缩函数"><a href="#压缩函数" class="headerlink" title="压缩函数"></a>压缩函数</h4><p>SHA的压缩函数由4轮处理过程组成，每轮处理过程20步迭代运算组成<br><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232332511.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232332511.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230617001018"><br>公式解释：<br><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232332806.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232332806.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230617001833"><br><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232332823.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232332823.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230617002014"></p>
 <ul>
-<li><p>字W.t的产生<br><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230617002113.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230617002113.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<li><p>字W.t的产生<br><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232332515.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232332515.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230617002113"></p>
 </li>
 <li><p>常量字Kt<br>Kt &#x3D; 0x5A827999 (0 &lt;&#x3D; t &lt;&#x3D; 19)<br>Kt &#x3D; 0x6ED9EBA1 (20 &lt;&#x3D; t &lt;&#x3D; 39)<br>Kt &#x3D; 0x8F1BBCDC (40 &lt;&#x3D; t &lt;&#x3D; 59)<br>Kt &#x3D; 0xCA62C1D6 (60 &lt;&#x3D; t &lt;&#x3D; 79).</p>
 </li>
 </ul>
-<h3 id="SHA系列Hash函数"><a href="#SHA系列Hash函数" class="headerlink" title="SHA系列Hash函数"></a>SHA系列Hash函数</h3><p><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230617002229.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230617002229.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<h3 id="SHA系列Hash函数"><a href="#SHA系列Hash函数" class="headerlink" title="SHA系列Hash函数"></a>SHA系列Hash函数</h3><p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232332721.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232332721.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230617002229"></p>
 <h3 id="SM3密码杂凑函数"><a href="#SM3密码杂凑函数" class="headerlink" title="SM3密码杂凑函数"></a>SM3密码杂凑函数</h3><p>输入：输入：小于264比特长的任意消息<br>输出：哈希值长度为256比特</p>
-<h4 id="常量和函数"><a href="#常量和函数" class="headerlink" title="常量和函数"></a>常量和函数</h4><p>IV、T.j为常量<br>FF.j、GG.j如下<br><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230617005202.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230617005202.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><br>P.0(X)、P.1(X)如下<br><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230617005414.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230617005414.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<h4 id="常量和函数"><a href="#常量和函数" class="headerlink" title="常量和函数"></a>常量和函数</h4><p>IV、T.j为常量<br>FF.j、GG.j如下<br><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232332060.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232332060.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230617005202"><br>P.0(X)、P.1(X)如下<br><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232332938.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232332938.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230617005414"></p>
 <h4 id="1-数据填充"><a href="#1-数据填充" class="headerlink" title="1)数据填充"></a>1)数据填充</h4><p>目的是使填充后的数据长度为512的整数倍<br>消息 的长度为l比特-&gt;<br>首先将比特“1”添加到m的末尾，再添加k 个“0”，其中k满足l+1+k&#x3D;448 mod 512<br>然后再添加一个64位比特串，该比特串是长度l的二进制表示</p>
-<h4 id="2-迭代压缩"><a href="#2-迭代压缩" class="headerlink" title="2)迭代压缩"></a>2)迭代压缩</h4><p><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230617010111.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230617010111.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
-<h4 id="3-消息扩展"><a href="#3-消息扩展" class="headerlink" title="3)消息扩展"></a>3)消息扩展</h4><p><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230617010251.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230617010251.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
-<h4 id="gt-压缩函数"><a href="#gt-压缩函数" class="headerlink" title="-&gt;压缩函数"></a>-&gt;压缩函数</h4><p><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230617011430.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230617011430.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
-<h4 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h4><p><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230617011527.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230617011527.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<h4 id="2-迭代压缩"><a href="#2-迭代压缩" class="headerlink" title="2)迭代压缩"></a>2)迭代压缩</h4><p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232333761.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232333761.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230617010111"></p>
+<h4 id="3-消息扩展"><a href="#3-消息扩展" class="headerlink" title="3)消息扩展"></a>3)消息扩展</h4><p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232333070.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232333070.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230617010251"></p>
+<h4 id="gt-压缩函数"><a href="#gt-压缩函数" class="headerlink" title="-&gt;压缩函数"></a>-&gt;压缩函数</h4><p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232333655.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232333655.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230617011430"></p>
+<h4 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h4><p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232333310.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232333310.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230617011527"></p>
 <h4 id="5-输出哈希值"><a href="#5-输出哈希值" class="headerlink" title="5)输出哈希值"></a>5)输出哈希值</h4><p>输出256比特的哈希值y&#x3D;ABCDEFGH</p>
-<p><img src="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230617011655.png" class="lazyload" data-srcset="https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230617011655.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232333079.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232333079.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230617011655"></p>
 <h4 id="SM3哈希算法的安全性"><a href="#SM3哈希算法的安全性" class="headerlink" title="SM3哈希算法的安全性"></a>SM3哈希算法的安全性</h4><ul>
 <li>FF.j(X,Y,Z)和GG.j(X,Y,Z)是非线性函数，经过循环迭代后提供混淆作用</li>
 <li>置换函数P.0(X)和P.1(X)是线性函数，经过循环迭代后提供扩散作用</li>
@@ -2995,10 +3093,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-08-23T15:39:31+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-09-23T23:40:08+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2023年8月23日</p>
+    <p>更新于：2023年9月23日</p>
   </a>
 </div>
 
@@ -3606,7 +3704,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
   <script>
-  let imgs = ["https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/cover%20(10).jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/cover%20(5).jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/cover%20(1).jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/cover%20(7).jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/cover%20(8).jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/cover%20(9).jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/cover%20(3).jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/cover%20(11).jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/cover%20(2).jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/cover%20(6).jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/cover%20(12).jpg","https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/cover%20(4).jpg"];
+  let imgs = ["https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232304843.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232305972.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232304301.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232304237.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232302541.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232303575.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232254011.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232305394.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232303572.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232304216.jpg"];
   let index = 0;
   let IntervalParallax = null;
 
@@ -3835,7 +3933,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"iullius’ Blog","url":"https://kievvv.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"iullius","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://kievvv.github.io/","sameAs":["https://github.com/volantis-x"],"description":"Personal Blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://kievvv.github.io/","name":"iullius’ Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://kievvv.github.io/categories/笔记/","name":"笔记"}},{"@type":"ListItem","position":3,"item":{"@id":"https://kievvv.github.io/2023/07/19/密码学笔记/","name":"密码学笔记"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"iullius’ Blog","url":"https://kievvv.github.io/","keywords":"iullius","description":"Personal Blog","author":{"@type":"Person","name":"iullius","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://kievvv.github.io/","description":"Personal Blog"},"publisher":{"@type":"Organization","name":"iullius’ Blog","url":"https://kievvv.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://kievvv.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"密码学笔记","description":"Personal Blog","inLanguage":["zh-CN","en","zh-HK","zh-TW","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://kievvv.github.io/2023/07/19/%E5%AF%86%E7%A0%81%E5%AD%A6%E7%AC%94%E8%AE%B0/"},"author":{"@type":"Person","name":"iullius","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://kievvv.github.io/"},"publisher":{"@type":"Organization","name":"iullius’ Blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://kievvv.github.io/2023/07/19/%E5%AF%86%E7%A0%81%E5%AD%A6%E7%AC%94%E8%AE%B0/","wordCount":0,"datePublished":"2023-07-19T13:36:33.000Z","dateModified":"2023-08-23T07:39:31.823Z","articleSection":"笔记","keywords":"Cryptography","image":{"@type":"ImageObject","url":"https://cdn.staticaly.com/gh/kievvv/blogcdn@master/img/Pasted%20image%2020230614220030.png","width":1024,"height":768}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"iullius’ Blog","url":"https://kievvv.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"iullius","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://kievvv.github.io/","sameAs":["https://github.com/volantis-x"],"description":"Personal Blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://kievvv.github.io/","name":"iullius’ Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://kievvv.github.io/categories/笔记/","name":"笔记"}},{"@type":"ListItem","position":3,"item":{"@id":"https://kievvv.github.io/2023/07/19/密码学笔记/","name":"密码学笔记"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"iullius’ Blog","url":"https://kievvv.github.io/","keywords":"iullius","description":"Personal Blog","author":{"@type":"Person","name":"iullius","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://kievvv.github.io/","description":"Personal Blog"},"publisher":{"@type":"Organization","name":"iullius’ Blog","url":"https://kievvv.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://kievvv.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"密码学笔记","description":"Personal Blog","inLanguage":["zh-CN","en","zh-HK","zh-TW","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://kievvv.github.io/2023/07/19/%E5%AF%86%E7%A0%81%E5%AD%A6%E7%AC%94%E8%AE%B0/"},"author":{"@type":"Person","name":"iullius","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://kievvv.github.io/"},"publisher":{"@type":"Organization","name":"iullius’ Blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://kievvv.github.io/2023/07/19/%E5%AF%86%E7%A0%81%E5%AD%A6%E7%AC%94%E8%AE%B0/","wordCount":0,"datePublished":"2023-07-19T13:36:33.000Z","dateModified":"2023-09-23T15:40:08.044Z","articleSection":"笔记","keywords":"Cryptography","image":{"@type":"ImageObject","url":"https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232339872.png","width":1024,"height":768}}]</script>
 
 
 
