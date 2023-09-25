@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="https://kievvv.github.io/2023/07/06/hello world：建站日志/"/>
+  <link rel="canonical" href="https://kievvv.github.io/2023/07/28/003squirrel-review/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -35,21 +35,23 @@
   <!-- feed -->
       <link rel="alternate" href="/atom.xml" title="iullius’ Blog" type="application/atom+xml">
   <!-- 页面元数据 -->
-  <title>Hello World：建站日志 - iullius’ Blog</title>
-  <meta name="keywords" content="HelloWorld,iullius">
+  <title>SQUIRREL：论文随记 - iullius’ Blog</title>
+  <meta name="keywords" content="Fuzzing,Database,SQL,iullius">
   <meta desc name="description" content="Personal Blog - iullius - iullius’ Blog">
   
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World：建站日志">
-<meta property="og:url" content="https://kievvv.github.io/2023/07/06/Hello%20World%EF%BC%9A%E5%BB%BA%E7%AB%99%E6%97%A5%E5%BF%97/index.html">
+<meta property="og:title" content="SQUIRREL：论文随记">
+<meta property="og:url" content="https://kievvv.github.io/2023/07/28/003SQUIRREL-review/index.html">
 <meta property="og:site_name" content="iullius’ Blog">
-<meta property="og:description" content="2023.7.6  21:38First Blog!  2023.7.18 更新主题： volantis  2023.7.19 小细节更新： 新增评论系统、启用滚动封面等 （图片文件过大导致加载较慢..  2023.7.25 绑定域名：iullius.com 欢迎常来！">
+<meta property="og:description" content="这是一篇Fuzzing测试相关论文的阅读随记，主要为了理清思路方法，文章题目是：SQUIRREL: Testing Database Management Systems with Language Validity and Coverage Feedback，2020年发表在CCS USA，一作是佐治亚理工学院的Rui Zhong，二作Yongheng Chen（是CTFer！ 相关链接如下：论">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2023-07-06T13:36:56.025Z">
-<meta property="article:modified_time" content="2023-07-25T14:02:32.586Z">
+<meta property="article:published_time" content="2023-07-27T19:28:54.000Z">
+<meta property="article:modified_time" content="2023-09-23T15:43:09.296Z">
 <meta property="article:author" content="iullius">
-<meta property="article:tag" content="HelloWorld">
+<meta property="article:tag" content="Fuzzing">
+<meta property="article:tag" content="Database">
+<meta property="article:tag" content="SQL">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -1859,7 +1861,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1695485798595),
+    lastupdate: new Date(1695623878362),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2660,7 +2662,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 <div id="l_main" class=''>
   <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="https://kievvv.github.io/2023/07/06/Hello World：建站日志/">
+  <link itemprop="mainEntityOfPage" href="https://kievvv.github.io/2023/07/28/003SQUIRREL-review/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="iullius’ Blog">
   </span>
@@ -2672,16 +2674,18 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
   
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
+    <div class='headimg-div'>
+      <a class='headimg-a'>
+        <img itemprop="image" class='headimg' src='https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232341319.png'/>
+      </a>
+    </div>
   
   <div class="article-meta" id="top">
     
     
     
       <h1 class="title" itemprop="name headline">
-        Hello World：建站日志
+        SQUIRREL：论文随记
       </h1>
       <div class='new-meta-box'>
         
@@ -2700,10 +2704,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
   <div class='new-meta-item category'>
     <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
-    <a class="category-link" href="/categories/%E6%9D%82%E8%B0%88/">杂谈</a>
+    <a class="category-link" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a>
     
       <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-        <a href="/categories/%E6%9D%82%E8%B0%88/" itemprop="url"><span itemprop="name">杂谈</span></a>
+        <a href="/categories/%E7%AC%94%E8%AE%B0/" itemprop="url"><span itemprop="name">笔记</span></a>
       </span>
     
   </div>
@@ -2712,10 +2716,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-07-06T21:36:56+08:00">
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-07-28T03:28:54+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2023年7月6日</p>
+    <p>发布于：2023年7月28日</p>
   </a>
 </div>
 
@@ -2738,20 +2742,143 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <p>2023.7.6  21:38<br>First Blog!</p>
-<hr>
-<p>2023.7.18</p>
-<p>更新主题：</p>
-<p><a target="_blank" rel="noopener" href="https://github.com/volantis-x/hexo-theme-volantis">volantis</a></p>
-<hr>
-<p>2023.7.19</p>
-<p>小细节更新：</p>
-<p>新增评论系统、启用滚动封面等</p>
-<p>（图片文件过大导致加载较慢..</p>
-<hr>
-<p>2023.7.25</p>
-<p>绑定域名：<a target="_blank" rel="noopener" href="http://iullius.com/">iullius.com</a></p>
-<p>欢迎常来！</p>
+    <p>这是一篇Fuzzing测试相关论文的阅读随记，主要为了理清思路方法，文章题目是：<strong>SQUIRREL: Testing Database Management Systems with Language Validity and Coverage Feedback</strong>，2020年发表在CCS USA，一作是佐治亚理工学院的<a target="_blank" rel="noopener" href="https://ieeexplore.ieee.org/author/37088950861">Rui Zhong</a>，二作<a target="_blank" rel="noopener" href="https://changochen.github.io/">Yongheng Chen</a>（是CTFer！</p>
+<p>相关链接如下：<a target="_blank" rel="noopener" href="https://dl.acm.org/doi/pdf/10.1145/3372297.3417260">论文</a>，<a target="_blank" rel="noopener" href="https://github.com/s3team/Squirrel">源码</a></p>
+<h1 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h1><blockquote>
+<p> Fuzzing is an increasingly popular technique for verifying software functionalities and finding security vulnerabilities. However, current mutation-based fuzzers cannot effectively test database management systems (DBMSs), which strictly check inputs for valid syntax and semantics. Generation-based testing can guarantee the syntax correctness of the inputs, but it does not utilize any feedback, like code coverage, to guide the path exploration. In this paper, we develop Sqirrel, a novel fuzzing framework that considers both language validity and coverage feedback to test DBMSs. We design an intermediate representation (IR) to maintain SQL queries in a structural and informative manner. To generate syntactically correct queries, we perform type-based mutations on IR, including statement insertion, deletion and replacement. To mitigate semantic errors, we analyze each IR to identify the logical dependencies between arguments, and generate queries that satisfy these dependencies. We evaluated Sqirrel on four popular DBMSs: SQLite, MySQL, PostgreSQL and MariaDB. Sqirrel found 51 bugs in SQLite, 7 in MySQL and 5 in MariaDB. 52 of the bugs are fixed with 12 CVEs assigned. In our experiment, Sqirrel achieves 2.4×243.9× higher semantic correctness than state-of-the-art fuzzers, and explores 2.0×-10.9× more new edges than mutation-based tools. These results show that Sqirrel is effective in finding memory errors in database management systems.</p>
+</blockquote>
+<p><strong>Fuzzing模糊测试 -&gt; 一种软件测试方法，通过半随机方式的数据发送以验证软件功能和查找安全漏洞</strong></p>
+<ol>
+<li><p>基于mutation的fuzzer<br> 因为DBMS严格检查输入-&gt;不可用</p>
+</li>
+<li><p>基于generation的fuzzer<br> -&gt;可以保证syntax correctness<br> 但不能利用feedback(代码覆盖率等)来引导探索路径</p>
+</li>
+</ol>
+<p><strong>Squirrel</strong><br>    兼顾language validity和coverage feedback<br>    <strong>Intermediate Representation</strong> -&gt; 使得查询structural和informative<br>    <strong>Type-based mutation</strong> -&gt; 保证语法(syntactically)正确<br>    <strong>Semantics-Guided Instantiation</strong> -&gt; 保证语义(semantically)正确</p>
+<h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><h2 id="主要贡献"><a href="#主要贡献" class="headerlink" title="主要贡献"></a>主要贡献</h2><ol>
+<li>Propose <strong>syntax-preserving mutation</strong> and <strong>semantics-guided instantiation</strong> to address the challenges of fuzzing DBMSs.</li>
+<li>Implement Squirrel, an <strong>end-to-end system</strong> that <strong>combines mutation and generation</strong> to detect DBMS bugs.</li>
+<li>Evaluated Squirrel on real-world DBMSs and identified <strong>63 memory error</strong> issues. The result shows that <strong>Squirrel outperforms existing tools on finding bugs from DBMSs</strong>.</li>
+</ol>
+<h1 id="Problem-Definition"><a href="#Problem-Definition" class="headerlink" title="Problem Definition"></a>Problem Definition</h1><h2 id="1-Query-Processing-in-DBMS"><a href="#1-Query-Processing-in-DBMS" class="headerlink" title="1. Query Processing in DBMS"></a>1. Query Processing in DBMS</h2><h3 id="How-a-DBMS-handles-SQL-queries"><a href="#How-a-DBMS-handles-SQL-queries" class="headerlink" title="How a DBMS handles SQL queries"></a>How a DBMS handles SQL queries</h3><h4 id="1-parse"><a href="#1-parse" class="headerlink" title="1) parse"></a>1) parse</h4><ul>
+<li>First parses the query to get its syntactic meaning<ol>
+<li>Breaks the query into individual tokens</li>
+<li>Checks them against the grammar rules</li>
+</ol>
+</li>
+</ul>
+<h4 id="2-validation"><a href="#2-validation" class="headerlink" title="2) validation"></a>2) validation</h4><ul>
+<li>Checks the semantic correctness of the query</li>
+</ul>
+<h4 id="3-ptimization"><a href="#3-ptimization" class="headerlink" title="3) ptimization"></a>3) ptimization</h4><ul>
+<li>构造几个可能的查询计划 -&gt; 确定给定查询最有效的查询计划</li>
+</ul>
+<h4 id="4-execution"><a href="#4-execution" class="headerlink" title="4) execution"></a>4) execution</h4><ul>
+<li>执行 + 返回</li>
+</ul>
+<blockquote>
+<p>如果1, 2阶段不满足，则不会进行到3, 4</p>
+</blockquote>
+<h2 id="2-Challenges-of-DBMS-Testing"><a href="#2-Challenges-of-DBMS-Testing" class="headerlink" title="2 Challenges of DBMS Testing"></a>2 Challenges of DBMS Testing</h2><h3 id="Introduce-existing-DBMS-testing-techniques-amp-Illustrate-their-limitations"><a href="#Introduce-existing-DBMS-testing-techniques-amp-Illustrate-their-limitations" class="headerlink" title="Introduce existing DBMS testing techniques &amp; Illustrate their limitations"></a>Introduce existing DBMS testing techniques &amp; Illustrate their limitations</h3><h3 id="主要有两种DBMS测试方法："><a href="#主要有两种DBMS测试方法：" class="headerlink" title="主要有两种DBMS测试方法："></a>主要有两种DBMS测试方法：</h3><h4 id="1-model-based-generation-基于模型生成"><a href="#1-model-based-generation-基于模型生成" class="headerlink" title="1) model-based generation 基于模型生成"></a>1) model-based generation 基于模型生成</h4><h5 id="遵循精确的语法模型以生成语法正确的输入"><a href="#遵循精确的语法模型以生成语法正确的输入" class="headerlink" title="遵循精确的语法模型以生成语法正确的输入"></a>遵循精确的语法模型以生成语法正确的输入</h5><ul>
+<li><strong>pros:</strong> 语法正确</li>
+<li><strong>cons:</strong><br>  顺序扫描整个输入空间-&gt;不能有效搜索程序的状态空间<br>  很难保证语义正确性-&gt;会被过滤</li>
+</ul>
+<h4 id="2-random-mutation-随机变异"><a href="#2-random-mutation-随机变异" class="headerlink" title="2) random mutation 随机变异"></a>2) random mutation 随机变异</h4><h5 id="更新现有输入以生成新输入"><a href="#更新现有输入以生成新输入" class="headerlink" title="更新现有输入以生成新输入"></a>更新现有输入以生成新输入</h5><ul>
+<li><strong>pros:</strong><br>  利用先前执行的反馈来评估生成的输入的优先级<br>  如果反馈表明之前的输入很有趣，模糊器会将其放入队列中以进行进一步的变异<br>  -&gt;可以有效地探索程序的状态空间</li>
+<li><strong>cons:</strong><br>  在处理结构化输入方面效率低下(如SQL、JS)<br>   1. 随机翻转一个 SQL 关键字的位很难产生另一个有效的关键字<br>   2. 整个查询将在语法上变得不正确</li>
+</ul>
+<blockquote>
+<p>AFL 生成的查询的验证率很低- &gt; 语义正确很重要</p>
+</blockquote>
+<h2 id="3-Our-Approach"><a href="#3-Our-Approach" class="headerlink" title="3 Our Approach"></a>3 Our Approach</h2><h3 id="Present-our-insight-to-solve-this-problem"><a href="#Present-our-insight-to-solve-this-problem" class="headerlink" title="Present our insight to solve this problem"></a>Present our insight to solve this problem</h3><h4 id="1-Generating-Syntax-Correct-Queries"><a href="#1-Generating-Syntax-Correct-Queries" class="headerlink" title="1) Generating Syntax-Correct Queries"></a>1) Generating Syntax-Correct Queries</h4><ul>
+<li>IR-&gt;使得查询structural和informative</li>
+<li>基于类型的突变来保证句法正确性<br>  -&gt;每个语句都有语法类型，每个数据都有语义类型</li>
+<li>从每个 IR 中剥离具体数据，如表名，以专注于改变骨架</li>
+</ul>
+<h4 id="2-Improving-Semantic-Correctness"><a href="#2-Improving-Semantic-Correctness" class="headerlink" title="2) Improving Semantic Correctness"></a>2) Improving Semantic Correctness</h4><p>确保语义正确是NP-hard问题</p>
+<ul>
+<li>通过动态查询实例化 -&gt; 保证其 SQL 模板的表现力</li>
+<li>给定语法正确的 SQL 查询的骨架 -&gt; 尝试用关系满足数据依赖图的具体操作数填充骨架</li>
+<li>(根据预定义的基本规则构建其数据依赖图)</li>
+</ul>
+<h1 id="Overview-of-Sqirrel"><a href="#Overview-of-Sqirrel" class="headerlink" title="Overview of Sqirrel"></a>Overview of Sqirrel</h1><p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232341319.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232341319.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="屏幕截图 2023-07-28 033639"></p>
+<h4 id="四个组成部分"><a href="#四个组成部分" class="headerlink" title="四个组成部分"></a>四个组成部分</h4><ol>
+<li>Translator, </li>
+<li>Mutator, </li>
+<li>Instantiator,</li>
+<li>SQL Fuzzer</li>
+</ol>
+<h4 id="主要流程"><a href="#主要流程" class="headerlink" title="主要流程"></a>主要流程</h4><ol>
+<li>从查询队列中<strong>选一个查询I</strong></li>
+<li><strong>IR Translator</strong>将查询I<strong>翻译成IR的向量V</strong><br> 同时从V中<strong>剥离具体值</strong>，使其<strong>成为骨架</strong></li>
+<li><strong>Mutator</strong>生成<strong>新的向量V’</strong>(通过插入、删除、替换)<br> -&gt; V’语法正确</li>
+<li><strong>Instantiator</strong>对V’进行<strong>数据依赖性分析</strong><br> （并构建新的数据依赖图）</li>
+<li>Instantiator<strong>选择新的具体值填充V’</strong>,which满足数据依赖性</li>
+<li>将V’转回SQL语句I‘</li>
+<li>运行：<br> if 崩溃 -&gt; 找到触发错误的输入<br> else if 触发了新的执行路径 -&gt; 保存到队列</li>
+</ol>
+<h1 id="Intermediate-Representation-中间表示（IR-Translator）"><a href="#Intermediate-Representation-中间表示（IR-Translator）" class="headerlink" title="Intermediate Representation 中间表示（IR Translator）"></a>Intermediate Representation 中间表示（IR Translator）</h1><p><strong>SQL语句I转化成 -&gt; IR向量V -&gt; 改变成V’ -&gt; 转换回SQL语句I’</strong></p>
+<ul>
+<li>IR特点：expressive, general, simple</li>
+</ul>
+<h1 id="Syntax-Preserving-Mutation-语法保留突变"><a href="#Syntax-Preserving-Mutation-语法保留突变" class="headerlink" title="Syntax-Preserving Mutation 语法保留突变"></a>Syntax-Preserving Mutation 语法保留突变</h1><h3 id="Token区分"><a href="#Token区分" class="headerlink" title="Token区分"></a>Token区分</h3><ul>
+<li><strong>structure</strong>：关键字 + 数学运算符<br>  改变structure会改变查询的操作，从而触发不同的功能</li>
+<li><strong>data</strong>：常量值、名称等<br>  修改与语义相关的data可能会生成语义不正确的查询导致DBMS拒绝执行<br>  改变structure的影响更大-&gt;剥离数据，在结构上变异</li>
+</ul>
+<h2 id="1-Structure-Data-Separation"><a href="#1-Structure-Data-Separation" class="headerlink" title="1) Structure-Data Separation"></a>1) Structure-Data Separation</h2><ul>
+<li>基本规则：用“x”替换语义数据，将常量数字更改为 1 或 1.0</li>
+<li>在IR library存储不同的IR</li>
+</ul>
+<h2 id="2-Type-Based-Mutation"><a href="#2-Type-Based-Mutation" class="headerlink" title="2) Type-Based Mutation"></a>2) Type-Based Mutation</h2><ul>
+<li><p>主要是operand的变异</p>
+<p>-&gt; 要么修改整个IR，要么修改operand</p>
+</li>
+</ul>
+<h3 id="三种变异"><a href="#三种变异" class="headerlink" title="三种变异"></a>三种变异</h3><p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232342901.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232342901.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230509215933"></p>
+<h4 id="Insertion插入"><a href="#Insertion插入" class="headerlink" title="Insertion插入"></a>Insertion插入</h4><h4 id="Replacement替换"><a href="#Replacement替换" class="headerlink" title="Replacement替换"></a>Replacement替换</h4><p> -&gt;在IR库中选择对应位置的孩子进行插入或替换</p>
+<h4 id="Deletion删除"><a href="#Deletion删除" class="headerlink" title="Deletion删除"></a>Deletion删除</h4><h4 id="验证语法正确"><a href="#验证语法正确" class="headerlink" title="验证语法正确"></a>验证语法正确</h4><p>转回SQL语句，传入执行<br>    if 成功执行 -&gt; 语法正确，继续使用<br>    else -&gt; 丢弃</p>
+<h1 id="Semantics-Guided-Instantiation-语义引导实例化"><a href="#Semantics-Guided-Instantiation-语义引导实例化" class="headerlink" title="Semantics-Guided Instantiation 语义引导实例化"></a>Semantics-Guided Instantiation 语义引导实例化</h1><h2 id="1-Data-Dependency-Inference"><a href="#1-Data-Dependency-Inference" class="headerlink" title="1) Data Dependency Inference"></a>1) Data Dependency Inference</h2><p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232342861.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232342861.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230509220312"><br>灰色线是从属关系，黑色线是对等关系</p>
+<p>细化数据类型，遵循<strong>lifetime原则：用前创建，删后不用</strong></p>
+<p>关系规则是一个包含四个元素的元组（α,β,γ,S）：α是关系目标，β是关系源； γ 定义关系； S 表示关系的范围</p>
+<h2 id="2-IR-Instantiation"><a href="#2-IR-Instantiation" class="headerlink" title="2) IR Instantiation"></a>2) IR Instantiation</h2><p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232342139.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232342139.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20230509221712"></p>
+<blockquote>
+<p>dataMap：跟踪具有不同类型的唯一名称<br>relationMap：将每个元素映射到其依赖项</p>
+</blockquote>
+<h4 id="验证语义正确"><a href="#验证语义正确" class="headerlink" title="验证语义正确"></a>验证语义正确</h4><p>转回SQL语句，传入执行<br>    if 满足依赖性，成功执行 -&gt; 语义正确，继续使用<br>     else -&gt; 丢弃<br>    if interesting -&gt; 保存入队列</p>
+<h1 id="Implementation-amp-Evaluation"><a href="#Implementation-amp-Evaluation" class="headerlink" title="Implementation &amp; Evaluation"></a>Implementation &amp; Evaluation</h1><p>此处略</p>
+<h1 id="Discussion"><a href="#Discussion" class="headerlink" title="Discussion"></a>Discussion</h1><h3 id="1-DBMS-Specific-Logic"><a href="#1-DBMS-Specific-Logic" class="headerlink" title="1. DBMS-Specific Logic"></a>1. DBMS-Specific Logic</h3><p>-&gt;针对不同DBMS系统的SQL方言语法进行设计可以提高测试效果</p>
+<h3 id="2-Relation-Rule-Construction"><a href="#2-Relation-Rule-Construction" class="headerlink" title="2. Relation-Rule Construction"></a>2. Relation-Rule Construction</h3><p>人工编写关系规则 -&gt; 自动推断（数据流分析&#x2F;深度学习）</p>
+<h3 id="3-Collisions-in-Code-Coverage"><a href="#3-Collisions-in-Code-Coverage" class="headerlink" title="3. Collisions in Code-Coverage"></a>3. Collisions in Code-Coverage</h3><p>扩大Bitmap的大小以缓解Collision</p>
+<h3 id="4-Alternative-Feedback-Mechanisms"><a href="#4-Alternative-Feedback-Mechanisms" class="headerlink" title="4. Alternative Feedback Mechanisms"></a>4. Alternative Feedback Mechanisms</h3><p>code coverage VS semantics-correct queries -&gt; 有害的代码覆盖率阻碍了语义正确查询的生成</p>
+<h1 id="Related-Work-amp-Conclusion"><a href="#Related-Work-amp-Conclusion" class="headerlink" title="Related Work &amp; Conclusion"></a>Related Work &amp; Conclusion</h1><p>略</p>
+<h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1><p><strong>SQUIRREL: Testing Database Management Systems with Language Validity and Coverage Feedback</strong>这篇论文提出了一种新型的自动化测试工具Squirrel，它的主要作用是用于测试关系型数据库管理系统(DBMS)。这篇论文在2020年11月首次发表在2020 ACM SIGSAC Conference上，作者为来自宾夕法尼亚州立大学和佐治亚理工学院的Rui Zhong等6人，当前在Google学术上被引用次数为40次。</p>
+<p>模糊测试是一种用于验证软件功能和查找软件安全漏洞的技术。但是，目前基于突变（mutation）的模糊器（fuzzer）无法有效测试会严格检查输入的语法语义正确性的数据库管理系统；基于生成（generation）的测试无法利用反馈来指导测试路径。</p>
+<p>基于以上现状，本文整合了上述两种测试框架的优点，介绍了一种名为Sqirrel的新型模糊测试框架，用于测试数据库管理系统（DBMS），同时考虑了语言有效性和覆盖反馈。Squirrel使用中间表示（IR, Intermediate Representation）以结构化和信息化的方式维护SQL查询，并对IR进行基于类型的变异以生成语法正确的查询。它还分析每个IR以识别参数之间的逻辑依赖关系，并生成满足这些依赖关系的查询以减轻语义错误。</p>
+<p>Squirrel的测试流程包括以下步骤： </p>
+<ol>
+<li>生成初始查询：Sqirrel使用基于模型的生成方法生成初始查询。</li>
+<li>转换为IR：Sqirrel将初始查询转换为IR，以便于后续的变异和分析。 </li>
+<li>变异：Sqirrel对IR进行基于类型的变异，以生成语法正确的查询。</li>
+<li>依赖分析：Sqirrel分析每个IR以识别参数之间的逻辑依赖关系，并生成满足这些依赖关系的查询以减轻语义错误。</li>
+<li>执行查询：Sqirrel执行生成的查询，并记录覆盖信息。</li>
+<li>覆盖反馈：Sqirrel使用覆盖信息来指导下一轮变异，以提高测试效率和覆盖率。<br>这个流程不断迭代，直到达到预设的测试目标或者测试时间结束。<br>上述6个流程是对Squirrel框架的高度概括，在具体实现上仍有很多较为细节的步骤，保证了Squirrel框架的结果准确、逻辑合理、运算高效，整个框架的代码实现超过了四万行。</li>
+</ol>
+<p>随后，作者将Squirrel框架在真实的数据库管理系统上测试。主要关注以下三个问题：<br>是否能检测出内存漏洞？是否超过了SOTA的测试工具？语言正确性和覆盖率反馈在测试中的作用如何？</p>
+<p>由此，将实验分为三个部分：语法正确性测试、语义正确性测试和性能测试。</p>
+<p>在语法正确性和语义正确性测试中，作者使用Sqirrel、AFL、SQLsmith、QSYM、Angora和GRIMOIRE等六个工具对SQLite和MySQL进行测试，并比较了它们的测试效果。作者使用了10个已知的语法错误和缺陷来评估这些工具的测试效果，并计算了它们的错误检测率和测试时间。</p>
+<p>在性能测试中，作者使用了Sqirrel、AFL、SQLsmith、QSYM、Angora和GRIMOIRE等六个工具对SQLite和MySQL进行测试，并比较了它们的测试效果。作者使用了10个已知的性能问题来评估这些工具的测试效果，并计算了它们的测试时间和覆盖率。</p>
+<p>Sqirrel在40天内发现了四个流行的DBMSs上的63个内存错误问题，其中包括51个SQLite错误、7个MySQL错误和5个MariaDB错误。综合实验各项指标，其结果表明Sqirrel在语法正确性测试、语义正确性测试和性能测试中都表现出色，能够有效地检测出各种类型的错误和缺陷，并且具有较高的测试效率和覆盖率。</p>
+<p>最后，对文章所做的研究不足之处及未来可以继续开展工作总结如下：</p>
+<ol>
+<li><p>提高测试效率：本文中提到Sqirrel的测试效率相对较低，需要较长的时间来生成测试用例。结合我自身复现代码的过程也印证了这一点。因此，未来的工作可以探索如何提高测试效率，例如使用并行化技术或者优化测试用例生成算法。</p>
+</li>
+<li><p>提高测试覆盖率：本文中Sqirrel的测试覆盖率仍有提升空间。未来的工作可以探索如何提高测试覆盖率，例如使用符号执行技术或者结合其他测试方法。</p>
+</li>
+<li><p>改进测试用例生成算法：本文中使用的测试用例生成算法可以生成语法正确的测试用例，但是无法保证语义正确。未来的工作可以探索如何改进测试用例生成算法，以提高测试用例的语义正确性。</p>
+</li>
+<li><p>扩展到其他类型的漏洞：本文中Sqirrel主要用于检测内存损坏漏洞，而数据库管理系统中存在的漏洞多种多样，面对的外部威胁更是防不胜防。未来的工作可以探索如何将Squirrel扩展到检测其他类型的漏洞，例如SQL注入漏洞或者逻辑漏洞等。</p>
+</li>
+</ol>
 
   </div>
   
@@ -2776,10 +2903,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-07-25T22:02:32+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-09-23T23:43:09+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2023年7月25日</p>
+    <p>更新于：2023年9月23日</p>
   </a>
 </div>
 
@@ -2788,8 +2915,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
   
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/HelloWorld/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>HelloWorld</p></a></div>
-  <span hidden itemprop="keywords">HelloWorld</span>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Fuzzing/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Fuzzing</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Database/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Database</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/SQL/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>SQL</p></a></div>
+  <span hidden itemprop="keywords">Fuzzing Database SQL</span>
 
 
         
@@ -2807,13 +2934,20 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/2023/07/19/%E5%AF%86%E7%A0%81%E5%AD%A6%E7%AC%94%E8%AE%B0/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>密码学笔记</p>
+        <a class='prev' href='/2023/08/10/004YayoiKusama/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>观展游记之「草间弥生：一九四五年至今」</p>
+          <p class='content'>3月3日，我在香港M+艺术馆参观了《草间弥生：一九四五年至今》这个展，很喜欢。这篇游记主要记录和回顾观展的内容。（该展已于2023年5月14日结束）
+展览官方介绍如下：
+「发掘草间弥生超凡绚烂的...</p>
+        </a>
+      
+      
+        <a class='next' href='/2023/07/19/002CryptoNote/'>
+          <p class='title'>密码学笔记<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
           <p class='content'>第一章 引言信息安全基本属性
 机密性 （Confidentiality）保证信息为授权者使用而不泄漏给未经授权者。别人“看不到”或“看不懂”
 认证（Authentication）消息认证，保证消...</p>
         </a>
-      
       
     </div>
   
@@ -2828,7 +2962,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/2023/07/06/Hello%20World%EF%BC%9A%E5%BB%BA%E7%AB%99%E6%97%A5%E5%BF%97/index.html#comments">
+      <meta itemprop="discussionUrl" content="/2023/07/28/003SQUIRREL-review/index.html#comments">
     </span>
     <p ct><i class='fa-solid fa-comments'></i> Comments</p>
     
@@ -2860,9 +2994,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
 
 
-  <div class="">
-    <!-- pjax占位 -->
-  </div>
+  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Abstract"><span class="toc-number">1.</span> <span class="toc-text">Abstract</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Introduction"><span class="toc-number">2.</span> <span class="toc-text">Introduction</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BB%E8%A6%81%E8%B4%A1%E7%8C%AE"><span class="toc-number">2.1.</span> <span class="toc-text">主要贡献</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Problem-Definition"><span class="toc-number">3.</span> <span class="toc-text">Problem Definition</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-Query-Processing-in-DBMS"><span class="toc-number">3.1.</span> <span class="toc-text">1. Query Processing in DBMS</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#How-a-DBMS-handles-SQL-queries"><span class="toc-number">3.1.1.</span> <span class="toc-text">How a DBMS handles SQL queries</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-parse"><span class="toc-number">3.1.1.1.</span> <span class="toc-text">1) parse</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-validation"><span class="toc-number">3.1.1.2.</span> <span class="toc-text">2) validation</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-ptimization"><span class="toc-number">3.1.1.3.</span> <span class="toc-text">3) ptimization</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-execution"><span class="toc-number">3.1.1.4.</span> <span class="toc-text">4) execution</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-Challenges-of-DBMS-Testing"><span class="toc-number">3.2.</span> <span class="toc-text">2 Challenges of DBMS Testing</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Introduce-existing-DBMS-testing-techniques-amp-Illustrate-their-limitations"><span class="toc-number">3.2.1.</span> <span class="toc-text">Introduce existing DBMS testing techniques &amp; Illustrate their limitations</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BB%E8%A6%81%E6%9C%89%E4%B8%A4%E7%A7%8DDBMS%E6%B5%8B%E8%AF%95%E6%96%B9%E6%B3%95%EF%BC%9A"><span class="toc-number">3.2.2.</span> <span class="toc-text">主要有两种DBMS测试方法：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-model-based-generation-%E5%9F%BA%E4%BA%8E%E6%A8%A1%E5%9E%8B%E7%94%9F%E6%88%90"><span class="toc-number">3.2.2.1.</span> <span class="toc-text">1) model-based generation 基于模型生成</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%81%B5%E5%BE%AA%E7%B2%BE%E7%A1%AE%E7%9A%84%E8%AF%AD%E6%B3%95%E6%A8%A1%E5%9E%8B%E4%BB%A5%E7%94%9F%E6%88%90%E8%AF%AD%E6%B3%95%E6%AD%A3%E7%A1%AE%E7%9A%84%E8%BE%93%E5%85%A5"><span class="toc-number">3.2.2.1.1.</span> <span class="toc-text">遵循精确的语法模型以生成语法正确的输入</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-random-mutation-%E9%9A%8F%E6%9C%BA%E5%8F%98%E5%BC%82"><span class="toc-number">3.2.2.2.</span> <span class="toc-text">2) random mutation 随机变异</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%9B%B4%E6%96%B0%E7%8E%B0%E6%9C%89%E8%BE%93%E5%85%A5%E4%BB%A5%E7%94%9F%E6%88%90%E6%96%B0%E8%BE%93%E5%85%A5"><span class="toc-number">3.2.2.2.1.</span> <span class="toc-text">更新现有输入以生成新输入</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-Our-Approach"><span class="toc-number">3.3.</span> <span class="toc-text">3 Our Approach</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Present-our-insight-to-solve-this-problem"><span class="toc-number">3.3.1.</span> <span class="toc-text">Present our insight to solve this problem</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-Generating-Syntax-Correct-Queries"><span class="toc-number">3.3.1.1.</span> <span class="toc-text">1) Generating Syntax-Correct Queries</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-Improving-Semantic-Correctness"><span class="toc-number">3.3.1.2.</span> <span class="toc-text">2) Improving Semantic Correctness</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Overview-of-Sqirrel"><span class="toc-number">4.</span> <span class="toc-text">Overview of Sqirrel</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9B%9B%E4%B8%AA%E7%BB%84%E6%88%90%E9%83%A8%E5%88%86"><span class="toc-number">4.0.0.1.</span> <span class="toc-text">四个组成部分</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%BB%E8%A6%81%E6%B5%81%E7%A8%8B"><span class="toc-number">4.0.0.2.</span> <span class="toc-text">主要流程</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Intermediate-Representation-%E4%B8%AD%E9%97%B4%E8%A1%A8%E7%A4%BA%EF%BC%88IR-Translator%EF%BC%89"><span class="toc-number">5.</span> <span class="toc-text">Intermediate Representation 中间表示（IR Translator）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Syntax-Preserving-Mutation-%E8%AF%AD%E6%B3%95%E4%BF%9D%E7%95%99%E7%AA%81%E5%8F%98"><span class="toc-number">6.</span> <span class="toc-text">Syntax-Preserving Mutation 语法保留突变</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Token%E5%8C%BA%E5%88%86"><span class="toc-number">6.0.1.</span> <span class="toc-text">Token区分</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-Structure-Data-Separation"><span class="toc-number">6.1.</span> <span class="toc-text">1) Structure-Data Separation</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-Type-Based-Mutation"><span class="toc-number">6.2.</span> <span class="toc-text">2) Type-Based Mutation</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E7%A7%8D%E5%8F%98%E5%BC%82"><span class="toc-number">6.2.1.</span> <span class="toc-text">三种变异</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Insertion%E6%8F%92%E5%85%A5"><span class="toc-number">6.2.1.1.</span> <span class="toc-text">Insertion插入</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Replacement%E6%9B%BF%E6%8D%A2"><span class="toc-number">6.2.1.2.</span> <span class="toc-text">Replacement替换</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Deletion%E5%88%A0%E9%99%A4"><span class="toc-number">6.2.1.3.</span> <span class="toc-text">Deletion删除</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%AA%8C%E8%AF%81%E8%AF%AD%E6%B3%95%E6%AD%A3%E7%A1%AE"><span class="toc-number">6.2.1.4.</span> <span class="toc-text">验证语法正确</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Semantics-Guided-Instantiation-%E8%AF%AD%E4%B9%89%E5%BC%95%E5%AF%BC%E5%AE%9E%E4%BE%8B%E5%8C%96"><span class="toc-number">7.</span> <span class="toc-text">Semantics-Guided Instantiation 语义引导实例化</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-Data-Dependency-Inference"><span class="toc-number">7.1.</span> <span class="toc-text">1) Data Dependency Inference</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-IR-Instantiation"><span class="toc-number">7.2.</span> <span class="toc-text">2) IR Instantiation</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%AA%8C%E8%AF%81%E8%AF%AD%E4%B9%89%E6%AD%A3%E7%A1%AE"><span class="toc-number">7.2.0.1.</span> <span class="toc-text">验证语义正确</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Implementation-amp-Evaluation"><span class="toc-number">8.</span> <span class="toc-text">Implementation &amp; Evaluation</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Discussion"><span class="toc-number">9.</span> <span class="toc-text">Discussion</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-DBMS-Specific-Logic"><span class="toc-number">9.0.1.</span> <span class="toc-text">1. DBMS-Specific Logic</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-Relation-Rule-Construction"><span class="toc-number">9.0.2.</span> <span class="toc-text">2. Relation-Rule Construction</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-Collisions-in-Code-Coverage"><span class="toc-number">9.0.3.</span> <span class="toc-text">3. Collisions in Code-Coverage</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-Alternative-Feedback-Mechanisms"><span class="toc-number">9.0.4.</span> <span class="toc-text">4. Alternative Feedback Mechanisms</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Related-Work-amp-Conclusion"><span class="toc-number">10.</span> <span class="toc-text">Related Work &amp; Conclusion</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Summary"><span class="toc-number">11.</span> <span class="toc-text">Summary</span></a></li></ol>
+    </div>
+  </section>
 
   
 
@@ -3365,7 +3509,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
   <script>
-  let imgs = ["https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232304843.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232305972.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232304301.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232304237.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232302541.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232303575.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232254011.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232305394.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232303572.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232304216.jpg"];
+  let imgs = ["https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232303575.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232254011.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232304301.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232304216.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232305972.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232303572.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232304237.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232305394.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232304843.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232302541.jpg"];
   let index = 0;
   let IntervalParallax = null;
 
@@ -3594,7 +3738,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"iullius’ Blog","url":"https://kievvv.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"iullius","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://kievvv.github.io/","sameAs":["https://github.com/volantis-x"],"description":"Personal Blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://kievvv.github.io/","name":"iullius’ Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://kievvv.github.io/categories/杂谈/","name":"杂谈"}},{"@type":"ListItem","position":3,"item":{"@id":"https://kievvv.github.io/2023/07/06/Hello World：建站日志/","name":"Hello World：建站日志"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"iullius’ Blog","url":"https://kievvv.github.io/","keywords":"iullius","description":"Personal Blog","author":{"@type":"Person","name":"iullius","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://kievvv.github.io/","description":"Personal Blog"},"publisher":{"@type":"Organization","name":"iullius’ Blog","url":"https://kievvv.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://kievvv.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Hello World：建站日志","description":"Personal Blog","inLanguage":["zh-CN","en","zh-HK","zh-TW","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://kievvv.github.io/2023/07/06/Hello%20World%EF%BC%9A%E5%BB%BA%E7%AB%99%E6%97%A5%E5%BF%97/"},"author":{"@type":"Person","name":"iullius","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://kievvv.github.io/"},"publisher":{"@type":"Organization","name":"iullius’ Blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://kievvv.github.io/2023/07/06/Hello%20World%EF%BC%9A%E5%BB%BA%E7%AB%99%E6%97%A5%E5%BF%97/","wordCount":0,"datePublished":"2023-07-06T13:36:56.025Z","dateModified":"2023-07-25T14:02:32.586Z","articleSection":"杂谈","keywords":"HelloWorld","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"iullius’ Blog","url":"https://kievvv.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"iullius","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://kievvv.github.io/","sameAs":["https://github.com/volantis-x"],"description":"Personal Blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://kievvv.github.io/","name":"iullius’ Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://kievvv.github.io/categories/笔记/","name":"笔记"}},{"@type":"ListItem","position":3,"item":{"@id":"https://kievvv.github.io/2023/07/28/003SQUIRREL-review/","name":"SQUIRREL：论文随记"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"iullius’ Blog","url":"https://kievvv.github.io/","keywords":"iullius","description":"Personal Blog","author":{"@type":"Person","name":"iullius","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://kievvv.github.io/","description":"Personal Blog"},"publisher":{"@type":"Organization","name":"iullius’ Blog","url":"https://kievvv.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://kievvv.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"SQUIRREL：论文随记","description":"Personal Blog","inLanguage":["zh-CN","en","zh-HK","zh-TW","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://kievvv.github.io/2023/07/28/003SQUIRREL-review/"},"author":{"@type":"Person","name":"iullius","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://kievvv.github.io/"},"publisher":{"@type":"Organization","name":"iullius’ Blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://kievvv.github.io/2023/07/28/003SQUIRREL-review/","wordCount":0,"datePublished":"2023-07-27T19:28:54.000Z","dateModified":"2023-09-23T15:43:09.296Z","articleSection":"笔记","keywords":"Fuzzing,Database,SQL","image":{"@type":"ImageObject","url":"https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232341319.png","width":1024,"height":768}}]</script>
 
 
 
