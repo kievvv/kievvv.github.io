@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.8.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="https://kievvv.github.io/tags/helloworld/"/>
+  
+  <link rel="canonical" href="https://kievvv.github.io/2023/11/08/007shamir-pic-secret-sharing/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -35,19 +35,22 @@
   <!-- feed -->
       <link rel="alternate" href="/atom.xml" title="iullius’ Blog" type="application/atom+xml">
   <!-- 页面元数据 -->
-  <title>标签：HelloWorld - iullius’ Blog</title>
-  <meta name="keywords" content="iullius">
+  <title>基于Shamir门限的彩色图片秘密共享方案 - iullius’ Blog</title>
+  <meta name="keywords" content="Cryptography,Privacy Protection,iullius">
   <meta desc name="description" content="Personal Blog - iullius - iullius’ Blog">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="iullius’ Blog">
-<meta property="og:url" content="https://kievvv.github.io/tags/HelloWorld/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="基于Shamir门限的彩色图片秘密共享方案">
+<meta property="og:url" content="https://kievvv.github.io/2023/11/08/007Shamir-pic-secret-sharing/index.html">
 <meta property="og:site_name" content="iullius’ Blog">
-<meta property="og:description" content="Personal Blog">
+<meta property="og:description" content="Shamir门限秘密共享方案Shamir的秘密共享（Shamir’s Secret Sharing）是一个将秘密分解为多个部分的方法，这样只有得到一定数量的部分才能重新构建该秘密。它是基于多项式插值，尤其是Lagrange插值原理。 在秘密共享的场景中，Shamir的方法允许一个秘密被分解为n个部分，其中任何k个部分可以用来重新构建原始的秘密，但k-1个部分或更少的部分没有任何信息。 以下是该方法">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2023-11-08T01:35:49.000Z">
+<meta property="article:modified_time" content="2023-11-08T02:13:40.337Z">
 <meta property="article:author" content="iullius">
-<meta property="article:tag" content="iullius">
+<meta property="article:tag" content="Cryptography">
+<meta property="article:tag" content="Privacy Protection">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2511,7 +2514,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="none" class='cover-wrapper  search' style="display: none;">
+      <div id="none" class='cover-wrapper post search' style="display: none;">
         
   <div id="parallax-window"></div>
 
@@ -2600,25 +2603,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="safearea">
         <div class="body-wrapper">
           
-
 <div id="l_main" class=''>
-  
-    
-      
-  <section class="post-list">
-    
-      
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://kievvv.github.io/2023/07/06/001HelloWorldLog/">
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="https://kievvv.github.io/2023/11/08/007Shamir-pic-secret-sharing/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="iullius’ Blog">
   </span>
@@ -2627,80 +2614,351 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="Personal Blog">
   </span>
   
+
+
   
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/07/06/001HelloWorldLog/"  itemprop="url">
-        Hello World：建站日志
+    <div class='headimg-div'>
+      <a class='headimg-a'>
+        <img itemprop="image" class='headimg' src='https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202311081005251.png'/>
       </a>
-    </h2>
+    </div>
   
-  <div class='md article-desc' itemprop="articleBody">
+  <div class="article-meta" id="top">
     
-      
-        2023.7.6  21:38First Blog!
+    
+    
+      <h1 class="title" itemprop="name headline">
+        基于Shamir门限的彩色图片秘密共享方案
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232347378.jpg" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232347378.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">iullius</p>
+  </a>
+</div>
 
-2023.7.18
-更新主题：
-volantis
-
-2023.7.19
-小细节更新：
-新增评论系统、启用滚动封面等
-（图片文件过大导致加载较慢..
-
-2023.7.25
-绑定域名：iullius.com
-欢迎常来！
-
-      
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/%E9%A1%B9%E7%9B%AE/">项目</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/%E9%A1%B9%E7%9B%AE/" itemprop="url"><span itemprop="name">项目</span></a>
+      </span>
     
   </div>
-  
-    <div class='meta-v3' line_style='dashed'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-07-06T21:36:56+08:00">2023-07-06</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%9D%82%E8%B0%88/">杂谈</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E6%9D%82%E8%B0%88/" itemprop="url"><span itemprop="name">杂谈</span></a>
-            </span>
+
+
           
         
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-11-08T09:35:49+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2023年11月8日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
       </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <h1 id="Shamir门限秘密共享方案"><a href="#Shamir门限秘密共享方案" class="headerlink" title="Shamir门限秘密共享方案"></a>Shamir门限秘密共享方案</h1><p>Shamir的秘密共享（Shamir’s Secret Sharing）是一个将秘密分解为多个部分的方法，这样只有得到一定数量的部分才能重新构建该秘密。它是基于多项式插值，尤其是Lagrange插值原理。</p>
+<p>在秘密共享的场景中，Shamir的方法允许一个秘密被分解为n个部分，其中任何k个部分可以用来重新构建原始的秘密，但k-1个部分或更少的部分没有任何信息。</p>
+<p>以下是该方法的基本原理和流程：</p>
+<ol>
+<li><p>选择秘密: 假设我们有一个秘密S，并且S是一个数字。在数字图像中，这一数字可认为是图片中各个像素值。</p>
+</li>
+<li><p>定义多项式: 选择一个k-1阶多项式：<br>$$<br>f(x)&#x3D;a_0+a_1x+a_2x^2+…+a_{k-1}x^{k-1}<br>$$</p>
+</li>
+</ol>
+<p>其中，$a_0&#x3D;S$(秘密），并且$a_0,a_2,…,a_{k-1}$是随机数。</p>
+<ol start="3">
+<li><p>生成分享：对于共享秘密的每个接收者，选择一个不同的x值，并计算多项式f(x)在这个x值上的值。这将生成一系列的(x, y)坐标，其中x是x值，y是f(x)的结果。</p>
+</li>
+<li><p>分发分享：将每个接收者的(x, y)坐标提供给相应的接收者。每个接收者将获得一个坐标点，这个坐标点包含了足够的信息来还原出原始的秘密。</p>
+</li>
+<li><p>重构秘密：为了还原原始秘密S，至少需要k个坐标点。这可以通过使用拉格朗日插值法来实现，从这些坐标点中重建多项式f(x)，并找到其常数项$a_0$，即原始秘密S。</p>
+</li>
+</ol>
+<h1 id="改进部分"><a href="#改进部分" class="headerlink" title="改进部分"></a>改进部分</h1><p>课上示例为灰度图片，要实现彩色图片秘密共享其实也很简单，把彩色图片分成RGB三个通道分别按灰度图片的方法处理，三通道合成为一个其中一个子秘密，共n个子秘密，选择其中任意k个（门限）即可恢复原图。</p>
+<p>在解密实现上，使用了拉格朗日插值函数进行逐比特差值恢复。在拉格朗日函数的实现上进行了优化改进，由于原始的浮点数计算将会产生小数，在恢复为像素时由于近似运算会使恢复的秘密图片产生可察觉的视觉差异。这里将原拉格朗日函数中的除法修改为与其模逆元的乘法，避免了小数的出现，由于原本像素模数256不是质数，在计算模逆元时会带来一定麻烦，因此模数选用了大小近似但是质数的257，在此基础上可以使用费马小定理计算模逆元，提高了算法的效率，从测试结果看，这一替换方法在秘密恢复过程中不会产生可察觉的视觉影响。</p>
+<h1 id="效果展示"><a href="#效果展示" class="headerlink" title="效果展示"></a>效果展示</h1><p>采用 3&#x2F;5 门限共享  ，原图如下：</p>
+<p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202311081004392.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202311081004392.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20231108100421288"></p>
+<p>加密生成的5个子秘密如下：</p>
+<p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202311081005251.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202311081005251.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20231108100503126"></p>
+<p>对以上彩色图像的 5 个子秘密进行了组合遍历测试，即遍历了 5 个子秘密中任意选取 3 个的所有可能情况，测试可视化结果如下：  </p>
+<p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202311081005854.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202311081005854.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20231108100558364"></p>
+<h1 id="源码"><a href="#源码" class="headerlink" title="源码"></a>源码</h1><pre><code class="python">from PIL import Image
+import numpy as np
+
+#--------------------------------参数设定-------------------------------
+n = 5 # 秘密分割份数
+r = 3 # 门限数
+path = &#39;test4.png&#39; # 秘密图片路径
+testNum = 4 # 用于测试图片的命名
+mod = 257 # 模数
+#--------------------------------参数设定-------------------------------
+
+def read_image(path):
+    &#39;&#39;&#39;
+    input: 图片路径
+    output: 图片矩阵的三个通道, 图片矩阵形状
+    &#39;&#39;&#39;
+    img = Image.open(path)
+    img_array = np.asarray(img)
+
+    red_channel = img_array[:,:,0].flatten()
+    green_channel = img_array[:,:,1].flatten()
+    blue_channel = img_array[:,:,2].flatten()
+
+    return red_channel, green_channel, blue_channel, img_array.shape
+
+def polynomial(img, n, r):
+    &#39;&#39;&#39;
+    input:
+        img: 输入图像，它应该是一个2D numpy数组。
+        n: 想生成的图像的数量。
+        r: 多项式的阶数。
+    output:
+        一个形状为 (n, num_pixels) 的numpy数组，其中每一行代表一个生成的图像
+    &#39;&#39;&#39;
+    num_pixels = img.shape[0]
+    coef = np.random.randint(low = 0, high = mod, size = (num_pixels, r - 1))
+    gen_imgs = []
+    for i in range(1, n + 1):#子秘密
+        base = np.array([i ** j for j in range(1, r)])
+        base = np.matmul(coef, base)
+        img_ = img + base
+        img_ = img_ % mod
+        gen_imgs.append(img_)
+
+    return np.array(gen_imgs)
+
+def lagrange(x, y, num_points, x_test):
+    l = np.zeros(shape=(num_points, ))
+
+    for k in range(num_points):
+        l[k] = 1
+        for k_ in range(num_points):
+            if k != k_:
+                num = (x_test - x[k_]) % mod
+                den = (x[k] - x[k_]) % mod
+                inverse_den = pow(int(den), mod-2, mod)
+                l[k] = (l[k] * num * inverse_den) % mod
+
+    L = 0
+    for i in range(num_points):
+        L = (L + y[i]*l[i]) % mod
+    return L
+
+
+def decode(imgs, index, r, n):
+    assert imgs.shape[0] &gt;= r
+    x = np.array(index)
+    dim = imgs.shape[1]
+    img = []
+    for i in range(dim):
+        y = imgs[:, i]
+        pixel = lagrange(x, y, r, 0) % mod
+        img.append(pixel)
+    return np.array(img)
+
+
+if __name__ == &quot;__main__&quot;:
+#------------------------------------加 密------------------------------------
+
+    print(&quot;**************&quot;)
+    print(&quot;Encrypt begin.&quot;)
+    print(&quot;**************&quot;)
+    r_channel, g_channel, b_channel, shape = read_image(path)
+
+    gen_imgs_r = polynomial(r_channel, n = n, r = r)
+    gen_imgs_g = polynomial(g_channel, n = n, r = r)
+    gen_imgs_b = polynomial(b_channel, n = n, r = r)
+
+    for i in range(n):
+        # 将三个通道合并，得到其中一个子秘密
+        combined_img = np.stack((
+            gen_imgs_r[i].reshape(shape[0], shape[1]),
+            gen_imgs_g[i].reshape(shape[0], shape[1]),
+            gen_imgs_b[i].reshape(shape[0], shape[1])
+        ), axis=-1)
+        Image.fromarray(combined_img.astype(np.uint8)).save(f&quot;test&#123;testNum&#125;_&#123;i+1&#125;.jpeg&quot;)
+        print(f&quot;test&#123;testNum&#125;_&#123;i+1&#125;.jpeg is saved.&quot;)
+
+#------------------------------------加 密------------------------------------
+
+
+#------------------------------------解 密------------------------------------
+    print(&quot;**************&quot;)
+    print(&quot;Decrypt begin.&quot;)
+    print(&quot;**************&quot;)
+
+    # 遍历所有图片组合以验证解密效果
+    for i in range(n):
+        for j in range(i+1, n):
+            for k in range(j+1, n):
+                # 选择子秘密和对应的x值
+                selected_subsecrets = [i, j,k]
+                selected_x_values = [i+1, j+1,k+1]
+                # 解密
+                origin_img_r = decode(gen_imgs_r[selected_subsecrets, :], selected_x_values, r=r, n=n)
+                origin_img_g = decode(gen_imgs_g[selected_subsecrets, :], selected_x_values, r=r, n=n)
+                origin_img_b = decode(gen_imgs_b[selected_subsecrets, :], selected_x_values, r=r, n=n)
+
+                # 将解密结果合并
+                combined_origin_img = np.stack((
+                    origin_img_r.reshape(shape[0], shape[1]),
+                    origin_img_g.reshape(shape[0], shape[1]),
+                    origin_img_b.reshape(shape[0], shape[1])
+                ), axis=-1)
+
+                # 保存图像，名称包含所选的子秘密的编号
+                filename = f&quot;test&#123;testNum&#125;_recovered_&#123;i+1&#125;_&#123;j+1&#125;_&#123;k+1&#125;.jpeg&quot;
+                Image.fromarray(combined_origin_img.astype(np.uint8)).save(filename)
+                print(f&quot;&#123;filename&#125; is saved.&quot;)
+
+
+    # 挑选制定的子秘密进行解密，如下标第1,2,4张，对应x值为2,3,5
+    # selected_subsecrets = [1,2,4]
+    # selected_x_values = [2,3,5]
+
+    # origin_img_r = decode(gen_imgs_r[selected_subsecrets, :], selected_x_values, r=r, n=n)
+    # origin_img_g = decode(gen_imgs_g[selected_subsecrets, :], selected_x_values, r=r, n=n)
+    # origin_img_b = decode(gen_imgs_b[selected_subsecrets, :], selected_x_values, r=r, n=n)
+
+
+    # 将解密结果合并
+    # combined_origin_img = np.stack((
+    #     origin_img_r.reshape(shape[0], shape[1]),
+    #     origin_img_g.reshape(shape[0], shape[1]),
+    #     origin_img_b.reshape(shape[0], shape[1])
+    # ), axis=-1)
+
+    # Image.fromarray(combined_origin_img.astype(np.uint8)).save(f&quot;test&#123;testNum&#125;_origin.jpeg&quot;)
+
+    #------------------------------------解 密------------------------------------
+</code></pre>
+
+  </div>
+  
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
       
-        <div>
-          <a class='readmore' href='/2023/07/06/001HelloWorldLog/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+      <!-- 打赏组件 -->
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-11-08T10:13:40+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2023年11月8日</p>
+  </a>
 </div>
 
-          </div>
         
       
-    
-  </section>
+        
+          
   
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Cryptography/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Cryptography</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Privacy-Protection/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Privacy Protection</p></a></div>
+  <span hidden itemprop="keywords">Cryptography Privacy Protection</span>
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
     
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/2023/08/24/006MatlabNote/'>
+          <p class='title'>Matlab基础语法备忘录<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>MatLab的索引是从1开始的
+
+清空
+clc 清空命令行clear all 清空工作区所有变量
+
+变量命名区分大小写，长度&lt;&#x3D;63
+
+%单行注释%%多行注释
+
+变量名字以字母开...</p>
+        </a>
+      
+    </div>
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
   
 
 
+  <article class="post white-box shadow floatable blur" id="comments">
+    <span hidden>
+      <meta itemprop="discussionUrl" content="/2023/11/08/007Shamir-pic-secret-sharing/index.html#comments">
+    </span>
+    <p ct><i class='fa-solid fa-comments'></i> Comments</p>
     
-  
+
+    <div id="layoutHelper-comments"></div>
+
+  </article>
+
+
+
+
+
+
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -2709,130 +2967,48 @@ volantis
     
     
       
-<section class="widget blogger desktop mobile pjax">
-  <div class='content'>
     
-      
-        <a class='avatar flat-box circle' href='/about/'>
-          <img no-lazy src='https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232347378.jpg'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-          <h2>iullius</h2>
-        
-        
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fa-solid fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/kievvv"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget category desktop pjax">
-    
-  <header>
-    
-      <a href='/blog/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>Categories</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/%E6%9D%82%E8%B0%88/" href="/categories/%E6%9D%82%E8%B0%88/"
-            active-action="action-categoriesE69D82E8B088"
-            ><div class='name'>杂谈</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E6%B8%B8%E8%AE%B0/" href="/categories/%E6%B8%B8%E8%AE%B0/"
-            active-action="action-categoriesE6B8B8E8AEB0"
-            ><div class='name'>游记</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E7%AC%94%E8%AE%B0/" href="/categories/%E7%AC%94%E8%AE%B0/"
-            active-action="action-categoriesE7AC94E8AEB0"
-            ><div class='name'>笔记</div><div class='badge'>(4)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E9%A1%B9%E7%9B%AE/" href="/categories/%E9%A1%B9%E7%9B%AE/"
-            active-action="action-categoriesE9A1B9E79BAE"
-            ><div class='name'>项目</div><div class='badge'>(1)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget tagcloud desktop mobile pjax">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>Tags</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/Art/" style="font-size: 14px; color: #999">Art</a> <a href="/tags/Cryptography/" style="font-size: 24px; color: #555">Cryptography</a> <a href="/tags/Database/" style="font-size: 14px; color: #999">Database</a> <a href="/tags/Fuzzing/" style="font-size: 14px; color: #999">Fuzzing</a> <a href="/tags/HelloWorld/" style="font-size: 14px; color: #999">HelloWorld</a> <a href="/tags/Matlab/" style="font-size: 14px; color: #999">Matlab</a> <a href="/tags/Netflix/" style="font-size: 14px; color: #999">Netflix</a> <a href="/tags/Photos/" style="font-size: 14px; color: #999">Photos</a> <a href="/tags/Privacy-Protection/" style="font-size: 14px; color: #999">Privacy Protection</a> <a href="/tags/SQL/" style="font-size: 14px; color: #999">SQL</a>
-    </div>
-  </section>
-
-
-    
-  
-
   
 
 
 <div class="widget-sticky pjax">
 
+  
+  
+
+
+  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Shamir%E9%97%A8%E9%99%90%E7%A7%98%E5%AF%86%E5%85%B1%E4%BA%AB%E6%96%B9%E6%A1%88"><span class="toc-number">1.</span> <span class="toc-text">Shamir门限秘密共享方案</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%94%B9%E8%BF%9B%E9%83%A8%E5%88%86"><span class="toc-number">2.</span> <span class="toc-text">改进部分</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%88%E6%9E%9C%E5%B1%95%E7%A4%BA"><span class="toc-number">3.</span> <span class="toc-text">效果展示</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%BA%90%E7%A0%81"><span class="toc-number">4.</span> <span class="toc-text">源码</span></a></li></ol>
+    </div>
+  </section>
+
+  
+
 </div>
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -2860,13 +3036,14 @@ volantis
 </aside>
 
 
+
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3413,6 +3590,60 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 <!-- pjax 标签必须存在于所有页面 否则 pjax error -->
 <pjax>
 
+        <script>
+  // https://github.com/theme-next/hexo-theme-next/blob/master/layout/_third-party/math/mathjax.swig
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = "https://unpkg.com/volantis-static@0.0.1654736714924/libs/mathjax/es5/tex-mml-chtml.js";
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    // 文章章节标题不能为 “MathJax” ，否则会报错。
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typesetPromise();
+  }
+</script>
+
+
+
 </pjax>
 
 <script>
@@ -3544,7 +3775,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"iullius’ Blog","url":"https://kievvv.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"iullius","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://kievvv.github.io/","sameAs":["https://github.com/volantis-x"],"description":"Personal Blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://kievvv.github.io/","name":"iullius’ Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://kievvv.github.io/tags/HelloWorld/","name":"HelloWorld"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"iullius’ Blog","url":"https://kievvv.github.io/","keywords":"iullius","description":"Personal Blog","author":{"@type":"Person","name":"iullius","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://kievvv.github.io/","description":"Personal Blog"},"publisher":{"@type":"Organization","name":"iullius’ Blog","url":"https://kievvv.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://kievvv.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"Personal Blog","inLanguage":["zh-CN","en","zh-HK","zh-TW","default"],"mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"iullius","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://kievvv.github.io/"},"publisher":{"@type":"Organization","name":"iullius’ Blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"iullius’ Blog","url":"https://kievvv.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"iullius","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://kievvv.github.io/","sameAs":["https://github.com/volantis-x"],"description":"Personal Blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://kievvv.github.io/","name":"iullius’ Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://kievvv.github.io/categories/项目/","name":"项目"}},{"@type":"ListItem","position":3,"item":{"@id":"https://kievvv.github.io/2023/11/08/007Shamir-pic-secret-sharing/","name":"基于Shamir门限的彩色图片秘密共享方案"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"iullius’ Blog","url":"https://kievvv.github.io/","keywords":"iullius","description":"Personal Blog","author":{"@type":"Person","name":"iullius","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://kievvv.github.io/","description":"Personal Blog"},"publisher":{"@type":"Organization","name":"iullius’ Blog","url":"https://kievvv.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://kievvv.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"基于Shamir门限的彩色图片秘密共享方案","description":"Personal Blog","inLanguage":["zh-CN","en","zh-HK","zh-TW","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://kievvv.github.io/2023/11/08/007Shamir-pic-secret-sharing/"},"author":{"@type":"Person","name":"iullius","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://kievvv.github.io/"},"publisher":{"@type":"Organization","name":"iullius’ Blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://kievvv.github.io/2023/11/08/007Shamir-pic-secret-sharing/","wordCount":0,"datePublished":"2023-11-08T01:35:49.000Z","dateModified":"2023-11-08T02:13:40.337Z","articleSection":"项目","keywords":"Cryptography,Privacy Protection","image":{"@type":"ImageObject","url":"https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202311081005251.png","width":1024,"height":768}}]</script>
 
 
 
