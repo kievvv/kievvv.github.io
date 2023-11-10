@@ -4,7 +4,7 @@
   <url>
     <loc>https://kievvv.github.io/moments/index.html</loc>
     
-    <lastmod>2023-11-09</lastmod>
+    <lastmod>2023-11-10</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -126,6 +126,13 @@
   </url>
   
   <url>
+    <loc>https://kievvv.github.io/tags/Cryptography/</loc>
+    <lastmod>2023-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://kievvv.github.io/tags/Fuzzing/</loc>
     <lastmod>2023-11-10</lastmod>
     <changefreq>weekly</changefreq>
@@ -147,6 +154,13 @@
   </url>
   
   <url>
+    <loc>https://kievvv.github.io/tags/Netflix/</loc>
+    <lastmod>2023-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://kievvv.github.io/tags/Art/</loc>
     <lastmod>2023-11-10</lastmod>
     <changefreq>weekly</changefreq>
@@ -161,21 +175,7 @@
   </url>
   
   <url>
-    <loc>https://kievvv.github.io/tags/Cryptography/</loc>
-    <lastmod>2023-11-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://kievvv.github.io/tags/Matlab/</loc>
-    <lastmod>2023-11-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://kievvv.github.io/tags/Netflix/</loc>
     <lastmod>2023-11-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
