@@ -126,13 +126,6 @@
   </url>
   
   <url>
-    <loc>https://kievvv.github.io/tags/Cryptography/</loc>
-    <lastmod>2023-12-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://kievvv.github.io/tags/Fuzzing/</loc>
     <lastmod>2023-12-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -148,6 +141,13 @@
   
   <url>
     <loc>https://kievvv.github.io/tags/SQL/</loc>
+    <lastmod>2023-12-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://kievvv.github.io/tags/Cryptography/</loc>
     <lastmod>2023-12-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
