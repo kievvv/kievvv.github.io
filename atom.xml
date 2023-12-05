@@ -6,7 +6,7 @@
   <link href="https://kievvv.github.io/atom.xml" rel="self"/>
   
   <link href="https://kievvv.github.io/"/>
-  <updated>2023-11-08T02:22:34.390Z</updated>
+  <updated>2023-12-05T15:50:01.705Z</updated>
   <id>https://kievvv.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Bitcoin: A Peer-to-Peer Electronic Cash System-论文随记</title>
+    <link href="https://kievvv.github.io/2023/12/05/008review-Bitcoin/"/>
+    <id>https://kievvv.github.io/2023/12/05/008review-Bitcoin/</id>
+    <published>2023-12-05T15:49:00.000Z</published>
+    <updated>2023-12-05T15:50:01.705Z</updated>
+    
+    <content type="html"><![CDATA[<p>互联网上的商务活动几乎完全依赖于作为值得信赖的第三方的金融机构来处理电子支付。尽管这个系统对大多数交易来说运作良好，但仍然存在基于信任的模型固有的弱点。由于金融机构无法避免调解争端，完全不可逆转的交易并非真正可能。调解的成本增加了交易成本，限制了最小实际交易规模，并削减了小额随意交易的可能性。同时，无法进行不可逆转支付的能力丧失也带来了更广泛的代价。由于存在撤销的可能性，对信任的需求扩散开来。商家必须对其客户保持警惕，要求提供比他们实际需要的更多信息。一定比例的欺诈被接受为不可避免。这些成本和支付的不确定性可以通过使用实物货币进行面对面交易来避免，但在没有值得信赖的第三方的情况下，通过通信渠道进行支付的机制并不存在。</p><p>需要一种基于加密证明而不是信任的电子支付系统，使任何两个愿意的当事方能够直接进行交易，而无需信赖第三方。计算上不可逆转的交易将保护卖方免受欺诈，而常规的担保机制可以轻松实施以保护买方。</p><p>在这篇论文中，作者提出了使用点对点分布式时间戳服务器解决双花问题的方案，以生成交易的时间顺序的计算证明。只要诚实的节点总体上控制的CPU算力资源多于任何一组攻击节点的合作，该系统就是安全的。</p><h1 id="交易"><a href="#交易" class="headerlink" title="交易"></a>交易</h1><p><strong>在区块链中，电子货币就是数字签名链，数字签名链就是电子货币。</strong><br>        所有者转移货币给下一个所有者的方式为：将“前一个交易的哈希值+下一个所有者的公钥”进行数字签名，将该数字签名添加到货币末尾。</p><p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202312052340491.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202312052340491.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20231205224011"></p><h2 id="双花问题"><a href="#双花问题" class="headerlink" title="双花问题"></a>双花问题</h2><p>上面的方法可以保证来源的可信，但是没有办法保证该货币只被使用了一次。在现实生活中，一块钱纸币花出去就没了，但比特币是没有实体的，它只是一个哈希签名，如果我使用前一个哈希值+不同人的公钥进行签名，那一个比特币就可以向不同人使用多次。如果一百块可以用两次，那它事实上就变成两百块了，这显然是不科学的，这就是双花问题。<br>比特币解决双花问题的方法就是引入时间戳，将时间纳入哈希签名中，经过验证后，只有交易时间最早的那笔交易是有效的。</p><p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202312052340599.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202312052340599.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20231205224954"></p><p>纳入时间戳之后，事实上形成了一个连续性的系统，每个哈希都包含了上一个哈希的信息，如果系统中有恶意者想插入伪造的区块，那么他将要重做插入位置后面的所有块，他才能得到信任。</p><h1 id="Proof-of-Work"><a href="#Proof-of-Work" class="headerlink" title="Proof-of-Work"></a>Proof-of-Work</h1><p>Proof-of-Work（工作量证明）是在一个区块公布之前，号召所有节点来解决的一个数学难题。解决这个数学难题计算量非常大，非常耗费CPU算力。这个数学难题有且只有唯一的答案，这个答案将会作为这个区块的一部分。之所以需要Proof-of-Work，是为建立一个基于数学的信任机制，假定大多数的节点（的计算资源）都是可信的，那么解决同一个难题，肯定是计算资源多的更快计算出答案（！暂且这样说），最快得出答案将被采纳。<br>这个数学难题的特点是：</p><ol><li><p>基于每一个区块，答案都不一样，且答案唯一</p></li><li><p>解答这一问题无法利用任何先验知识，没有简便解法，其解答过程相当于是在遍历答案的所有取值空间，逐个尝试，<strong>相当于是完全随机的</strong></p></li><li><p>解答问题的计算量非常大，但验证答案是否正确只需要一次哈希运算</p><p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202312052341606.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202312052341606.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pasted image 20231205230730"></p></li></ol><p>答案一经采纳，将作为区块的一部分，该区块的哈希将传给下一个区块。那么如果有人想插入伪造区块，那么他的工作量就是将插入位置之后的所有区块全部重做，将每一个区块中的数学难题全部重新算一遍，这在可信节点占大多的系统中是不可能办到的。</p><h2 id="一定是计算资源多的一方更快计算出答案吗？"><a href="#一定是计算资源多的一方更快计算出答案吗？" class="headerlink" title="一定是计算资源多的一方更快计算出答案吗？"></a>一定是计算资源多的一方更快计算出答案吗？</h2><p>不一定。因为答案是随机分布的，也许计算资源少的恶意节点计算恶意区块时恰巧很快就蒙到正确答案了。如果遇到这种情况，区块链是会接受这个答案的，但随后，可信节点会计算出真答案，恶意答案和真答案不一样，那么区块链会将两个答案同时保留，分别根据两个不同的答案建立下一个区块，区块链从这里开始会产生分支。但是，我们假定可信节点是占大多数的，恶意节点会一两次碰巧，但当链变长之后，其计算速度肯定不如占大多数的可信节点快的。可信链的长度将逐渐超过恶意链，当超过一个阈值时，较短的链（恶意链）将会被去除，只保留长的链。</p><p><em>PoW是区块链信任机制的核心，同时也是区块链灾难般性能的始作俑者，验证一笔交易的算力消耗太大了</em>。<br><em>In case you don’t know, “计算数学难题”这件事就是平时说的“挖矿”，计算出结果就可以将一个区块打包，为了激励矿工，计算出一道数学难题并将区块链打包，就会得到一定比特币作为回报，这就是激励机制。</em></p><h1 id="工作流程"><a href="#工作流程" class="headerlink" title="工作流程"></a>工作流程</h1><ol><li>新交易被广播到所有节点。 </li><li>每个节点将新交易收集到一个块中。 </li><li>每个节点都致力于为其区块寻找困难的工作量证明。 </li><li>当节点找到工作量证明时，它会将块广播到所有节点。 </li><li>仅当块中的所有交易均有效且尚未花费时，节点才会接受该块。</li><li>节点通过使用已接受块的哈希值作为前一个哈希值创建链中的下一个块来表达对块的接受。</li></ol><p>以上是区块链的基本流程，但原文中还有更加深入的内容，如激励、磁盘空间缩减、简化的支付验证、数值的合并与分割、交易隐私、数值计算等，有机会再做展开。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;互联网上的商务活动几乎完全依赖于作为值得信赖的第三方的金融机构来处理电子支付。尽管这个系统对大多数交易来说运作良好，但仍然存在基于信任的模型固有的弱点。由于金融机构无法避免调解争端，完全不可逆转的交易并非真正可能。调解的成本增加了交易成本，限制了最小实际交易规模，并削减了小</summary>
+      
+    
+    
+    
+    <category term="笔记" scheme="https://kievvv.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="Cryptography" scheme="https://kievvv.github.io/tags/Cryptography/"/>
+    
+    <category term="Blockchain" scheme="https://kievvv.github.io/tags/Blockchain/"/>
+    
+  </entry>
   
   <entry>
     <title>基于Shamir门限的彩色图片秘密共享方案</title>
