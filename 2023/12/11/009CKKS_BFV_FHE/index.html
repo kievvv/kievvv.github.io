@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.8.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="https://kievvv.github.io/tags/privacy-protection/"/>
+  
+  <link rel="canonical" href="https://kievvv.github.io/2023/12/11/009ckks_bfv_fhe/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -35,19 +35,22 @@
   <!-- feed -->
       <link rel="alternate" href="/atom.xml" title="iullius’ Blog" type="application/atom+xml">
   <!-- 页面元数据 -->
-  <title>标签：Privacy Protection - iullius’ Blog</title>
-  <meta name="keywords" content="iullius">
+  <title>CKKS与BFV算法的图片同态加密、密态检索与同态解密 - iullius’ Blog</title>
+  <meta name="keywords" content="Cryptography,PrivacyProtection,iullius">
   <meta desc name="description" content="Personal Blog - iullius - iullius’ Blog">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="iullius’ Blog">
-<meta property="og:url" content="https://kievvv.github.io/tags/Privacy-Protection/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CKKS与BFV算法的图片同态加密、密态检索与同态解密">
+<meta property="og:url" content="https://kievvv.github.io/2023/12/11/009CKKS_BFV_FHE/index.html">
 <meta property="og:site_name" content="iullius’ Blog">
-<meta property="og:description" content="Personal Blog">
+<meta property="og:description" content="CKKS与BFV算法的图片同态加密、密态检索与同态解密本文基于TenSEAL库实现，是《数据安全与隐私保护》课程Project，由于是课程作业性质，这里的重点放在了运行效率的比较，没有将server端和client段做严谨区分，context的公私钥分离也略显潦草。本文的源码可以在这里找到，仅供参考，若想深入学习请查看官方文档。 如果不了解同态加密，以下是一些供参考的文章： 同态加密Homomor">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2023-12-11T11:57:43.000Z">
+<meta property="article:modified_time" content="2023-12-11T12:39:27.666Z">
 <meta property="article:author" content="iullius">
-<meta property="article:tag" content="iullius">
+<meta property="article:tag" content="Cryptography">
+<meta property="article:tag" content="PrivacyProtection">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -1760,7 +1763,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1702227173696),
+    lastupdate: new Date(1702298381219),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2511,7 +2514,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="none" class='cover-wrapper  search' style="display: none;">
+      <div id="none" class='cover-wrapper post search' style="display: none;">
         
   <div id="parallax-window"></div>
 
@@ -2600,25 +2603,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="safearea">
         <div class="body-wrapper">
           
-
 <div id="l_main" class=''>
-  
-    
-      
-  <section class="post-list">
-    
-      
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://kievvv.github.io/2023/11/08/007Shamir-pic-secret-sharing/">
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="https://kievvv.github.io/2023/12/11/009CKKS_BFV_FHE/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="iullius’ Blog">
   </span>
@@ -2627,70 +2614,621 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="Personal Blog">
   </span>
   
-  
+
+
   
     <div class='headimg-div'>
-      <a class='headimg-a' href="/2023/11/08/007Shamir-pic-secret-sharing/">
-        <img itemprop="image" class='headimg' alt="基于Shamir门限的彩色图片秘密共享方案" src='https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202311081005251.png'/>
+      <a class='headimg-a'>
+        <img itemprop="image" class='headimg' src='https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202312112020308.png'/>
       </a>
     </div>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/11/08/007Shamir-pic-secret-sharing/"  itemprop="url">
-        基于Shamir门限的彩色图片秘密共享方案
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
     
-      
-        Shamir门限秘密共享方案Shamir的秘密共享（Shamir’s Secret Sharing）是一个将秘密分解为多个部分的方法，这样只有得到一定数量的部分才能重新构建该秘密。它是基于多项式插值，尤其是Lagrange插值原理。
-在秘密共享的场景中，Shamir的方法允许一个秘密被分解为n个部分，其中任何k个部分可以用来重新构建原始的秘密，但k-1个部分或更少的部分没有任何信息。
-以下是...
-      
     
-  </div>
-  
-    <div class='meta-v3' line_style='dashed'>
-      <div>
+      <h1 class="title" itemprop="name headline">
+        CKKS与BFV算法的图片同态加密、密态检索与同态解密
+      </h1>
+      <div class='new-meta-box'>
         
-        <time itemprop="dateCreated datePublished" datetime="2023-11-08T09:35:49+08:00">2023-11-08</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E9%A1%B9%E7%9B%AE/">项目</a>
           
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E9%A1%B9%E7%9B%AE/" itemprop="url"><span itemprop="name">项目</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2023/11/08/007Shamir-pic-secret-sharing/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232347378.jpg" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232347378.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">iullius</p>
+  </a>
 </div>
 
-          </div>
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/%E7%AC%94%E8%AE%B0/" itemprop="url"><span itemprop="name">笔记</span></a>
+      </span>
+    
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-12-11T19:57:43+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2023年12月11日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <h1 id="CKKS与BFV算法的图片同态加密、密态检索与同态解密"><a href="#CKKS与BFV算法的图片同态加密、密态检索与同态解密" class="headerlink" title="CKKS与BFV算法的图片同态加密、密态检索与同态解密"></a>CKKS与BFV算法的图片同态加密、密态检索与同态解密</h1><p>本文基于<a target="_blank" rel="noopener" href="https://github.com/OpenMined/TenSEAL">TenSEAL</a>库实现，是《数据安全与隐私保护》课程Project，由于是课程作业性质，这里的重点放在了运行效率的比较，没有将server端和client段做严谨区分，context的公私钥分离也略显潦草。本文的源码可以在<a target="_blank" rel="noopener" href="https://github.com/kievvv/ckks_bfv_ImgFHE">这里</a>找到，仅供参考，若想深入学习请查看官方文档。</p>
+<p>如果不了解同态加密，以下是一些供参考的文章：</p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/77478956">同态加密Homomorphic Encryption介绍</a></p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/54484449">全同态加密算法深入解析</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/shn111/article/details/124594241">同态加密详解</a></p>
+<p>这是同态加密实现的经典逻辑框图：</p>
+<img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202312112014663.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202312112014663.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20231211201406187" style="zoom: 67%;" />
+
+<p>以下是正文：</p>
+<h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>全同态加密（Fully Homomorphic Encryption，FHE）是一种密码学技术，允许在加密状态下执行计算操作，而无需解密数据。本实验选用两种常见的全同态加密方案，即CKKS（Cheon-Kim-Kim-Song）和BFV（Brakerski-Vaikuntanathan-Gentry）。</p>
+<h3 id="CKKS（Cheon-Kim-Kim-Song）"><a href="#CKKS（Cheon-Kim-Kim-Song）" class="headerlink" title="CKKS（Cheon-Kim-Kim-Song）"></a>CKKS（Cheon-Kim-Kim-Song）</h3><p>CKKS 是一种基于环的全同态加密方案。环是一种数学结构，允许在加密域上进行多项式运算。CKKS 方案主要用于处理实数和复数，因此在机器学习和数据分析等领域中得到广泛应用。</p>
+<p>主要特点：</p>
+<ul>
+<li>支持加法和乘法运算。</li>
+<li>适用于实数和复数的加密计算。</li>
+<li>允许动态调整安全参数以平衡安全性和性能。</li>
+</ul>
+<h3 id="BFV（Brakerski-Vaikuntanathan-Gentry）"><a href="#BFV（Brakerski-Vaikuntanathan-Gentry）" class="headerlink" title="BFV（Brakerski-Vaikuntanathan-Gentry）"></a>BFV（Brakerski-Vaikuntanathan-Gentry）</h3><p>BFV 是一种基于多项式环的全同态加密方案。它是 Gentry 的经典全同态加密方案的改进版本，旨在提高效率和应用范围。</p>
+<p>主要特点：</p>
+<ul>
+<li>支持加法、乘法和混合运算（同时进行加法和乘法）。</li>
+<li>允许在多项式环上进行计算。</li>
+<li>提供更高的效率和灵活性，适用于更广泛的应用场景。</li>
+</ul>
+<h3 id="TenSEAL"><a href="#TenSEAL" class="headerlink" title="TenSEAL"></a>TenSEAL</h3><p>TenSEAL是一个基于 Microsoft Research 的 Simple Encrypted Arithmetic Library（SEAL）的同态加密库。它是专为支持深度学习任务中的同态加密操作而设计的，与 PySyft 框架集成，以支持联邦学习和安全多方计算。</p>
+<p>主要特点和功能：</p>
+<ol>
+<li><strong>SEAL 基础：</strong> TenSEAL建立在 Microsoft Research 提供的 SEAL 库之上，该库专注于提供同态加密的基础原语。这使得 TenSEAL 可以充分利用 SEAL 的强大功能，同时为用户提供更高层次的接口。</li>
+<li><strong>同态加密支持：</strong> TenSEAL 提供了同态加密的功能，使得用户可以在加密状态下执行计算，而无需解密敏感数据。</li>
+<li><strong>PySyft 集成：</strong> TenSEAL 与 PySyft 框架集成，支持联邦学习和安全多方计算。这使得 TenSEAL 能够与 PySyft 中的其他工具和库协同工作，实现更广泛的隐私保护应用。</li>
+<li><strong>CKKS 和 BFV 算法：</strong> TenSEAL 实现了两种常见的同态加密算法，即 CKKS 和 BFV。这两种算法分别适用于不同的使用场景，CKKS 用于处理实数和复数，而 BFV 用于通用的多项式环上的计算。</li>
+</ol>
+<h2 id="实验内容"><a href="#实验内容" class="headerlink" title="实验内容"></a>实验内容</h2><p><strong>从开源的库中选择一个开源库验证比较不同全同态加密算法的效率。</strong></p>
+<ul>
+<li><strong>场景设置：</strong><br>1）选取M张64*64（或更大的图片）加密存储于数据库 or 文件中；<br>2） 对于一张查询图片，在密态下跟数据库 or文件中加密图像进行匹配。</li>
+<li><strong>要求：</strong><br>1） report实验环境（如，操作系统，CPU型号，内存等）<br>2） report同一开源库中不同FHE算法的计算效率（多测几次求平均）<br>3） 总结分析所测试算法的优劣</li>
+</ul>
+<h2 id="实验环境"><a href="#实验环境" class="headerlink" title="实验环境"></a>实验环境</h2><table>
+<thead>
+<tr>
+<th align="center">操作系统</th>
+<th align="center">CPU型号</th>
+<th align="center">内存</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Linux Ubuntu 22.04.3</td>
+<td align="center">AMD Ryzen 7 5800H(16 CPUs)</td>
+<td align="center">16Gb</td>
+</tr>
+</tbody></table>
+<p>本实验的图片数据集使用CelebA数据集，选取前100张做加密测试。</p>
+<h2 id="实验流程与代码实现"><a href="#实验流程与代码实现" class="headerlink" title="实验流程与代码实现"></a>实验流程与代码实现</h2><p>本实验选用基于python的TenSEAL库，实现了CKKS和BFV两种全同态加密算法对批量图片文件的加密、解密、存储和密态检索，同时本实验进行多次测试，比较了同一同态加密库不同算法的加密、解密和检索效率，本部分主要汇报实验和代码实现流程，因为两算法实现流程类似，因此以CKKS为例子进行详细分析。</p>
+<h3 id="主函数"><a href="#主函数" class="headerlink" title="主函数"></a>主函数</h3><p>本代码需包含以下库：</p>
+<pre><code class="python">import tenseal as ts
+
+import sqlite3
+
+from PIL import Image
+
+import numpy as np
+
+import os
+
+from time import time
+</code></pre>
+<p>本代码主函数如下：</p>
+<pre><code class="python">if __name__ == &quot;__main__&quot;:
+    # 定义 CKKS context，并分离公私钥
+    context = ts.context(
+        ts.SCHEME_TYPE.CKKS, poly_modulus_degree=8192, coeff_mod_bit_sizes=[60, 40, 40, 60]
+    )
+    context.generate_galois_keys()
+    context.global_scale = 2**40  # 设置全局缩放因子
+    ckks_secret_key = context.secret_key()
+    context.make_context_public()
+
+    # 创建或连接到 SQLite 数据库
+    conn = sqlite3.connect(&quot;ckks_encrypted_images.db&quot;)
+    cursor = conn.cursor()
+
+    # 创建表以存储加密向量
+    cursor.execute(&#39;&#39;&#39;
+        CREATE TABLE IF NOT EXISTS EncryptedImages (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            encrypted_red BLOB,
+            encrypted_green BLOB,
+            encrypted_blue BLOB
+        )
+    &#39;&#39;&#39;)
+
+    t_start_add = time()
+    # 加密并将每个图像存储到数据库中
+    restored_image()
+    t_end_add = time()
+    print(&quot;ckks同态加密用时: &#123;&#125; ms&quot;.format((t_end_add - t_start_add) * 1000))
+
+    # 提交更改并关闭连接
+    conn.commit()
+    conn.close()
+    print(&quot;加密存储完成&quot;)
+
+    # 读取要查询的图片并加密
+    query_image_path = &quot;./data/5.jpg&quot;
+    encrypted_query_red, encrypted_query_green, encrypted_query_blue = encrypt_image(query_image_path, context, ts.SCHEME_TYPE.CKKS)
+
+    # 连接到 SQLite 数据库
+    conn = sqlite3.connect(&quot;ckks_encrypted_images.db&quot;)
+    cursor = conn.cursor()
+
+    # 查询数据库以获取加密向量
+    cursor.execute(&quot;SELECT encrypted_red, encrypted_green, encrypted_blue FROM EncryptedImages&quot;)
+    rows = cursor.fetchall()
+
+    # 计算余弦相似度并排序
+    similarities = []
+
+    for i, row in enumerate(rows, start=1):
+        # 反序列化数据库中的密文向量
+        serialized_red, serialized_green, serialized_blue = row
+        encrypted_red = ts.ckks_vector_from(context, serialized_red)
+        encrypted_green = ts.ckks_vector_from(context, serialized_green)
+        encrypted_blue = ts.ckks_vector_from(context, serialized_blue)
+
+        # 计算余弦相似度
+        similarity_red = calculate_cosine_similarity(encrypted_query_red, encrypted_red)
+        similarity_green = calculate_cosine_similarity(encrypted_query_green, encrypted_green)
+        similarity_blue = calculate_cosine_similarity(encrypted_query_blue, encrypted_blue)
+
+        # 将三个通道的相似度取平均作为整体相似度
+        average_similarity = (similarity_red + similarity_green + similarity_blue) / 3
+
+        similarities.append((i, average_similarity))
+        print(f&quot;计算第&#123;i&#125;张图片的相似度&quot;)
+
+    # 对相似度进行排序
+    print(&quot;相似度排序中...&quot;)
+    similarities.sort(key=lambda x: abs(x[1] - 1))
+
+    # 输出相似度最接近1的图像编号和相似度值
+    print(similarities)
+    closest_result = similarities[0]
+    print(f&quot;最相似的图片为: &#123;closest_result[0]&#125;, 二者余弦相似度为: &#123;closest_result[1]&#125;&quot;)
+
+    # 关闭数据库连接
+    conn.close()
+
+    # 解密并还原图像
+    decrypt_all_image()
+</code></pre>
+<p>主函数的每一个关键步骤均在代码中以注释说明，其流程可总结如下：</p>
+<ol>
+<li>定义 CKKS context，并分离公私钥；</li>
+<li>创建并连接到 SQLite 数据库，创建表；</li>
+<li>将图片数据进行同态加密，并存储到数据库中；</li>
+<li>读取要查询的图片；</li>
+<li>从数据库中获取加密数据，反序列化，并与查询图片计算余弦相似度，选取相似度最高的图片，输出；</li>
+<li>将数据库中的所有加密数据全部解密，并还原为jpg图片。</li>
+</ol>
+<p>context是TenSEAL库实现同态加密的核心参数，在加密前要根据加密算法对context进行相应初始化，同时需要生成galois_keys、global_scale等特定参数。在默认生成的context中是同时包含公钥和私钥的，为了代码在现实中有使用价值，需要对context进行公私钥分离，使用分离了私钥只含有公钥的context加密，而使用单独保管的私钥进行解密和密文检索等工作。</p>
+<p>本实验使用轻量级的SQLite数据库来存储加密后的密文数据，为将CKKSVector或BFVVector对象存入数据库，需要调用该类的序列化方法，相应地要对数据库中的数据进行解密或密文检索，需要使用反序列化方法后再进行后续操作。</p>
+<h3 id="图像加密存储"><a href="#图像加密存储" class="headerlink" title="图像加密存储"></a>图像加密存储</h3><p>本实验的图像加密存储分为图像加密和图像存储两部分，在代码实现中也分为restored_image()和encrypt_image两个函数，restored_image函数中会调用encrypt_image函数，restored_image函数实现如下：</p>
+<pre><code class="python">def restored_image():
+    # 加密并将每个图像存储到数据库中
+    for i in range(1, 101):  # 读取图片
+        image_path = f&quot;./data/&#123;i&#125;.jpg&quot;
+        values_red, values_green, values_blue = encrypt_image(image_path, context, ts.SCHEME_TYPE.CKKS)
+
+        # 将加密向量的值序列化
+        serialized_red = values_red.serialize()
+        serialized_green = values_green.serialize()
+        serialized_blue = values_blue.serialize()
+
+        # 将序列化的加密向量插入到数据库中
+        cursor.execute(&#39;&#39;&#39;
+        INSERT OR REPLACE INTO EncryptedImages (id, encrypted_red, encrypted_green, encrypted_blue)
+        VALUES (?, ?, ?, ?)
+    &#39;&#39;&#39;, (i, sqlite3.Binary(serialized_red), sqlite3.Binary(serialized_green), sqlite3.Binary(serialized_blue)))
+        print(f&quot;加密存储第&#123;i&#125;张图片&quot;)
+</code></pre>
+<p>这一函数首先从.&#x2F;data文件夹中读取100张图片（本实验中图片数M取100），调用encrypt_image函数得到R、G、B三个加密数据列表，调用序列化方法，然后将加密数据按R、G、B三通道分别存入数据库中。</p>
+<p>encrypt_image函数实现如下：</p>
+<pre><code class="python">def encrypt_image(image_path, context_public, encryption_algorithm):
+    image = Image.open(image_path)
+    image = image.resize((64, 64))  # 调整大小
+    image_array = np.array(image)
+
+    # 分离每个通道
+    red_channel = image_array[:, :, 0].flatten().tolist()
+    green_channel = image_array[:, :, 1].flatten().tolist()
+    blue_channel = image_array[:, :, 2].flatten().tolist()
+
+    # 加密每个通道，使用公钥
+    encrypted_red = ts.ckks_vector(context_public, red_channel)
+    encrypted_green = ts.ckks_vector(context_public, green_channel)
+    encrypted_blue = ts.ckks_vector(context_public, blue_channel)
+
+    return encrypted_red, encrypted_green, encrypted_blue
+</code></pre>
+<p>这一函数获取图片路径后，读取图片并调整图片分辨率（本实验图片分辨率取为64*64），将图片分为R、G、B三通道，分别调用TenSEAL加密方法ts.ckks_vector（或ts.bfv_vector）使用公钥进行加密。</p>
+<h3 id="图像检索"><a href="#图像检索" class="headerlink" title="图像检索"></a>图像检索</h3><p>在图像加密存储到数据库之后，下一个任务是给定图像，在加密数据中进行图像检索，这一部分代码的核心逻辑在主函数中实现。</p>
+<p>首先要读取希望查询的图片，并调用一次同态加密算法获取查询图片的密文：</p>
+<pre><code class="python">if __name__ == &quot;__main__&quot;:    
+    # ...
+    query_image_path = &quot;./data/5.jpg&quot;
+    encrypted_query_red, encrypted_query_green, encrypted_query_blue = encrypt_image(query_image_path, context, ts.SCHEME_TYPE.CKKS)
+    # ...
+</code></pre>
+<p>图像检索核心逻辑如下：</p>
+<pre><code class="python">if __name__ == &quot;__main__&quot;:
+    # ...
+    # 计算余弦相似度并排序
+    similarities = []
+
+    for i, row in enumerate(rows, start=1):
+        # 反序列化数据库中的密文向量
+        serialized_red, serialized_green, serialized_blue = row
+        encrypted_red = ts.ckks_vector_from(context, serialized_red)
+        encrypted_green = ts.ckks_vector_from(context, serialized_green)
+        encrypted_blue = ts.ckks_vector_from(context, serialized_blue)
+
+        # 计算余弦相似度
+        similarity_red = calculate_cosine_similarity(encrypted_query_red, encrypted_red)
+        similarity_green = calculate_cosine_similarity(encrypted_query_green, encrypted_green)
+        similarity_blue = calculate_cosine_similarity(encrypted_query_blue, encrypted_blue)
+
+        # 将三个通道的相似度取平均作为整体相似度
+        average_similarity = (similarity_red + similarity_green + similarity_blue) / 3
+
+        similarities.append((i, average_similarity))
+        print(f&quot;计算第&#123;i&#125;张图片的相似度&quot;)
+
+    # 对相似度进行排序
+    print(&quot;相似度排序中...&quot;)
+    similarities.sort(key=lambda x: abs(x[1] - 1))
+
+    # 输出相似度最接近1的图像编号和相似度值
+    print(similarities)
+    closest_result = similarities[0]
+    print(f&quot;最相似的图片为: &#123;closest_result[0]&#125;, 二者余弦相似度为: &#123;closest_result[1]&#125;&quot;)
+    # ...
+</code></pre>
+<p>如上所说，首先要对数据库中的数据进行反序列化以获得密文，然后调用calculate_cosine_similarity函数计算三通道的余弦相似度，将三通道的平均余弦相似度作为匹配标准，因为同态加密往往涉及浮点数运算，密文之间无无法做精确比较，因此这里认为平均余弦相似度最接近1图片即为要匹配的图片，最后输出匹配图片的序号。</p>
+<p>这里匹配的核心是余弦相似度的计算，其公式为：$\text{Similarity}(\mathbf{A}, \mathbf{B}) &#x3D; \frac{\sum_{i&#x3D;1}^{n} A_i \cdot B_i}{\sqrt{\sum_{i&#x3D;1}^{n} A_i^2} \cdot \sqrt{\sum_{i&#x3D;1}^{n} B_i^2}}$。</p>
+<p>由于CKKSVector和BFVVector类的成员函数差异，在两个算法中，calculate_cosine_similarity函数的实现略有不同，如下：</p>
+<pre><code class="python">def calculate_cosine_similarity(vector1, vector2):
+    # 分子（ckks）
+    numerator = vector1.dot(vector2)
+    numerator = numerator.pow(2)
+    
+       # 如果是bfv算法，分子的计算方法替换为下面两行
+    # numerator = vector1.dot(vector2)
+    # numerator = numerator * numerator 
+    
+    # 分母
+    denominator1 = vector1.dot(vector1)
+    denominator2 = vector2.dot(vector2)
+    denominator = denominator1 * denominator2
+
+    numerator = numerator.decrypt(ckks_secret_key)
+    denominator = denominator.decrypt(ckks_secret_key)
+
+    numerator_array = np.array(numerator)
+    denominator_array = np.array(denominator)
+    similarity = np.sum(numerator_array) / np.sum(denominator_array)
+
+    return similarity
+</code></pre>
+<h3 id="图像解密与还原"><a href="#图像解密与还原" class="headerlink" title="图像解密与还原"></a>图像解密与还原</h3><p>为了验证全此处全同态加密的有效性，这部分对加密数据进行解密和还原，这一部分实现封装在decrypt_all_image中，函数如下：</p>
+<pre><code class="python">def decrypt_all_image():
+    # 创建或连接到 SQLite 数据库
+    conn = sqlite3.connect(&quot;bfv_encrypted_images.db&quot;)
+    cursor = conn.cursor()
+
+    # 查询数据库以获取加密向量
+    cursor.execute(&quot;SELECT encrypted_red, encrypted_green, encrypted_blue FROM EncryptedImages&quot;)
+    rows = cursor.fetchall()
+
+    # 创建保存目录
+    save_directory = &quot;./restored_images/&quot;
+    os.makedirs(save_directory, exist_ok=True)
+
+    # 解密并还原每个图像
+    for i, row in enumerate(rows, start=1):
+        # 反序列化加密向量的值
+        serialized_red, serialized_green, serialized_blue = row
+
+        # 反序列化加密向量
+        deserialized_red = ts.bfv_vector_from(context, serialized_red)
+        deserialized_green = ts.bfv_vector_from(context, serialized_green)
+        deserialized_blue = ts.bfv_vector_from(context, serialized_blue)
+
+        # 使用私钥解密
+        decrypted_red = deserialized_red.decrypt(secret_key = bfv_secret_key)
+        decrypted_green = deserialized_green.decrypt(secret_key = bfv_secret_key)
+        decrypted_blue = deserialized_blue.decrypt(secret_key = bfv_secret_key)
+
+        # 转换为 NumPy 数组
+        red_channel = np.array(decrypted_red)
+        green_channel = np.array(decrypted_green)
+        blue_channel = np.array(decrypted_blue)
+
+        # 由于解密后是一维数组，需要重新调整为图像形状
+        shape = (int(len(decrypted_red) ** 0.5), int(len(decrypted_red) ** 0.5), 1)
+        red_channel = red_channel.reshape(shape)
+        green_channel = green_channel.reshape(shape)
+        blue_channel = blue_channel.reshape(shape)
+
+        # 合并通道并进行值的缩放和截断
+        restored_image_array = np.clip(np.concatenate([red_channel, green_channel, blue_channel], axis=2), 0, 255).astype(&#39;uint8&#39;)
+
+        # 将还原后的图像数组转换为图像对象
+        restored_image = Image.fromarray(restored_image_array.astype(&#39;uint8&#39;))
+
+        # 保存还原后的图像为 JPG 文件
+        restored_image.save(f&quot;./restored_images/&#123;i&#125;_restored.jpg&quot;)
+        print(f&quot;解密还原第&#123;i&#125;张图片&quot;)
+
+    conn.close()
+    print(&quot;解密完成&quot;)
+</code></pre>
+<p>其中关键步骤均用注释进行说明，需要注意的部分主要是：调用反序列化方法、使用私钥解密、图片形状reshape。</p>
+<p>以上均基于CKKS同态加密算法进行分析，如果要换用BFV算法，需要更改的地方主要有：</p>
+<ol>
+<li><p>数据库名称：<code>conn = sqlite3.connect(&quot;bfv_encrypted_images.db&quot;)</code></p>
+</li>
+<li><p>context初始化：</p>
+<pre><code class="python"># 定义 BFV context，并分离公私钥
+    context = ts.context(ts.SCHEME_TYPE.BFV,poly_modulus_degree=8192,plain_modulus=1032193)
+    context.global_scale = 2**20
+    context.generate_galois_keys()
+    bfv_secret_key = context.secret_key()
+    context.make_context_public()
+</code></pre>
+</li>
+<li><p>加密方法：</p>
+<pre><code class="python">encrypted_red = ts.bfv_vector(context, red_channel)
+encrypted_green = ts.bfv_vector(context, green_channel)
+encrypted_blue = ts.bfv_vector(context, blue_channel)
+</code></pre>
+</li>
+<li><p>反序列化方法：</p>
+<pre><code class="python">serialized_red, serialized_green, serialized_blue = row
+encrypted_red = ts.bfv_vector_from(context, serialized_red)
+encrypted_green = ts.bfv_vector_from(context, serialized_green)
+encrypted_blue = ts.bfv_vector_from(context, serialized_blue)
+</code></pre>
+</li>
+<li><p>calculate_cosine_similarity函数中分子计算方法，上文已做解释。</p>
+</li>
+</ol>
+<p>此外还有一些相应的变量名称需要更换，不再赘述。</p>
+<h2 id="实验结果和效率比较"><a href="#实验结果和效率比较" class="headerlink" title="实验结果和效率比较"></a>实验结果和效率比较</h2><p>为保证算法比较的客观性，本实验实现两种算法的代码流程基本一致，影响算法复杂度的两个关键参数poly_modulus_degree和global_scale也保持一致，设置为：<code>context.poly_modulus_degree=8192</code>、<code>context.global_scale = 2**40</code>。在实验数据上，统一使用了CelebA人脸数据集的前100张图片作为测试数据，在读取图片时统一将图片分辨率更改为64*64。</p>
+<p>下面对CKKS和BFV两个算法的三个测试维度（同态加密、密态搜索、同态解密）分别测试用时，测试过程截图如下：</p>
+<p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202312112014045.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202312112014045.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20231211133207261"></p>
+<p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202312112014186.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202312112014186.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20231211133257989"></p>
+<p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202312112014765.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202312112014765.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20231211133548923"></p>
+<p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202312112014462.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202312112014462.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20231211133602023"></p>
+<p>每次执行算法的用时都略有不同，这里对每种算法的每项任务的平均用时取3次测试结果的平均值，以便进行效率比较和分析，测试结果如下：</p>
+<p>同态加密用时：</p>
+<table>
+<thead>
+<tr>
+<th>测试次数\算法</th>
+<th>CKKS</th>
+<th>BFV</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>6877ms</td>
+<td>7896ms</td>
+</tr>
+<tr>
+<td>2</td>
+<td>6957ms</td>
+<td>7337ms</td>
+</tr>
+<tr>
+<td>3</td>
+<td>6699ms</td>
+<td>7398ms</td>
+</tr>
+<tr>
+<td>平均</td>
+<td>6844.3ms</td>
+<td>7543.7ms</td>
+</tr>
+</tbody></table>
+<p>密态搜索用时：</p>
+<table>
+<thead>
+<tr>
+<th>测试次数\算法</th>
+<th>CKKS</th>
+<th>BFV</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>21818ms</td>
+<td>64848ms</td>
+</tr>
+<tr>
+<td>2</td>
+<td>20206ms</td>
+<td>64673ms</td>
+</tr>
+<tr>
+<td>3</td>
+<td>20475ms</td>
+<td>65213ms</td>
+</tr>
+<tr>
+<td>平均</td>
+<td>20833ms</td>
+<td>64911.3ms</td>
+</tr>
+</tbody></table>
+<p>同态解密用时：</p>
+<table>
+<thead>
+<tr>
+<th>测试次数\算法</th>
+<th>CKKS</th>
+<th>BFV</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>3255ms</td>
+<td>4545ms</td>
+</tr>
+<tr>
+<td>2</td>
+<td>3341ms</td>
+<td>4044ms</td>
+</tr>
+<tr>
+<td>3</td>
+<td>3449ms</td>
+<td>4185ms</td>
+</tr>
+<tr>
+<td>平均</td>
+<td>3348.3ms</td>
+<td>4258ms</td>
+</tr>
+</tbody></table>
+<p>上述测试结果，从不同任务的角度来看，密态搜索任务的用时是最长的，而密态解密的用时最短；从算法的角度来看，三项任务中CKKS算法的运行速度均比BFV算法快，CKKS算法在同态加密平均比BFV算法快10.2%，在密态搜索中快211.6%，在同态解密中快27.7%，整体上看，CKKS算法效率始终高于BFV算法，效率优势在密态搜索任务上体现得非常显著。</p>
+<h2 id="分析与总结"><a href="#分析与总结" class="headerlink" title="分析与总结"></a>分析与总结</h2><p>在本次实验从不同的任务角度对比了CKKS和BFV两种同态加密算法在图像处理任务中的性能。结合实验过程和结果，做出以下分析与总结：</p>
+<p>在实验环境方面，我在Window宿主系统使用wsl2的Linux Ubuntu操作系统（22.04.3）、CPU型号为AMD Ryzen 7 5800H（16核）以及16 Gb运行内存下进行了TenSEAL库中CKKS和BFV两种同态加密算法执行同态加密、密态检索、同态解密三个任务的效率测试。</p>
+<p>在任务性能方面，我针对同一开源库中的CKKS和BFV两种同态加密算法进行了多次测试，以获取更为稳定的平均性能数据。在图像加密存储任务中，可以观察到CKKS算法相对于BFV算法，平均快了10.2%。在密态搜索任务中，CKKS算法表现出更为显著的优势，其运行速度相比BFV算法平均快了211.6%。而在同态解密任务中，CKKS算法仍然保持较高的效率，平均快了27.7%。</p>
+<p>从不同算法的角度看，CKKS算法在所有测试任务中都表现出了更高的效率。在密态搜索任务中，其性能提升尤为显著，这可能归因于CKKS算法对多项式环上计算的适用性以及其更高的并行性。相较之下，BFV算法在同态加密任务中的性能相对较低，可能由于其更为复杂的计算模型导致的。</p>
+<p>此外，在不同任务中，我们还观察到密态搜索任务的耗时相对较长，而密态解密任务的用时最短。这可以解释为，在同态加密中，解密操作相对简单，而密文搜索可能涉及到更多的计算，导致相对较高的执行时间。但是，更短的时间不能与算法的优劣直接关联，由于BFV更复杂的计算机制，虽然效率偏低，但可能会会同态加密的安全性或其他方面有提升，这里不做展开。</p>
+<p>综上所述，从测试结果中可以得出结论，CKKS算法在多项测试任务中表现出更高的性能和效率，而BFV算法相对较慢。在选择同态加密算法时，需要根据具体应用场景和任务需求来权衡算法的优劣，以确保系统在安全性和性能之间取得合适的平衡。</p>
+
+  </div>
+  
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
+      
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+      <!-- 打赏组件 -->
+      
+    </div>
+  
+  
+    
+
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-12-11T20:39:27+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2023年12月11日</p>
+  </a>
+</div>
+
         
       
-    
-  </section>
+        
+          
   
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Cryptography/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Cryptography</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/PrivacyProtection/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>PrivacyProtection</p></a></div>
+  <span hidden itemprop="keywords">Cryptography PrivacyProtection</span>
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
     
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/2023/12/05/008review-Bitcoin/'>
+          <p class='title'>Bitcoin: A Peer-to-Peer Electronic Cash System-论文随记<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>互联网上的商务活动几乎完全依赖于作为值得信赖的第三方的金融机构来处理电子支付。尽管这个系统对大多数交易来说运作良好，但仍然存在基于信任的模型固有的弱点。由于金融机构无法避免调解争端，完全不可逆转...</p>
+        </a>
+      
+    </div>
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
   
 
 
+  <article class="post white-box shadow floatable blur" id="comments">
+    <span hidden>
+      <meta itemprop="discussionUrl" content="/2023/12/11/009CKKS_BFV_FHE/index.html#comments">
+    </span>
+    <p ct><i class='fa-solid fa-comments'></i> Comments</p>
     
-  
+
+    <div id="layoutHelper-comments"></div>
+
+  </article>
+
+
+
+
+
+
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -2699,130 +3237,48 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
-<section class="widget blogger desktop mobile pjax">
-  <div class='content'>
     
-      
-        <a class='avatar flat-box circle' href='/about/'>
-          <img no-lazy src='https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232347378.jpg'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-          <h2>iullius</h2>
-        
-        
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fa-solid fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/kievvv"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget category desktop pjax">
-    
-  <header>
-    
-      <a href='/blog/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>Categories</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/%E6%9D%82%E8%B0%88/" href="/categories/%E6%9D%82%E8%B0%88/"
-            active-action="action-categoriesE69D82E8B088"
-            ><div class='name'>杂谈</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E6%B8%B8%E8%AE%B0/" href="/categories/%E6%B8%B8%E8%AE%B0/"
-            active-action="action-categoriesE6B8B8E8AEB0"
-            ><div class='name'>游记</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E7%AC%94%E8%AE%B0/" href="/categories/%E7%AC%94%E8%AE%B0/"
-            active-action="action-categoriesE7AC94E8AEB0"
-            ><div class='name'>笔记</div><div class='badge'>(5)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E9%A1%B9%E7%9B%AE/" href="/categories/%E9%A1%B9%E7%9B%AE/"
-            active-action="action-categoriesE9A1B9E79BAE"
-            ><div class='name'>项目</div><div class='badge'>(1)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget tagcloud desktop mobile pjax">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>Tags</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/Art/" style="font-size: 14px; color: #999">Art</a> <a href="/tags/Blockchain/" style="font-size: 14px; color: #999">Blockchain</a> <a href="/tags/Cryptography/" style="font-size: 24px; color: #555">Cryptography</a> <a href="/tags/Database/" style="font-size: 14px; color: #999">Database</a> <a href="/tags/Fuzzing/" style="font-size: 14px; color: #999">Fuzzing</a> <a href="/tags/HelloWorld/" style="font-size: 14px; color: #999">HelloWorld</a> <a href="/tags/Matlab/" style="font-size: 14px; color: #999">Matlab</a> <a href="/tags/Netflix/" style="font-size: 14px; color: #999">Netflix</a> <a href="/tags/Photos/" style="font-size: 14px; color: #999">Photos</a> <a href="/tags/Privacy-Protection/" style="font-size: 14px; color: #999">Privacy Protection</a> <a href="/tags/SQL/" style="font-size: 14px; color: #999">SQL</a>
-    </div>
-  </section>
-
-
-    
-  
-
   
 
 
 <div class="widget-sticky pjax">
 
+  
+  
+
+
+  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#CKKS%E4%B8%8EBFV%E7%AE%97%E6%B3%95%E7%9A%84%E5%9B%BE%E7%89%87%E5%90%8C%E6%80%81%E5%8A%A0%E5%AF%86%E3%80%81%E5%AF%86%E6%80%81%E6%A3%80%E7%B4%A2%E4%B8%8E%E5%90%8C%E6%80%81%E8%A7%A3%E5%AF%86"><span class="toc-number">1.</span> <span class="toc-text">CKKS与BFV算法的图片同态加密、密态检索与同态解密</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%8B%E7%BB%8D"><span class="toc-number">1.1.</span> <span class="toc-text">介绍</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#CKKS%EF%BC%88Cheon-Kim-Kim-Song%EF%BC%89"><span class="toc-number">1.1.1.</span> <span class="toc-text">CKKS（Cheon-Kim-Kim-Song）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BFV%EF%BC%88Brakerski-Vaikuntanathan-Gentry%EF%BC%89"><span class="toc-number">1.1.2.</span> <span class="toc-text">BFV（Brakerski-Vaikuntanathan-Gentry）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#TenSEAL"><span class="toc-number">1.1.3.</span> <span class="toc-text">TenSEAL</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E9%AA%8C%E5%86%85%E5%AE%B9"><span class="toc-number">1.2.</span> <span class="toc-text">实验内容</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E9%AA%8C%E7%8E%AF%E5%A2%83"><span class="toc-number">1.3.</span> <span class="toc-text">实验环境</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E9%AA%8C%E6%B5%81%E7%A8%8B%E4%B8%8E%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0"><span class="toc-number">1.4.</span> <span class="toc-text">实验流程与代码实现</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BB%E5%87%BD%E6%95%B0"><span class="toc-number">1.4.1.</span> <span class="toc-text">主函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%BE%E5%83%8F%E5%8A%A0%E5%AF%86%E5%AD%98%E5%82%A8"><span class="toc-number">1.4.2.</span> <span class="toc-text">图像加密存储</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%BE%E5%83%8F%E6%A3%80%E7%B4%A2"><span class="toc-number">1.4.3.</span> <span class="toc-text">图像检索</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%BE%E5%83%8F%E8%A7%A3%E5%AF%86%E4%B8%8E%E8%BF%98%E5%8E%9F"><span class="toc-number">1.4.4.</span> <span class="toc-text">图像解密与还原</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E9%AA%8C%E7%BB%93%E6%9E%9C%E5%92%8C%E6%95%88%E7%8E%87%E6%AF%94%E8%BE%83"><span class="toc-number">1.5.</span> <span class="toc-text">实验结果和效率比较</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%86%E6%9E%90%E4%B8%8E%E6%80%BB%E7%BB%93"><span class="toc-number">1.6.</span> <span class="toc-text">分析与总结</span></a></li></ol></li></ol>
+    </div>
+  </section>
+
+  
+
 </div>
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -2850,13 +3306,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </aside>
 
 
+
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3305,7 +3762,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
   <script>
-  let imgs = ["https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232303575.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232304237.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232304216.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232305394.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232303572.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232304301.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232305972.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232304843.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232302541.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232254011.jpg"];
+  let imgs = ["https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232304216.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232303575.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232254011.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232304301.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232302541.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232305972.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232304843.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232304237.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232303572.jpg","https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232305394.jpg"];
   let index = 0;
   let IntervalParallax = null;
 
@@ -3534,7 +3991,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"iullius’ Blog","url":"https://kievvv.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"iullius","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://kievvv.github.io/","sameAs":["https://github.com/volantis-x"],"description":"Personal Blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://kievvv.github.io/","name":"iullius’ Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://kievvv.github.io/tags/Privacy Protection/","name":"Privacy Protection"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"iullius’ Blog","url":"https://kievvv.github.io/","keywords":"iullius","description":"Personal Blog","author":{"@type":"Person","name":"iullius","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://kievvv.github.io/","description":"Personal Blog"},"publisher":{"@type":"Organization","name":"iullius’ Blog","url":"https://kievvv.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://kievvv.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"Personal Blog","inLanguage":["zh-CN","en","zh-HK","zh-TW","default"],"mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"iullius","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://kievvv.github.io/"},"publisher":{"@type":"Organization","name":"iullius’ Blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"iullius’ Blog","url":"https://kievvv.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"iullius","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://kievvv.github.io/","sameAs":["https://github.com/volantis-x"],"description":"Personal Blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://kievvv.github.io/","name":"iullius’ Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://kievvv.github.io/categories/笔记/","name":"笔记"}},{"@type":"ListItem","position":3,"item":{"@id":"https://kievvv.github.io/2023/12/11/009CKKS_BFV_FHE/","name":"CKKS与BFV算法的图片同态加密、密态检索与同态解密"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"iullius’ Blog","url":"https://kievvv.github.io/","keywords":"iullius","description":"Personal Blog","author":{"@type":"Person","name":"iullius","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://kievvv.github.io/","description":"Personal Blog"},"publisher":{"@type":"Organization","name":"iullius’ Blog","url":"https://kievvv.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://kievvv.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"CKKS与BFV算法的图片同态加密、密态检索与同态解密","description":"Personal Blog","inLanguage":["zh-CN","en","zh-HK","zh-TW","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://kievvv.github.io/2023/12/11/009CKKS_BFV_FHE/"},"author":{"@type":"Person","name":"iullius","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://kievvv.github.io/"},"publisher":{"@type":"Organization","name":"iullius’ Blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://kievvv.github.io/2023/12/11/009CKKS_BFV_FHE/","wordCount":0,"datePublished":"2023-12-11T11:57:43.000Z","dateModified":"2023-12-11T12:39:27.666Z","articleSection":"笔记","keywords":"Cryptography,PrivacyProtection","image":{"@type":"ImageObject","url":"https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202312112020308.png","width":1024,"height":768}}]</script>
 
 
 
