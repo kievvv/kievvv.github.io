@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.8.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="https://kievvv.github.io/tags/blockchain/"/>
+  
+  <link rel="canonical" href="https://kievvv.github.io/2024/06/19/011fouradvattack/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -35,19 +35,21 @@
   <!-- feed -->
       <link rel="alternate" href="/atom.xml" title="iullius’ Blog" type="application/atom+xml">
   <!-- 页面元数据 -->
-  <title>标签：Blockchain - iullius’ Blog</title>
-  <meta name="keywords" content="iullius">
+  <title>对抗攻击四种算法实现(FGSM、BIM、PGD、MIFGSM) - iullius’ Blog</title>
+  <meta name="keywords" content="AI Security,iullius">
   <meta desc name="description" content="Personal Blog - iullius - iullius’ Blog">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="iullius’ Blog">
-<meta property="og:url" content="https://kievvv.github.io/tags/Blockchain/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="对抗攻击四种算法实现(FGSM、BIM、PGD、MIFGSM)">
+<meta property="og:url" content="https://kievvv.github.io/2024/06/19/011FourAdvAttack/index.html">
 <meta property="og:site_name" content="iullius’ Blog">
-<meta property="og:description" content="Personal Blog">
+<meta property="og:description" content="FGSM算法原理快速梯度符号法（Fast Gradient Sign Method，FGSM）是一种最早的对抗攻击方法之一。其基本思想是通过计算输入图像在损失函数上的梯度，并沿着梯度上升方向对图像进行扰动，从而生成对抗样本。具体公式为： $$ x_{\text{adv}} &#x3D; x + \epsilon \cdot \text{sign}(\nabla_x J(\theta, x, y))">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2024-06-19T12:15:42.000Z">
+<meta property="article:modified_time" content="2024-06-19T12:39:51.687Z">
 <meta property="article:author" content="iullius">
-<meta property="article:tag" content="iullius">
+<meta property="article:tag" content="AI Security">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2511,7 +2513,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="none" class='cover-wrapper  search' style="display: none;">
+      <div id="none" class='cover-wrapper post search' style="display: none;">
         
   <div id="parallax-window"></div>
 
@@ -2600,25 +2602,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="safearea">
         <div class="body-wrapper">
           
-
 <div id="l_main" class=''>
-  
-    
-      
-  <section class="post-list">
-    
-      
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://kievvv.github.io/2023/12/05/008review-Bitcoin/">
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="https://kievvv.github.io/2024/06/19/011FourAdvAttack/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="iullius’ Blog">
   </span>
@@ -2627,68 +2613,450 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="Personal Blog">
   </span>
   
-  
+
+
   
     <div class='headimg-div'>
-      <a class='headimg-a' href="/2023/12/05/008review-Bitcoin/">
-        <img itemprop="image" class='headimg' alt="Bitcoin: A Peer-to-Peer Electronic Cash System-论文随记" src='https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202312052340491.png'/>
+      <a class='headimg-a'>
+        <img itemprop="image" class='headimg' src='https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202406192019945.png'/>
       </a>
     </div>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/12/05/008review-Bitcoin/"  itemprop="url">
-        Bitcoin: A Peer-to-Peer Electronic Cash System-论文随记
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
     
-      
-        互联网上的商务活动几乎完全依赖于作为值得信赖的第三方的金融机构来处理电子支付。尽管这个系统对大多数交易来说运作良好，但仍然存在基于信任的模型固有的弱点。由于金融机构无法避免调解争端，完全不可逆转的交易并非真正可能。调解的成本增加了交易成本，限制了最小实际交易规模，并削减了小额随意交易的可能性。同时，无法进行不可逆转支付的能力丧失也带来了更广泛的代价。由于存在撤销的可能性，对信任的需求扩散开来...
-      
     
-  </div>
-  
-    <div class='meta-v3' line_style='dashed'>
-      <div>
+      <h1 class="title" itemprop="name headline">
+        对抗攻击四种算法实现(FGSM、BIM、PGD、MIFGSM)
+      </h1>
+      <div class='new-meta-box'>
         
-        <time itemprop="dateCreated datePublished" datetime="2023-12-05T23:49:00+08:00">2023-12-05</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a>
           
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E7%AC%94%E8%AE%B0/" itemprop="url"><span itemprop="name">笔记</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2023/12/05/008review-Bitcoin/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232347378.jpg" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232347378.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">iullius</p>
+  </a>
 </div>
 
-          </div>
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/%E7%AC%94%E8%AE%B0/" itemprop="url"><span itemprop="name">笔记</span></a>
+      </span>
+    
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2024-06-19T20:15:42+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2024年6月19日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <h2 id="FGSM"><a href="#FGSM" class="headerlink" title="FGSM"></a>FGSM</h2><h3 id="算法原理"><a href="#算法原理" class="headerlink" title="算法原理"></a>算法原理</h3><p>快速梯度符号法（Fast Gradient Sign Method，FGSM）是一种最早的对抗攻击方法之一。其基本思想是通过计算输入图像在损失函数上的梯度，并沿着梯度上升方向对图像进行扰动，从而生成对抗样本。具体公式为：</p>
+<p>$$ x_{\text{adv}} &#x3D; x + \epsilon \cdot \text{sign}(\nabla_x J(\theta, x, y)) $$ </p>
+<p>其中，$x_{\text{adv}}$ 为对抗样本，$x$为原始输入，$\epsilon$为扰动强度，$\nabla_x J(\theta, x, y)$为损失函数$J$对输入$x$的梯度。</p>
+<h3 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h3><p>FGSM的核心算法在FGSM类中实现，除了初始化方法以外，这个类只有唯一一个函数，即攻击函数attack。这部分在示例代码中已经完成，但之后的攻击算法都基于这一函数实现，因此这里对这一函数进行详细分析，attack函数实现如下：</p>
+<pre><code class="python">def attack(self):
+    perturbed_img=[]
+    perturbed_label=[]
+    org_img=[]
+    org_label=[]
+    wrong=0
+    right=0
+    success=0
+    for i,(img,label) in enumerate(self.data()):
+        if i==self.num_size:
+            break
+        tensor_img = paddle.to_tensor(img)
+        tensor_label=paddle.to_tensor(label)
+        tensor_img.stop_gradient = False
+        predict = self.model(tensor_img)
+        pred=predict.argmax(axis=1)
+        if pred == tensor_label:#如果被正确分类则执行攻击
+            right+=1
+            loss = self.criterion(predict, tensor_label)
+            loss.backward()
+            grad = paddle.to_tensor(tensor_img.grad)
+            grad = paddle.sign(grad)
+            adv_img = tensor_img + self.epsilon * grad
+            #攻击完成之后再次预测
+            predict = self.model(adv_img)
+            pred=predict.argmax(axis=1)
+            if pred!=tensor_label:
+                success+=1
+                #将攻击后的图片保存下来
+                adv_img=paddle.transpose(adv_img,perm=[0,2,3,1]).numpy()
+                tensor_img=paddle.transpose(tensor_img,perm=[0,2,3,1]).numpy()
+                adv_img=np.squeeze(adv_img)
+                tensor_img=np.squeeze(tensor_img)
+                adv_img=adv_img*127.5+127.5
+                tensor_img=tensor_img*127.5+127.5
+                adv_img=adv_img.astype(np.int64)
+                perturbed_img.append(adv_img)
+                tensor_img=tensor_img.astype(np.int64)
+                org_img.append(tensor_img)
+                org_label.append(tensor_label.numpy())
+                perturbed_label.append(pred.numpy())
+        else:
+            wrong+=1
+            continue
+    if right:        
+        succ_rate=success/right
+    else :
+        print(&quot;全都预测错误&quot;)
+        return 
+    print(right)
+    return succ_rate,perturbed_img,org_img,perturbed_label,org_label
+</code></pre>
+<p>这一函数定义了一些初始变量，然后遍历数据图片，首先将图片输入模型以获取分类结果，对正确分类的图片进行攻击，计算损失，然后反向传播计算梯度，获取梯度符号后计算对抗样本，在图片上添加对抗样本。然后将对抗图片输入模型重新预测，比较预测结果与真实标签，并进行结果计数。然后保存结果，将攻击后的图片和原始图片进行转置、去除维度、反归一化、类型转换等处理后再保存到相应列表，根据结果计数来计算攻击成功率并返回。</p>
+<p>返回结果分别为攻击成功率、攻击后图片、原始图片、攻击后分类标签、原始分类标签。这里的攻击成功率<code>succ_rate</code>由两个计数变量<code>right</code>和<code>success</code>计算得出，其中<code>right</code>是原始模型分类正确的图片数，<code>success</code>是原本分类正确而攻击后分类错误的图片数，攻击成功率计算公式为<code>succ_rate=success/right</code>。</p>
+<h3 id="运行测试"><a href="#运行测试" class="headerlink" title="运行测试"></a>运行测试</h3><p>接下来进行效果测试，这里的模型（model）为vgg16，损失函数为交叉熵损失，批大小（batch size）为1，扰动大小设为4，数据量为1000，运行结果如下：</p>
+<p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202406192018755.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202406192018755.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20240619163249698"></p>
+<p>FGSM方法的攻击成功率约为73.4%，运行时间为57秒左右。</p>
+<p>使用示例代码对攻击结果进行可视化，如下：</p>
+<p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202406192019945.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202406192019945.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="下载"></p>
+<p>上图中第一行为原始图片及正确分类结果，而第二行为攻击后图片及攻击后分类结果。</p>
+<h2 id="BIM"><a href="#BIM" class="headerlink" title="BIM"></a>BIM</h2><h3 id="算法原理-1"><a href="#算法原理-1" class="headerlink" title="算法原理"></a>算法原理</h3><p>基本迭代法（Basic Iterative Method, BIM）是快速梯度符号法（FGSM）的扩展版本。它通过在每一步迭代中对输入图像进行小幅度扰动，从而生成更具欺骗性的对抗样本。与FGSM不同，BIM通过多次迭代累积梯度，从而在每一步扰动中逐渐增强对抗效果。BIM的公式为：</p>
+<p>$$<br>x^{(n+1)}<em>{\text{adv}} &#x3D; \text{clip}</em>{x, \epsilon} \left{ x^{(n)}<em>{\text{adv}} + \alpha \cdot \text{sign}(\nabla</em>{x^{(n)}<em>{\text{adv}}} J(\theta, x, y)) \right}<br>$$<br>其中， $x^{(n)}</em>{\text{adv}}$ 表示第$n$次迭代后的对抗样本，$\alpha$ 为每一步的扰动大小， $\epsilon$为总扰动范围，$\text{clip}$操作用于确保对抗样本在合法范围内。</p>
+<h3 id="代码实现-1"><a href="#代码实现-1" class="headerlink" title="代码实现"></a>代码实现</h3><p>以下是BIM的代码实现的核心部分，与FGSM相比，主要的不同之处在于多次迭代和每次迭代中的裁剪操作。</p>
+<pre><code class="python">    if pred== tensor_label:#如果被正确分类则执行攻击
+        right+=1
+        # Add code
+        for iter in range(self.num_iters):# 多次迭代
+            adv_img.stop_gradient = False
+            predict=model(adv_img)
+            loss = self.criterion(predict, tensor_label)
+            for parameter in self.model.parameters():
+                parameter.clear_grad()
+            loss.backward(retain_graph=True)
+            grad = paddle.to_tensor(adv_img.grad)
+            delta = self.alpha * paddle.sign(grad)
+            tmp_img = adv_img + delta
+            tensor_img=paddle.to_tensor(img)
+            clip_delta = paddle.clip(tmp_img-tensor_img, min=-self.epsilon, max=self.epsilon)
+            adv_img=adv_img+clip_delta
+            #攻击完成之后再次预测
+            predict = self.model(adv_img)
+            pred=predict.argmax(axis=1)
+            if pred!=tensor_label:
+                success+=1
+                #将攻击后的图片保存下来
+                adv_img=paddle.transpose(adv_img,perm=[0,2,3,1]).numpy()
+                tensor_img=paddle.transpose(tensor_img,perm=[0,2,3,1]).numpy()
+                adv_img=np.squeeze(adv_img)
+                tensor_img=np.squeeze(tensor_img)
+                adv_img=adv_img*127.5+127.5
+                tensor_img=tensor_img*127.5+127.5
+                adv_img=adv_img.astype(np.int64)
+                perturbed_img.append(adv_img)
+                tensor_img=tensor_img.astype(np.int64)
+                org_img.append(tensor_img)
+                org_label.append(tensor_label.numpy())
+                perturbed_label.append(pred.numpy())
+                break# 成功的退出迭代
+        #end addcode
+</code></pre>
+<p>BIM实际上是FGSM的迭代版本，依据FGSM方法获取对抗样本并添加，在每次迭代后进行clip操作以控制扰动强度，在每次迭代后进行分类预测，如果成功则退出迭代，或者达到最大迭代次数自动退出。</p>
+<h3 id="运行测试-1"><a href="#运行测试-1" class="headerlink" title="运行测试"></a>运行测试</h3><p>接下来进行效果测试，这里的模型（model）同样为vgg16，损失函数为交叉熵损失，批大小（batch size）为1，扰动大小设为4，数据量为1000，运行结果如下：</p>
+<p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202406192019923.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202406192019923.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20240619165725962"></p>
+<p>FGSM方法的攻击成功率约为90.6%，运行时间为1分26秒左右。</p>
+<p>使用示例代码对攻击结果进行可视化，如下：</p>
+<p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202406192019157.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202406192019157.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="下载 (1)"></p>
+<p>上图中第一行为原始图片及正确分类结果，而第二行为攻击后图片及攻击后分类结果。</p>
+<h2 id="PGD"><a href="#PGD" class="headerlink" title="PGD"></a>PGD</h2><h3 id="算法原理-2"><a href="#算法原理-2" class="headerlink" title="算法原理"></a>算法原理</h3><p>投影梯度下降法（Projected Gradient Descent, PGD）是BIM的一个扩展版本，它被认为是最有效的第一阶对抗攻击方法之一。PGD方法通过多次迭代，在每一步应用FGSM生成扰动，然后将扰动结果投影回合法的输入范围。具体来说，PGD可以看作是带有投影操作的BIM方法。PGD的公式如下：</p>
+<p> $$ x^{(0)}<em>{\text{adv}} &#x3D; x + \delta, \quad \delta \sim \mathcal{U}(-\epsilon, \epsilon) \ x^{(n+1)}</em>{\text{adv}} &#x3D; \text{clip}<em>{x, \epsilon} \left{ x^{(n)}</em>{\text{adv}} + \alpha \cdot \text{sign}(\nabla_{x^{(n)}_{\text{adv}}} J(\theta, x, y)) \right} $$ </p>
+<p>其中，$x^{(0)}<em>{\text{adv}}$是初始对抗样本，通过在原始输入上添加一个均匀分布的随机噪声$\delta$生成。每一步迭代通过在当前对抗样本上添加扰动$\alpha \cdot \text{sign}(\nabla</em>{x^{(n)}_{\text{adv}}} J(\theta, x, y))$，并使用$\text{clip}$操作将结果投影回合法范围$[x - \epsilon, x + \epsilon]$。</p>
+<h3 id="代码实现-2"><a href="#代码实现-2" class="headerlink" title="代码实现"></a>代码实现</h3><p>以下是PGD的代码实现的核心部分，与BIM相比，PGD在初始时添加了一个随机噪声，并且每一步都包含投影操作。</p>
+<pre><code class="python">if pred== tensor_label:#如果被正确分类则执行攻击
+    right+=1
+    delta_init = paddle.uniform(img.shape, dtype=&#39;float32&#39;, min=-self.epsilon, max=self.epsilon)
+    clip_delta = paddle.clip(delta_init, -self.epsilon, self.epsilon)
+    tensor_img_iter = tensor_img+clip_delta
+    for iter in range(self.num_iters):
+        tensor_img_iter.stop_gradient=False
+        predict=self.model(tensor_img_iter)
+        loss = self.criterion(predict, tensor_label)
+        for param in self.model.parameters():
+            param.clear_grad()
+        loss.backward(retain_graph=True)
+        grad = paddle.to_tensor(tensor_img_iter.grad)
+        delta = self.alpha * paddle.sign(grad)
+        tensor_img = paddle.to_tensor(img)
+        tmp_img = tensor_img_iter+delta
+        clip_delta = paddle.clip(tmp_img-tensor_img, min=-self.epsilon, max=self.epsilon)
+        adv_img = tensor_img_iter+clip_delta
+        #攻击完成之后再次预测
+        predict = self.model(adv_img)
+        pred = predict.argmax(axis=1)
+        if pred != tensor_label:
+            success += 1
+            #将攻击后的图片保存下来
+            adv_img = paddle.transpose(adv_img,perm=[0,2,3,1]).numpy()
+            # tensor_img = paddle.to_tensor(img)
+            tensor_img = paddle.transpose(tensor_img,perm=[0,2,3,1]).numpy()
+            adv_img = np.squeeze(adv_img)
+            tensor_img = np.squeeze(tensor_img)
+            adv_img = adv_img*127.5+127.5
+            tensor_img = tensor_img*127.5+127.5
+            adv_img = adv_img.astype(np.int64)
+            perturbed_img.append(adv_img)
+            tensor_img = tensor_img.astype(np.int64)
+            org_img.append(tensor_img)
+            org_label.append(tensor_label.numpy())
+            perturbed_label.append(pred.numpy())
+            break
+        tensor_img_iter = adv_img
+</code></pre>
+<p>相比BIM，PGD方法的改进主要体现在初始随机噪声的引入，而随机噪声的生成方法，对攻击效果和速度都有明显的影响，这里尝试多种随机噪声生成方法。</p>
+<p>均匀分布：</p>
+<pre><code class="python">delta_init = paddle.uniform(img.shape, dtype=&#39;float32&#39;, min=-self.epsilon, max=self.epsilon)
+</code></pre>
+<p>高斯分布：</p>
+<pre><code class="python">delta_init = paddle.normal(shape=img.shape, mean=0.0, std=self.epsilon)
+</code></pre>
+<p>随机分布</p>
+<pre><code class="python">delta_init = paddle.rand(shape=img.shape) * self.epsilon
+</code></pre>
+<p>这些生成方法各自具有特点，在运行测试部分测试它们的效果并进行对比分析。</p>
+<h3 id="运行测试-2"><a href="#运行测试-2" class="headerlink" title="运行测试"></a>运行测试</h3><p>以下进行了三次运行测试，分别为均匀分布、高斯分布和随机分布的测试结果，最大迭代次数（num_iter）均设置为5：</p>
+<p>均匀分布：</p>
+<p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202406192019451.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202406192019451.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20240619170940855"></p>
+<p>高斯分布：</p>
+<p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202406192020933.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202406192020933.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20240619173858006"></p>
+<p>随机分布：</p>
+<p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202406192021860.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202406192021860.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20240619174325726"></p>
+<p>在最大迭代次数设置为5时，均匀分布运行速度最快，而随机分布的攻击成功率最高。但通过与BIM方法的结果对比，这一系列攻击测试的成功率明显偏低，在80%-83%左右，与预期不符，推测是由于最大迭代次数设置得过小，攻击方法尚未收敛，于是将最大迭代次数（num_iter）调整为15，进行重复测试，结果分别如下：</p>
+<p>均匀分布：</p>
+<p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202406192020457.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202406192020457.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20240619173421987"></p>
+<p>高斯分布：</p>
+<p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202406192019277.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202406192019277.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20240619171916719"></p>
+<p>随机分布：</p>
+<p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202406192021262.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202406192021262.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20240619174808506"></p>
+<p>可以看到，均匀分布和高斯分布的攻击成功率均有明显提高，达到了94%以上，但随机分布的攻击成功率反而有所下降。结合上面的测试结果，<strong>均匀分布生成随机噪声的PGD方法总体表现最好，高斯分布其次，而随机分布方法受到随机性影响，稳定性较差。</strong>同时，相较BIM方法，PGD攻击达到收敛所需的迭代次数更多，应设置更大的最大迭代次数以确保收敛，因此耗费的计算资源和时间也更多，但其攻击成功率也有相应的提升。</p>
+<p>将以上不同噪声生成方法在不同最大迭代次数下运行所用的时间及其最终攻击成功率作成柱状图，以供直观地比较不同噪声生成方法的性能差异，如下图：</p>
+<p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202406192022360.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202406192022360.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20240619194355982"></p>
+<h2 id="MIFGSM"><a href="#MIFGSM" class="headerlink" title="MIFGSM"></a>MIFGSM</h2><h3 id="算法原理-3"><a href="#算法原理-3" class="headerlink" title="算法原理"></a>算法原理</h3><p>MIFGSM（Momentum Iterative Fast Gradient Sign Method）是一种改进的对抗攻击方法，基于FGSM的基础，通过引入动量项来加速收敛和提高攻击的稳定性。与传统的FGSM（Fast Gradient Sign Method）相比，MIFGSM在每次迭代中积累梯度信息，从而更有效地找到对抗样本。</p>
+<p>MIFGSM 是一种利用动量加速收敛的对抗攻击方法。迭代过程如下：</p>
+<ul>
+<li><p>对于$t &#x3D; 1$到$T$（迭代次数），首先计算损失相对于输入的梯度：$\nabla_{\mathbf{x}^\mathrm{adv}<em>{t-1}} J(\mathbf{x}^\mathrm{adv}</em>{t-1}, y_{true})$</p>
+</li>
+<li><p>使用动量累积梯度：$\mathbf{g}<em>t &#x3D; \alpha \cdot \mathbf{g}</em>{t-1} + \frac{\nabla_{\mathbf{x}^\mathrm{adv}<em>{t-1}} J(\mathbf{x}^\mathrm{adv}</em>{t-1}, y_{true})}{|\nabla_{\mathbf{x}^\mathrm{adv}<em>{t-1}} J(\mathbf{x}^\mathrm{adv}</em>{t-1}, y_{true})|_1}$</p>
+</li>
+<li><p>使用这一公式更新对抗样本：$\mathbf{x}^\mathrm{adv}<em>t &#x3D; \mathrm{clip}(\mathbf{x}^\mathrm{adv}</em>{t-1} + \mathrm{clip}(\alpha \cdot \mathrm{sign}(\mathbf{g}_t), -\epsilon, \epsilon), \mathbf{x} - \epsilon, \mathbf{x} + \epsilon)$</p>
+</li>
+</ul>
+<h3 id="代码实现-3"><a href="#代码实现-3" class="headerlink" title="代码实现"></a>代码实现</h3><p>MIFGSM的代码核心实现如下，与FGSM的区别主要在动量项g的引入并利用其来累计梯度。</p>
+<pre><code class="python">if pred == tensor_label:#如果被正确分类则执行攻击
+    right+=1
+    # Add code
+    g = 0#动量初始化
+    for iter in range(self.num_iters):
+        adv_img.stop_gradient=False
+        predict = self.model(adv_img)
+        loss = self.criterion(predict, tensor_label)
+        for param in self.model.parameters():
+            param.clear_grad()
+        loss.backward(retain_graph=True)
+        grad = paddle.to_tensor(adv_img.grad)
+        g = g * self.decay_factor + grad / paddle.norm(grad,p=1)#使用动量累积梯度
+        delta = self.alpha * paddle.sign(g)
+        tensor_img = paddle.to_tensor(img)
+        tmp_img = adv_img + delta
+        clip_delta = paddle.clip(tmp_img - tensor_img, -self.epsilon, self.epsilon)
+        adv_img = adv_img + clip_delta
+        #攻击完成之后再次预测
+        predict = self.model(adv_img)
+        pred = predict.argmax(axis = 1)
+        if pred != tensor_label:
+            success += 1
+            #将攻击后的图片保存下来
+            adv_img = paddle.transpose(adv_img,perm=[0,2,3,1]).numpy()
+            tensor_img = paddle.transpose(tensor_img,perm=[0,2,3,1]).numpy()
+            adv_img = np.squeeze(adv_img)
+            tensor_img = np.squeeze(tensor_img)
+            adv_img = adv_img*127.5+127.5
+            tensor_img = tensor_img*127.5+127.5
+            adv_img = adv_img.astype(np.int64)
+            perturbed_img.append(adv_img)
+            tensor_img = tensor_img.astype(np.int64)
+            org_img.append(tensor_img)
+            org_label.append(tensor_label.numpy())
+            perturbed_label.append(pred.numpy())
+            break
+    # end addcode
+</code></pre>
+<p>相比FGSM，MIFGSM在开始攻击之初引入了动量项g，根据动量累积公式更新g的值，然后再更新<code>delta</code>；同时MIFGSM也是一个迭代方法，动量项g会在每次迭代中更新，同时也保留了上一次循环的信息。</p>
+<h3 id="运行测试-3"><a href="#运行测试-3" class="headerlink" title="运行测试"></a>运行测试</h3><p>接下来进行效果测试，这里的模型（model）为vgg16，损失函数为交叉熵损失，批大小（batch size）为1，扰动大小设为4，最大迭代次数（num_iters）为5，数据量为1000，衰减因子（decay_factor）为1，运行结果如下：</p>
+<p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202406192021148.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202406192021148.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20240619191202726"></p>
+<p>MIFGSM方法的攻击成功率约为86.6%，运行时间为1分36秒左右。</p>
+<p>使用示例代码对攻击结果进行可视化，如下：</p>
+<p><img src="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202406192021973.png" class="lazyload" data-srcset="https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202406192021973.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="下载 (2)"></p>
+<p>上图中第一行为原始图片及正确分类结果，而第二行为攻击后图片及攻击后分类结果。</p>
+<h2 id="对比分析"><a href="#对比分析" class="headerlink" title="对比分析"></a>对比分析</h2><p>为了横向对比四个攻击方法的性能差异，将同样超参数下的攻击数据作成如下表格，最大迭代次数均为5，如下表：</p>
+<table>
+<thead>
+<tr>
+<th>攻击方法</th>
+<th>时间 (秒)</th>
+<th>攻击成功率 (%)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>FGSM</td>
+<td>57</td>
+<td>73.4</td>
+</tr>
+<tr>
+<td>BIM</td>
+<td>86</td>
+<td>90.6</td>
+</tr>
+<tr>
+<td>PGD</td>
+<td>87</td>
+<td>82.8</td>
+</tr>
+<tr>
+<td>MIFGSM</td>
+<td>96</td>
+<td>86.6</td>
+</tr>
+</tbody></table>
+<p>在本场景下，用时最快的方法为FGSM，用时最久为MIFGSM；攻击成功率最高的方法为BIM，攻击成功率最低的为FGSM。但上述对比不能完全体现方法的优劣，仍需结合具体场景和不同算法的特点选取合适的攻击方法。</p>
+<p>首先，FGSM 是一种简单而高效的对抗攻击方法，其优点在于计算速度快，因为只需进行一次梯度计算和一次扰动操作，而它的缺点是生成的对抗样本可能会被防御机制检测出来，因为扰动较大且不一定最优。</p>
+<p>BIM 是在FGSM基础上发展而来的迭代攻击方法，相比FGSM具有更高的攻击成功率，但也会增加计算成本和生成时间。其优点在于相对较高的攻击成功率和适应性，可以绕过一些简单的防御机制，但可能需要更多的迭代次数和计算资源。</p>
+<p>PGD 是一种更强大的迭代对抗攻击方法，PGD通常可以在较大的扰动范围内找到最优的对抗样本，因此具有较高的攻击成功率。它的缺点在于需要更多的迭代次数和计算成本，尤其是在处理复杂的模型和数据集时。</p>
+<p>MIFGSM是基于动量的迭代FGSM方法，MIFGSM在FGSM和PGD之间找到了一种平衡，相比于普通的FGSM，具有更高的攻击成功率，同时相比于PGD，计算成本相对较低。然而，MIFGSM可能需要调节更多的超参数来达到最优效果，并且在处理不同模型和数据集时表现可能有所不同。</p>
+
+  </div>
+  
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
+      
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+      <!-- 打赏组件 -->
+      
+    </div>
+  
+  
+    
+
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-06-19T20:39:51+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2024年6月19日</p>
+  </a>
+</div>
+
         
       
-    
-  </section>
+        
+          
   
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/AI-Security/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>AI Security</p></a></div>
+  <span hidden itemprop="keywords">AI Security</span>
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
     
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/2023/12/31/010review_of_2023/'>
+          <p class='title'>2023年终总结<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>2023年终总结能够选择，是一项莫大的权力。2023年，我的可选项比以往来说都要多。至于我怎么选的，请看VCR：
+Jan.买相机了
+
+
+跟同学爬楼
+
+
+去年春节，祝各位奉旨发财！
+
+
+Feb.海...</p>
+        </a>
+      
+    </div>
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
   
 
 
+  <article class="post white-box shadow floatable blur" id="comments">
+    <span hidden>
+      <meta itemprop="discussionUrl" content="/2024/06/19/011FourAdvAttack/index.html#comments">
+    </span>
+    <p ct><i class='fa-solid fa-comments'></i> Comments</p>
     
-  
+
+    <div id="layoutHelper-comments"></div>
+
+  </article>
+
+
+
+
+
+
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -2697,130 +3065,48 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
-<section class="widget blogger desktop mobile pjax">
-  <div class='content'>
     
-      
-        <a class='avatar flat-box circle' href='/about/'>
-          <img no-lazy src='https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202309232347378.jpg'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-          <h2>iullius</h2>
-        
-        
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fa-solid fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/kievvv"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget category desktop pjax">
-    
-  <header>
-    
-      <a href='/blog/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>Categories</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/%E6%9D%82%E8%B0%88/" href="/categories/%E6%9D%82%E8%B0%88/"
-            active-action="action-categoriesE69D82E8B088"
-            ><div class='name'>杂谈</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E6%B8%B8%E8%AE%B0/" href="/categories/%E6%B8%B8%E8%AE%B0/"
-            active-action="action-categoriesE6B8B8E8AEB0"
-            ><div class='name'>游记</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E7%AC%94%E8%AE%B0/" href="/categories/%E7%AC%94%E8%AE%B0/"
-            active-action="action-categoriesE7AC94E8AEB0"
-            ><div class='name'>笔记</div><div class='badge'>(7)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E9%A1%B9%E7%9B%AE/" href="/categories/%E9%A1%B9%E7%9B%AE/"
-            active-action="action-categoriesE9A1B9E79BAE"
-            ><div class='name'>项目</div><div class='badge'>(1)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget tagcloud desktop mobile pjax">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>Tags</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/AI-Security/" style="font-size: 14px; color: #999">AI Security</a> <a href="/tags/Art/" style="font-size: 14px; color: #999">Art</a> <a href="/tags/Blockchain/" style="font-size: 14px; color: #999">Blockchain</a> <a href="/tags/Cryptography/" style="font-size: 24px; color: #555">Cryptography</a> <a href="/tags/Database/" style="font-size: 14px; color: #999">Database</a> <a href="/tags/Fuzzing/" style="font-size: 14px; color: #999">Fuzzing</a> <a href="/tags/HelloWorld/" style="font-size: 14px; color: #999">HelloWorld</a> <a href="/tags/Life/" style="font-size: 14px; color: #999">Life</a> <a href="/tags/Matlab/" style="font-size: 14px; color: #999">Matlab</a> <a href="/tags/Netflix/" style="font-size: 14px; color: #999">Netflix</a> <a href="/tags/Photos/" style="font-size: 14px; color: #999">Photos</a> <a href="/tags/PrivacyProtection/" style="font-size: 19px; color: #777">PrivacyProtection</a> <a href="/tags/SQL/" style="font-size: 14px; color: #999">SQL</a>
-    </div>
-  </section>
-
-
-    
-  
-
   
 
 
 <div class="widget-sticky pjax">
 
+  
+  
+
+
+  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#FGSM"><span class="toc-number">1.</span> <span class="toc-text">FGSM</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%97%E6%B3%95%E5%8E%9F%E7%90%86"><span class="toc-number">1.1.</span> <span class="toc-text">算法原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0"><span class="toc-number">1.2.</span> <span class="toc-text">代码实现</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%90%E8%A1%8C%E6%B5%8B%E8%AF%95"><span class="toc-number">1.3.</span> <span class="toc-text">运行测试</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#BIM"><span class="toc-number">2.</span> <span class="toc-text">BIM</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%97%E6%B3%95%E5%8E%9F%E7%90%86-1"><span class="toc-number">2.1.</span> <span class="toc-text">算法原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0-1"><span class="toc-number">2.2.</span> <span class="toc-text">代码实现</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%90%E8%A1%8C%E6%B5%8B%E8%AF%95-1"><span class="toc-number">2.3.</span> <span class="toc-text">运行测试</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PGD"><span class="toc-number">3.</span> <span class="toc-text">PGD</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%97%E6%B3%95%E5%8E%9F%E7%90%86-2"><span class="toc-number">3.1.</span> <span class="toc-text">算法原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0-2"><span class="toc-number">3.2.</span> <span class="toc-text">代码实现</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%90%E8%A1%8C%E6%B5%8B%E8%AF%95-2"><span class="toc-number">3.3.</span> <span class="toc-text">运行测试</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#MIFGSM"><span class="toc-number">4.</span> <span class="toc-text">MIFGSM</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%97%E6%B3%95%E5%8E%9F%E7%90%86-3"><span class="toc-number">4.1.</span> <span class="toc-text">算法原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0-3"><span class="toc-number">4.2.</span> <span class="toc-text">代码实现</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%90%E8%A1%8C%E6%B5%8B%E8%AF%95-3"><span class="toc-number">4.3.</span> <span class="toc-text">运行测试</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%B9%E6%AF%94%E5%88%86%E6%9E%90"><span class="toc-number">5.</span> <span class="toc-text">对比分析</span></a></li></ol>
+    </div>
+  </section>
+
+  
+
 </div>
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -2848,13 +3134,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </aside>
 
 
+
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3401,6 +3688,60 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 <!-- pjax 标签必须存在于所有页面 否则 pjax error -->
 <pjax>
 
+        <script>
+  // https://github.com/theme-next/hexo-theme-next/blob/master/layout/_third-party/math/mathjax.swig
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = "https://unpkg.com/volantis-static@0.0.1654736714924/libs/mathjax/es5/tex-mml-chtml.js";
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    // 文章章节标题不能为 “MathJax” ，否则会报错。
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typesetPromise();
+  }
+</script>
+
+
+
 </pjax>
 
 <script>
@@ -3532,7 +3873,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"iullius’ Blog","url":"https://kievvv.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"iullius","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://kievvv.github.io/","sameAs":["https://github.com/volantis-x"],"description":"Personal Blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://kievvv.github.io/","name":"iullius’ Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://kievvv.github.io/tags/Blockchain/","name":"Blockchain"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"iullius’ Blog","url":"https://kievvv.github.io/","keywords":"iullius","description":"Personal Blog","author":{"@type":"Person","name":"iullius","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://kievvv.github.io/","description":"Personal Blog"},"publisher":{"@type":"Organization","name":"iullius’ Blog","url":"https://kievvv.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://kievvv.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"Personal Blog","inLanguage":["zh-CN","en","zh-HK","zh-TW","default"],"mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"iullius","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://kievvv.github.io/"},"publisher":{"@type":"Organization","name":"iullius’ Blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"iullius’ Blog","url":"https://kievvv.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"iullius","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://kievvv.github.io/","sameAs":["https://github.com/volantis-x"],"description":"Personal Blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://kievvv.github.io/","name":"iullius’ Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://kievvv.github.io/categories/笔记/","name":"笔记"}},{"@type":"ListItem","position":3,"item":{"@id":"https://kievvv.github.io/2024/06/19/011FourAdvAttack/","name":"对抗攻击四种算法实现(FGSM、BIM、PGD、MIFGSM)"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"iullius’ Blog","url":"https://kievvv.github.io/","keywords":"iullius","description":"Personal Blog","author":{"@type":"Person","name":"iullius","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://kievvv.github.io/","description":"Personal Blog"},"publisher":{"@type":"Organization","name":"iullius’ Blog","url":"https://kievvv.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://kievvv.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"对抗攻击四种算法实现(FGSM、BIM、PGD、MIFGSM)","description":"Personal Blog","inLanguage":["zh-CN","en","zh-HK","zh-TW","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://kievvv.github.io/2024/06/19/011FourAdvAttack/"},"author":{"@type":"Person","name":"iullius","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://kievvv.github.io/"},"publisher":{"@type":"Organization","name":"iullius’ Blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://kievvv.github.io/2024/06/19/011FourAdvAttack/","wordCount":0,"datePublished":"2024-06-19T12:15:42.000Z","dateModified":"2024-06-19T12:39:51.687Z","articleSection":"笔记","keywords":"AI Security","image":{"@type":"ImageObject","url":"https://iulliusimg.oss-cn-shenzhen.aliyuncs.com/blogImg/202406192019945.png","width":1024,"height":768}}]</script>
 
 
 
