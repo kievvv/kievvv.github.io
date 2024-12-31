@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://kievvv.github.io/2024/12/31/012review-of-2024/</loc>
+    
+    <lastmod>2024-12-31</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://kievvv.github.io/2023/12/31/010review_of_2023/</loc>
+    
+    <lastmod>2024-12-31</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://kievvv.github.io/moments/index.html</loc>
     
     <lastmod>2024-07-21</lastmod>
@@ -39,15 +57,6 @@
   
   <url>
     <loc>https://kievvv.github.io/2023/07/06/001HelloWorldLog/</loc>
-    
-    <lastmod>2024-01-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://kievvv.github.io/2023/12/31/010review_of_2023/</loc>
     
     <lastmod>2024-01-04</lastmod>
     
@@ -162,6 +171,34 @@
   </url>
   
   <url>
+    <loc>https://kievvv.github.io/tags/Cryptography/</loc>
+    <lastmod>2024-12-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://kievvv.github.io/tags/Netflix/</loc>
+    <lastmod>2024-12-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://kievvv.github.io/tags/Art/</loc>
+    <lastmod>2024-12-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://kievvv.github.io/tags/Photos/</loc>
+    <lastmod>2024-12-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://kievvv.github.io/tags/Fuzzing/</loc>
     <lastmod>2024-12-31</lastmod>
     <changefreq>weekly</changefreq>
@@ -183,41 +220,6 @@
   </url>
   
   <url>
-    <loc>https://kievvv.github.io/tags/Art/</loc>
-    <lastmod>2024-12-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://kievvv.github.io/tags/Photos/</loc>
-    <lastmod>2024-12-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://kievvv.github.io/tags/Netflix/</loc>
-    <lastmod>2024-12-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://kievvv.github.io/tags/PrivacyProtection/</loc>
-    <lastmod>2024-12-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://kievvv.github.io/tags/Cryptography/</loc>
-    <lastmod>2024-12-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://kievvv.github.io/tags/Matlab/</loc>
     <lastmod>2024-12-31</lastmod>
     <changefreq>weekly</changefreq>
@@ -226,6 +228,13 @@
   
   <url>
     <loc>https://kievvv.github.io/tags/Blockchain/</loc>
+    <lastmod>2024-12-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://kievvv.github.io/tags/PrivacyProtection/</loc>
     <lastmod>2024-12-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
